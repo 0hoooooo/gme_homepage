@@ -1,0 +1,390 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+#header_outer {
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 30px 0 0 0;
+  z-index: 9999;
+  overflow: visible;
+  /* background-color: rgba(185, 217, 243, 0.5); */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  height: 120px;
+  transition: transform 0.3s ease 0s, background-color 0.3s ease 0s,
+    opacity 0.3s ease 0s, box-shadow 0.3s ease 0s, border-color 0.3s ease 0s,
+    margin 0.25s ease-out 0s;
+}
+#header_outer_scrolled {
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  padding: 20px 20px;
+  background-color: #fff;
+  z-index: 9999;
+  overflow: visible;
+  background-color: rgba(255, 255, 255, 100);
+  box-shadow: 0 0 10px rgba(241, 90, 110, 0.5);
+}
+
+#top {
+  position: relative;
+  z-index: 9998;
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  position: relative;
+}
+@media only screen and (min-width: 1300px) {
+  .container {
+    max-width: 1100px;
+  }
+}
+
+.row {
+  position: relative;
+  padding-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+@media only screen and (min-width: 1000px) {
+  .row {
+    display: flex;
+  }
+}
+
+.logo {
+  margin-right: 25px;
+  position: relative;
+}
+@media only screen and (min-width: 1000px) {
+  .logo {
+    display: flex;
+    float: none;
+    width: auto;
+  }
+}
+
+#top #logo {
+  width: auto;
+  max-width: none;
+  line-height: 22px;
+  font-size: 22px;
+  letter-spacing: -1px;
+  color: #444;
+  font-family: "Open Sans";
+  font-weight: 600;
+  align-self: center;
+}
+#logo,
+.logo-spacing {
+  transition: margin 0.32s ease, color 0.32s ease;
+}
+#header-outer #logo img {
+  height: 50px;
+}
+#top #logo img {
+  text-indent: -9999px;
+  max-width: none;
+  width: auto;
+  margin-bottom: 0;
+  display: block;
+}
+
+.menu {
+  display: flex;
+  position: static;
+  float: none;
+  width: auto;
+  vertical-align: baseline;
+  position: static;
+  margin-right: 0;
+}
+@media only screen and (min-width: 1000px) {
+  .menu {
+    display: flex;
+    float: none;
+    width: auto;
+  }
+}
+.widget-area {
+  display: none;
+  z-index: 10000;
+}
+nav {
+  display: flex;
+}
+@media only screen and (min-width: 1000px) {
+  nav {
+    display: flex;
+  }
+}
+
+#top nav > ul {
+  overflow: visible;
+  transition: padding 0.8s ease, margin 0.25s ease;
+  min-height: 1px;
+  line-height: 1px;
+}
+
+@media only screen and (min-width: 1px) and (max-width: 999px) {
+  #header-outer #top nav > ul {
+    width: auto;
+    padding: 15px 0 25px 0;
+    margin: 0 auto 0 auto;
+    z-index: 100000;
+    position: relative;
+  }
+}
+
+#top nav > ul > li {
+  display: flex;
+}
+
+@media only screen and (min-width: 1000px) {
+  #top nav > ul li {
+    display: flex;
+    margin-left: 0;
+  }
+}
+
+.sf-menu {
+  display: flex;
+  list-style: none outside none;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+  z-index: 10;
+  float: none;
+  overflow: visible;
+  transition: padding 0.8s ease, margin 0.25s ease;
+  min-height: 1px;
+  line-height: 1px;
+  list-style: none outside none;
+  padding: 0;
+  z-index: 10;
+}
+.sf-menu li {
+  outline: 0 none;
+  line-height: 0;
+  font-size: 15px;
+  align-items: center;
+  display: flex;
+  float: left;
+  list-style: none;
+}
+#top nav > ul > li > a {
+  font-family: "Poppins";
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  padding: 0 10px 0 10px;
+  display: block;
+}
+li a {
+  position: relative;
+  text-decoration: none;
+  outline: 0 none;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #191c1f;
+  opacity: 1;
+}
+li a:hover {
+  color: red;
+  border-bottom: solid 3px #ea2129;
+}
+li a:hover:after {
+  border-bottom: solid 3px #ea2129;
+}
+.menu_item1 {
+  display: flex;
+  align-items: center;
+  float: left;
+  list-style: none;
+  outline: 0 none;
+  line-height: 0;
+  font-size: 12px;
+  position: relative;
+}
+.sub_menu {
+  display: none;
+}
+.menu_item2 {
+  display: inline-block;
+}
+.menu_item2:hover .sub_menu {
+  border-radius: 20px;
+  padding: 0;
+  display: flex;
+
+  background-color: rgba(255, 255, 255, 100) !important;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-color: #eeeeee;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  box-shadow: 0 6px 28px rgba(0, 0, 0, 0.08);
+  list-style: none outside none;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+  pointer-events: none;
+  border-width: 1px;
+}
+.sub_menu li {
+  display: flex;
+  float: none;
+  width: 25%;
+  flex: none;
+  padding: 0;
+  border: none;
+  background-size: cover;
+  background-position: center;
+  outline: 0 none;
+  line-height: 0;
+  position: relative;
+  margin: 0;
+  z-index: 10;
+}
+.business_left {
+  width: 25%;
+  flex: none;
+  float: none;
+  border: none;
+  padding: 0;
+  transform: translate3d(0, 13px, 0);
+  background-size: cover;
+  background-position: center;
+  display: block;
+  list-style: none;
+  outline: 0 none;
+  line-height: 0;
+  position: relative;
+  margin: 0;
+  z-index: 10;
+}
+#menu-item-16863 {
+  width: 25%;
+  display: flex;
+}
+.business_left a {
+  padding: 35px !important;
+  margin-bottom: 0;
+  font-family: Poppins;
+  text-transform: none !important;
+  font-size: 16px;
+  font-weight: 400;
+  color: #444444 !important;
+  background-color: transparent !important;
+  border-bottom: none;
+  line-height: 28px;
+  transition: none;
+  letter-spacing: 0;
+  outline: 0 none;
+  margin: 0;
+  display: block;
+  position: relative;
+  text-decoration: none;
+  z-index: 10;
+}
+.business_left_banner {
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-height: 400px;
+  display: flex;
+  text-align: left;
+  list-style: none outside none;
+  margin: 0;
+  padding: 0;
+}
+.business_left_image_layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  list-style: none outside none;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+  text-align: left;
+}
+.business_left_image_layer_loaded {
+  background-image: url("https://www.gmeremit.com/wp-content/uploads/2021/08/digital-design-businessman-trading-online-stock-market-teblet-screen.jpg");
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 0.25s ease 0.1s;
+  list-style: none outside none;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+  text-align: left;
+  opacity: 1;
+}
+.business_left_color_overlay {
+  background: linear-gradient(360deg, transparent, #f6653c);
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  list-style: none outside none;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+}
+.business_left_inner_content {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  list-style: none outside none;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+.business_solutions {
+  display: flex;
+  padding: 30px;
+  float: none;
+  width: 25%;
+  flex: none;
+  border: none;
+  background-size: cover;
+  background-position: center;
+  outline: 0 none;
+  line-height: 0;
+  position: relative;
+}
+.menu_item_desc {
+  margin-top: 0.4rem;
+  color: #fff;
+  display: block;
+  line-height: 1.4em;
+  position: relative;
+  list-style: none outside none;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+}
