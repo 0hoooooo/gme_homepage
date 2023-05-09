@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import "../css/Header.css";
 import { styled } from "styled-components";
+import { useNavigate } from "react-router-dom";
 const Header = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
-
+  const navigate = useNavigate();
   const updateScroll = () => {
     setScrollPosition(window.scrollY || document.documentElement.scrollTop);
   };
@@ -14,13 +15,22 @@ const Header = () => {
     console.log(scrollPosition);
   });
 
+  const goSolution = () => {
+    console.log("이동");
+    navigate("/business/solutions");
+    window.location.reload();
+  };
+  const goHome = () => {
+    console.log("홈으로 이동");
+    navigate("/main/home");
+  };
   return (
     <div id={scrollPosition < 100 ? "header_outer" : "header_outer_scrolled"}>
       <header id="top">
         <div className="container">
           <div className="row">
-            <div className="logo">
-              <a id="logo" href="https://www.gmeremit.com">
+            <div className="logo" onClick={goHome}>
+              <a id="logo">
                 <img
                   className="logo"
                   width={180}
@@ -74,8 +84,8 @@ const Header = () => {
                       </li>
                       <li id="menu-item-16714" className="business_solutions">
                         <a
-                          href="https://www.gmeremit.com/business/#solutions"
                           className="business_solutions_a"
+                          onClick={goSolution}
                         >
                           <span className="menu-title-text">Solutions</span>
                         </a>
@@ -90,7 +100,7 @@ const Header = () => {
                             >
                               <img
                                 src="https://www.gmeremit.com/wp-content/uploads/2023/01/financial.png"
-                                className="nectar-menu-icon-img loaded"
+                                className="icon_image"
                                 alt=""
                                 width="128"
                                 height="128"

@@ -1,4 +1,4 @@
-import "../css/Main.css";
+import "../css/Main/Main.css";
 import Main1 from "./Main/Main1";
 import Main2 from "./Main/Main2";
 import Main3 from "./Main/Main3";

@@ -18,6 +18,7 @@ const MainLayout = () => {
     setTimeout(() => {
       api();
     }, 1000);
+    console.log(loading);
   }, [loading]);
 
   return loading === false ? (
@@ -25,38 +26,40 @@ const MainLayout = () => {
   ) : (
     <MainWrapper>
       <Header />
-      <MainBody>
-        <MainContent>
-          <MainContentRow>
-            <Outlet />
-          </MainContentRow>
-        </MainContent>
-      </MainBody>
+      <AjaxContentWrapper>
+        <ContainerWrapper>
+          <MainContent>
+            <MainContentRow>
+              <Outlet />
+            </MainContentRow>
+          </MainContent>
+        </ContainerWrapper>
+      </AjaxContentWrapper>
       <Footer />
     </MainWrapper>
   );
 };
 export default MainLayout;
 const MainWrapper = styled.div`
-  min-width: 1300px;
-  width: 100%;
-  height: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   background: ${({ theme }) => theme.white};
 `;
-const MainBody = styled.div`
+const AjaxContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  flex: 1;
-  width: 100%;
+  flex-grow: 1;
+`;
+
+const ContainerWrapper = styled.div`
   padding-bottom: 0px;
   margin-top: 0 !important;
-  padding-top: 0 !important;
+  padding-top: 100px;
+  flex-grow: 1;
+  background-color: #fafbfc;
   position: relative;
   z-index: 10;
-  background: ${({ theme }) => theme.white};
 `;
 const MainContent = styled.div`
   margin: 0 auto;

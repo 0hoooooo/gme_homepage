@@ -22,11 +22,17 @@ const GlobalStyles = createGlobalStyle`
         border: 0;
         vertical-align: baseline;
     }
+    p{
+        padding-bottom: 27px;
+    }
     body{
         line-height: 1;
         background-color: #FFF;
         margin-bottom: 100px;
-        font-family: 'Noto Sans KR', sans-serif;
+        font-family: Poppins;
+        font-size: 36px;
+        line-height: 36px;
+        font-weight: 600;
         font-size: 16px;
         line-height: 24px;
         font-weight: 400;

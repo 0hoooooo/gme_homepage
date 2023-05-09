@@ -1,4 +1,4 @@
-import "../../css/Main9.css";
+import "../../css/Main/Main9.css";
 
 const Main9 = () => {
   return (

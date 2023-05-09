@@ -1,5 +1,5 @@
-import "../../css/Footer1.css";
-import "../../css/Main.css";
+import "../../css/Footer/Footer1.css";
+import "../../css/Main/Main.css";
 
 import { BsLinkedin } from "react-icons/bs";
 const Footer1 = () => {

@@ -55,6 +55,7 @@ header .row {
   width: calc(100vw - var(--scroll-bar-w));
 }
 .inner-wrap {
+  visibility: visible;
   overflow: hidden;
   position: absolute;
   z-index: 1;
@@ -91,14 +92,13 @@ header .row {
   --scroll-bar-w: 13px;
   margin-left: calc(-50vw + var(--scroll-bar-w) / 2);
   left: 50%;
-  /* width: 100vw; */
-  /* width: calc(100vw - var(--scroll-bar-w)); */
+  width: calc(100vw - var(--scroll-bar-w));
   position: absolute;
   z-index: 1;
   top: 0;
   display: none;
   height: 100%;
-  /* background-size: cover; */
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-image: url("https://www.gmeremit.com/wp-content/uploads/2021/08/Landing-Page.png");
@@ -166,7 +166,7 @@ header .row {
   z-index: 2;
 }
 .wpb_wrapper > div {
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   position: relative;
 }
 .row_bg_wrap {
@@ -229,6 +229,8 @@ header .row {
   float: none;
   margin-right: 0;
   margin-left: 0;
+  padding-left: 1%;
+  padding-right: 1%;
 }
 @media (min-width: 690px) {
   .vc_column_container {
@@ -330,8 +332,9 @@ a {
   position: relative;
   display: block;
   float: none;
+  width: 100%;
   margin-right: 0;
-  margin-left: 250px;
+  margin-left: 0;
   margin-bottom: 0;
   text-align: center;
   background-position: center;
