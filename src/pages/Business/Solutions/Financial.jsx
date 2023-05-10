@@ -159,10 +159,13 @@ const Financial = () => {
                           <div className="vc_column_inner_solution">
                             <div className="wpb_wrapper_solution">
                               <div className="image_wrapper_solution">
-                                <div className="inner">
+                                <div className="inner_solution">
                                   <div className="hover_wrapper">
                                     <div className="hover_wrapper_image">
-                                      <img src={item.src} />
+                                      <img
+                                        src={item.src}
+                                        className="solution_image"
+                                      />
                                     </div>
                                   </div>
                                 </div>
