@@ -33,9 +33,9 @@ const MainLayout = () => {
               <Outlet />
             </MainContentRow>
           </MainContent>
+          <Footer />
         </ContainerWrapper>
       </AjaxContentWrapper>
-      <Footer />
     </MainWrapper>
   );
 };
@@ -55,7 +55,7 @@ const AjaxContentWrapper = styled.div`
 const ContainerWrapper = styled.div`
   padding-bottom: 0px;
   margin-top: 0 !important;
-  padding-top: 100px;
+  padding-top: 0 !important;
   flex-grow: 1;
   background-color: #fafbfc;
   position: relative;
@@ -73,10 +73,4 @@ const MainContentRow = styled.div`
   margin-left: 0;
   margin-right: 0;
   padding-bottom: 0;
-`;
-const MainFooter = styled.div`
-  padding-top: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 `;

@@ -374,7 +374,8 @@ li a:hover:after {
   float: none;
   width: 25%;
   flex: none;
-  display: block;
+  display: flex;
+  flex-direction: column;
   border: none;
   background-size: cover;
   background-position: center;
@@ -399,6 +400,7 @@ li a:hover:after {
   letter-spacing: 0;
   display: block;
   position: relative;
+  flex-direction: row;
   text-decoration: none;
   list-style: none outside none;
   margin: 0;
@@ -460,4 +462,23 @@ li a:hover:after {
   vertical-align: middle;
   transition: opacity 0.2s ease 0.05s;
   max-width: 100%;
+}
+.developers {
+  padding: 30px;
+  float: none;
+  width: 25%;
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  background-size: cover;
+  background-position: center;
+  outline: 0 none;
+  line-height: 0;
+  position: relative;
+  list-style: none;
+  outline: 0 none;
+  line-height: 0;
+  font-size: 12px;
+  position: relative;
 }

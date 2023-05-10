@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 
 const Main1 = () => {
   const [isShow, setIsShow] = useState(false);
@@ -115,7 +115,7 @@ const Main1 = () => {
                         transform: "none",
                       }}
                     >
-                      <div className="vc_column_inner">
+                      <div className="vc_column_inner_title1">
                         <div className="wpb_wrapper">
                           <h1
                             style={{

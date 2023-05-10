@@ -108,7 +108,7 @@ header .row {
   left: 50%;
   width: 100vw !important;
   position: absolute;
-  top: -40px;
+  top: 0px;
   padding-bottom: 0;
   overflow: hidden;
   z-index: 1;
@@ -166,7 +166,7 @@ header .row {
   z-index: 2;
 }
 .wpb_wrapper > div {
-  /* margin-bottom: 20px; */
+  margin-bottom: 20px;
   position: relative;
 }
 .row_bg_wrap {
@@ -666,6 +666,9 @@ a {
   }
 }
 .vc_column_inner {
+  position: relative;
+}
+.vc_column_inner_title1 {
   position: relative;
 }
 .main3_vc_column_inner {

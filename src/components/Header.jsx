@@ -95,8 +95,9 @@ const Header = () => {
                             className="menu-item menu-item-type-custom menu-item-object-custom nectar-regular-menu-item menu-item-has-icon menu-item-16718"
                           >
                             <a
-                              href="https://www.gmeremit.com/business/#solutions"
+                              href="#!"
                               className="nectar-menu-item-with-icon"
+                              onClick={goSolution}
                             >
                               <img
                                 src="https://www.gmeremit.com/wp-content/uploads/2023/01/financial.png"
@@ -122,7 +123,7 @@ const Header = () => {
                             >
                               <img
                                 src="https://www.gmeremit.com/wp-content/uploads/2023/01/payment.png"
-                                className="nectar-menu-icon-img loaded"
+                                className="icon_image"
                                 alt=""
                                 width="96"
                                 height="96"
@@ -202,10 +203,7 @@ const Header = () => {
                           </li>
                         </ul>
                       </li>
-                      <li
-                        id="menu-item-16716"
-                        className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children nectar-regular-menu-item megamenu-column-width-20 megamenu-column-padding-30px menu-item-16716"
-                      >
+                      <li id="menu-item-16716" className="developers">
                         <a
                           href="https://www.gmeremit.com/developers/"
                           className="sf-with-ul"
