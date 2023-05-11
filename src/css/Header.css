@@ -232,7 +232,6 @@ li a:hover:after {
   margin: 0;
   z-index: 10;
   color: #191c1f;
-  box-shadow: 0 6px 28px rgba(0, 0, 0, 0.08);
 }
 .sub_menu li {
   display: flex;
@@ -244,7 +243,7 @@ li a:hover:after {
   background-size: cover;
   background-position: center;
   outline: 0 none;
-  line-height: 0;
+  line-height: 5;
   position: relative;
   margin: 0;
   z-index: 10;
@@ -306,7 +305,7 @@ li a:hover:after {
 .business_left_banner {
   align-items: flex-start;
   justify-content: flex-start;
-  min-height: 300px;
+  min-height: 400px;
   display: flex;
   text-align: left;
   list-style: none outside none;
@@ -318,7 +317,7 @@ li a:hover:after {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 120%;
   overflow: hidden;
   list-style: none outside none;
   margin: 0;
@@ -352,7 +351,7 @@ li a:hover:after {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 120%;
   overflow: hidden;
   list-style: none outside none;
   margin: 0;
@@ -369,12 +368,34 @@ li a:hover:after {
   display: block;
   text-align: left;
 }
+.title_business{
+  list-style: none outside none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  text-transform: none!important;
+  color: #444444!important;
+}
+.title_menu{
+  color: #fff;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  background-image: linear-gradient(to right, #825cff 0%, #825cff 100%);
+  -webkit-transition: background-size 0.55s cubic-bezier(.2,.75,.5,1);
+  transition: background-size 0.55s cubic-bezier(.2,.75,.5,1);
+  background-position: left bottom;
+  font-family: Poppins;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 600;
+}
 .business_solutions {
   padding: 30px;
   float: none;
   width: 25%;
   flex: none;
-  display: flex;
+  display: block;
   flex-direction: column;
   border: none;
   background-size: cover;
@@ -387,6 +408,7 @@ li a:hover:after {
   line-height: 0;
   font-size: 12px;
   position: relative;
+  transform: translate3d(0,13px,0);
 }
 .business_solutions_a {
   font-family: Poppins;
@@ -407,10 +429,20 @@ li a:hover:after {
   padding: 0;
   z-index: 10;
   cursor: pointer;
+  padding: 6px 6px;
+}
+.menu-title-text{
+  position: relative;
+  list-style: none outside none;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+  text-transform: none!important;
 }
 .sub-menu {
   border-top: 0;
   border-radius: 20px;
+  background-color: transparent!important;
   display: block;
   top: 0 !important;
   width: 100%;
@@ -421,6 +453,20 @@ li a:hover:after {
   margin: 0;
   padding: 0;
   transform: none;
+  z-index: auto;
+  transition: transform 0.25s,opacity 0.25s;
+}
+.sub-menu-li{
+  float: none;
+  list-style: none;
+  font-size: 12px;
+  width: 150%;
+  outline: 0 none;
+  line-height: 0;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
 }
 .menu_item_desc {
   margin-top: 0.4rem;
@@ -447,10 +493,25 @@ li a:hover:after {
 }
 .nectar-menu-item-with-icon {
   border-bottom: none;
+  padding: 10px 10px;
+  font-family: Poppins;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  transition: none;
+  letter-spacing: 0;
+  margin-bottom: 0;
+  display: flex;
+  align-items: flex-start;
+  outline: 0 none;
+  position: relative;
+  text-decoration: none;
+  list-style: none outside none;
+  z-index: 10;
 }
 .icon_image {
   margin-right: 15px;
-  width: 36px;
+  width: 50px;
   line-height: inherit;
   display: inline-block;
   margin-bottom: 0;
@@ -478,4 +539,43 @@ li a:hover:after {
   line-height: 0;
   font-size: 12px;
   position: relative;
+  transform: translate3d(0,13px,0);
+}
+.nectar-menu-icon-text{
+  list-style: none outside none;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+  visibility: visible;
+  width: 200px;
+}
+.menu_title_text{
+  display: inline;
+  position: relative;
+  list-style: none outside none;
+  letter-spacing: 0;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+  color: #4c4c4c!important;
+}
+.platform{
+   padding: 30px;
+  float: none;
+  width: 25%;
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  background-size: cover;
+  background-position: center;
+  outline: 0 none;
+  line-height: 0;
+  position: relative;
+  list-style: none;
+  outline: 0 none;
+  line-height: 0;
+  font-size: 12px;
+  position: relative;
+  transform: translate3d(0,13px,0);
 }

@@ -72,8 +72,8 @@ const Header = () => {
                               <div className="business_left_color_overlay"></div>
                             </div>
                             <div className="business_left_inner_content">
-                              <span className="title inherit-h3">
-                                <span className="menu-title-text">B2B</span>
+                              <span className="title_business">
+                                <span className="title_menu">B2B</span>
                               </span>
                               <span className="menu_item_desc">
                                 Reduce Cost on Business Transfers
@@ -92,7 +92,7 @@ const Header = () => {
                         <ul className="sub-menu">
                           <li
                             id="menu-item-16718"
-                            className="menu-item menu-item-type-custom menu-item-object-custom nectar-regular-menu-item menu-item-has-icon menu-item-16718"
+                            className="sub-menu-li"
                           >
                             <a
                               href="#!"
@@ -107,7 +107,7 @@ const Header = () => {
                                 height="128"
                               />
                               <span className="nectar-menu-icon-text">
-                                <span className="menu-title-text">
+                                <span className="menu_title_text">
                                   Financial Services
                                 </span>
                               </span>
@@ -115,7 +115,7 @@ const Header = () => {
                           </li>
                           <li
                             id="menu-item-16728"
-                            className="menu-item menu-item-type-custom menu-item-object-custom nectar-regular-menu-item menu-item-has-icon menu-item-16728"
+                            className="sub-menu-li"
                           >
                             <a
                               href="https://www.gmeremit.com/business/#sps"
@@ -137,7 +137,7 @@ const Header = () => {
                           </li>
                           <li
                             id="menu-item-16732"
-                            className="menu-item menu-item-type-custom menu-item-object-custom nectar-regular-menu-item menu-item-has-icon menu-item-16732"
+                            className="sub-menu-li"
                           >
                             <a
                               href="https://www.gmeremit.com/business/#vas"
@@ -145,7 +145,7 @@ const Header = () => {
                             >
                               <img
                                 src="https://www.gmeremit.com/wp-content/uploads/2023/01/real-time-analysis.png"
-                                className="nectar-menu-icon-img loaded"
+                                className="icon_image"
                                 alt=""
                                 width="96"
                                 height="96"
@@ -159,7 +159,7 @@ const Header = () => {
                           </li>
                           <li
                             id="menu-item-16738"
-                            className="menu-item menu-item-type-custom menu-item-object-custom nectar-regular-menu-item menu-item-has-icon menu-item-16738"
+                            className="sub-menu-li"
                           >
                             <a
                               href="https://www.gmeremit.com/business/#service"
@@ -167,7 +167,7 @@ const Header = () => {
                             >
                               <img
                                 src="https://www.gmeremit.com/wp-content/uploads/2023/01/service-provider.png"
-                                className="nectar-menu-icon-img loaded"
+                                className="icon_image"
                                 alt=""
                                 width="96"
                                 height="96"
@@ -181,7 +181,7 @@ const Header = () => {
                           </li>
                           <li
                             id="menu-item-16739"
-                            className="menu-item menu-item-type-custom menu-item-object-custom nectar-regular-menu-item menu-item-has-icon menu-item-16739"
+                            className="sub-menu-li"
                           >
                             <a
                               href="https://www.gmeremit.com/business/#partners"
@@ -189,7 +189,7 @@ const Header = () => {
                             >
                               <img
                                 src="https://www.gmeremit.com/wp-content/uploads/2023/01/partnership.png"
-                                className="nectar-menu-icon-img loaded"
+                                className="icon_image"
                                 alt=""
                                 width="96"
                                 height="96"
@@ -206,14 +206,14 @@ const Header = () => {
                       <li id="menu-item-16716" className="developers">
                         <a
                           href="https://www.gmeremit.com/developers/"
-                          className="sf-with-ul"
+                          className="business_solutions_a"
                         >
                           <span className="menu-title-text">Developers</span>
                         </a>
                         <ul className="sub-menu">
                           <li
                             id="menu-item-16778"
-                            className="menu-item menu-item-type-custom menu-item-object-custom nectar-regular-menu-item menu-item-has-icon menu-item-16778"
+                            className="sub-menu-li"
                           >
                             <a
                               href="https://www.gmeremit.com/api-documentation/"
@@ -221,7 +221,7 @@ const Header = () => {
                             >
                               <img
                                 src="https://www.gmeremit.com/wp-content/uploads/2023/01/api.png"
-                                className="nectar-menu-icon-img loaded"
+                                className="icon_image"
                                 alt=""
                                 width="96"
                                 height="96"
@@ -233,7 +233,7 @@ const Header = () => {
                           </li>
                           <li
                             id="menu-item-16780"
-                            className="menu-item menu-item-type-custom menu-item-object-custom nectar-regular-menu-item menu-item-has-icon menu-item-16780"
+                            className="sub-menu-li"
                           >
                             <a
                               href="https://www.gmeremit.com/api-documentation/"
@@ -241,7 +241,7 @@ const Header = () => {
                             >
                               <img
                                 src="https://www.gmeremit.com/wp-content/uploads/2023/01/view.png"
-                                className="nectar-menu-icon-img loaded"
+                                className="icon_image"
                                 alt=""
                                 width="96"
                                 height="96"
@@ -257,18 +257,18 @@ const Header = () => {
                       </li>
                       <li
                         id="menu-item-16717"
-                        className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children nectar-regular-menu-item megamenu-column-padding-30px menu-item-16717"
+                        className="platform"
                       >
                         <a
                           href="https://www.gmeremit.com/developers/#platform"
-                          className="sf-with-ul"
+                          className="business_solutions_a"
                         >
                           <span className="menu-title-text">Platform</span>
                         </a>
                         <ul className="sub-menu">
                           <li
                             id="menu-item-16782"
-                            className="menu-item menu-item-type-custom menu-item-object-custom nectar-regular-menu-item menu-item-has-icon menu-item-16782"
+                            className="sub-menu-li"
                           >
                             <a
                               href="https://www.gmeremit.com/gme-hom/"
@@ -276,7 +276,7 @@ const Header = () => {
                             >
                               <img
                                 src="https://www.gmeremit.com/wp-content/uploads/2023/01/financial-institutions.png"
-                                className="nectar-menu-icon-img loaded"
+                                className="icon_image"
                                 alt=""
                                 width="96"
                                 height="96"
@@ -288,7 +288,7 @@ const Header = () => {
                           </li>
                           <li
                             id="menu-item-16784"
-                            className="menu-item menu-item-type-custom menu-item-object-custom nectar-regular-menu-item menu-item-has-icon menu-item-16784"
+                            className="sub-menu-li"
                           >
                             <a
                               href="#collect"
@@ -296,7 +296,7 @@ const Header = () => {
                             >
                               <img
                                 src="https://www.gmeremit.com/wp-content/uploads/2023/01/data-collection.png"
-                                className="nectar-menu-icon-img loaded"
+                                className="icon_image"
                                 alt=""
                                 width="96"
                                 height="96"
@@ -310,7 +310,7 @@ const Header = () => {
                           </li>
                           <li
                             id="menu-item-16788"
-                            className="menu-item menu-item-type-custom menu-item-object-custom nectar-regular-menu-item menu-item-has-icon menu-item-16788"
+                            className="sub-menu-li"
                           >
                             <a
                               href="#make"
@@ -318,7 +318,7 @@ const Header = () => {
                             >
                               <img
                                 src="https://www.gmeremit.com/wp-content/uploads/2023/01/global-payments.png"
-                                className="nectar-menu-icon-img loaded"
+                                className="icon_image"
                                 alt=""
                                 width="96"
                                 height="96"
@@ -332,7 +332,7 @@ const Header = () => {
                           </li>
                           <li
                             id="menu-item-16789"
-                            className="menu-item menu-item-type-custom menu-item-object-custom nectar-regular-menu-item menu-item-has-icon menu-item-16789"
+                            className="sub-menu-li"
                           >
                             <a
                               href="#multiple"
@@ -340,7 +340,7 @@ const Header = () => {
                             >
                               <img
                                 src="https://www.gmeremit.com/wp-content/uploads/2023/01/multiple-targets.png"
-                                className="nectar-menu-icon-img loaded"
+                                className="icon_image"
                                 alt=""
                                 width="96"
                                 height="96"
@@ -354,7 +354,7 @@ const Header = () => {
                           </li>
                           <li
                             id="menu-item-16793"
-                            className="menu-item menu-item-type-custom menu-item-object-custom nectar-regular-menu-item menu-item-has-icon menu-item-16793"
+                            className="sub-menu-li"
                           >
                             <a
                               href="#collect"
@@ -362,7 +362,7 @@ const Header = () => {
                             >
                               <img
                                 src="https://www.gmeremit.com/wp-content/uploads/2023/01/china.png"
-                                className="nectar-menu-icon-img loaded"
+                                className="icon_image"
                                 alt=""
                                 width="96"
                                 height="96"
