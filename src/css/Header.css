@@ -493,6 +493,9 @@ li a:hover:after {
 }
 .nectar-menu-item-with-icon {
   border-bottom: none;
+}
+.nectar-menu-item-with-icon2{
+  border-bottom: none;
   padding: 10px 10px;
   font-family: Poppins;
   font-size: 16px;

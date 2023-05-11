@@ -96,7 +96,7 @@ const Header = () => {
                           >
                             <a
                               href="#!"
-                              className="nectar-menu-item-with-icon"
+                              className="nectar-menu-item-with-icon2"
                               onClick={goSolution}
                             >
                               <img
@@ -119,7 +119,7 @@ const Header = () => {
                           >
                             <a
                               href="https://www.gmeremit.com/business/#sps"
-                              className="nectar-menu-item-with-icon"
+                              className="nectar-menu-item-with-icon2"
                             >
                               <img
                                 src="https://www.gmeremit.com/wp-content/uploads/2023/01/payment.png"
@@ -141,7 +141,7 @@ const Header = () => {
                           >
                             <a
                               href="https://www.gmeremit.com/business/#vas"
-                              className="nectar-menu-item-with-icon"
+                              className="nectar-menu-item-with-icon2"
                             >
                               <img
                                 src="https://www.gmeremit.com/wp-content/uploads/2023/01/real-time-analysis.png"
@@ -163,7 +163,7 @@ const Header = () => {
                           >
                             <a
                               href="https://www.gmeremit.com/business/#service"
-                              className="nectar-menu-item-with-icon"
+                              className="nectar-menu-item-with-icon2"
                             >
                               <img
                                 src="https://www.gmeremit.com/wp-content/uploads/2023/01/service-provider.png"
@@ -185,7 +185,7 @@ const Header = () => {
                           >
                             <a
                               href="https://www.gmeremit.com/business/#partners"
-                              className="nectar-menu-item-with-icon"
+                              className="nectar-menu-item-with-icon2"
                             >
                               <img
                                 src="https://www.gmeremit.com/wp-content/uploads/2023/01/partnership.png"
@@ -217,7 +217,7 @@ const Header = () => {
                           >
                             <a
                               href="https://www.gmeremit.com/api-documentation/"
-                              className="nectar-menu-item-with-icon"
+                              className="nectar-menu-item-with-icon2"
                             >
                               <img
                                 src="https://www.gmeremit.com/wp-content/uploads/2023/01/api.png"
@@ -237,7 +237,7 @@ const Header = () => {
                           >
                             <a
                               href="https://www.gmeremit.com/api-documentation/"
-                              className="nectar-menu-item-with-icon"
+                              className="nectar-menu-item-with-icon2"
                             >
                               <img
                                 src="https://www.gmeremit.com/wp-content/uploads/2023/01/view.png"
@@ -272,7 +272,7 @@ const Header = () => {
                           >
                             <a
                               href="https://www.gmeremit.com/gme-hom/"
-                              className="nectar-menu-item-with-icon"
+                              className="nectar-menu-item-with-icon2"
                             >
                               <img
                                 src="https://www.gmeremit.com/wp-content/uploads/2023/01/financial-institutions.png"
@@ -292,7 +292,7 @@ const Header = () => {
                           >
                             <a
                               href="#collect"
-                              className="nectar-menu-item-with-icon"
+                              className="nectar-menu-item-with-icon2"
                             >
                               <img
                                 src="https://www.gmeremit.com/wp-content/uploads/2023/01/data-collection.png"
@@ -314,7 +314,7 @@ const Header = () => {
                           >
                             <a
                               href="#make"
-                              className="nectar-menu-item-with-icon"
+                              className="nectar-menu-item-with-icon2"
                             >
                               <img
                                 src="https://www.gmeremit.com/wp-content/uploads/2023/01/global-payments.png"
@@ -336,7 +336,7 @@ const Header = () => {
                           >
                             <a
                               href="#multiple"
-                              className="nectar-menu-item-with-icon"
+                              className="nectar-menu-item-with-icon2"
                             >
                               <img
                                 src="https://www.gmeremit.com/wp-content/uploads/2023/01/multiple-targets.png"
@@ -358,7 +358,7 @@ const Header = () => {
                           >
                             <a
                               href="#collect"
-                              className="nectar-menu-item-with-icon"
+                              className="nectar-menu-item-with-icon2"
                             >
                               <img
                                 src="https://www.gmeremit.com/wp-content/uploads/2023/01/china.png"
