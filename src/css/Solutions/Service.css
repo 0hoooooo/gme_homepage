@@ -1,0 +1,299 @@
+#service {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  margin-bottom: 0;
+  box-sizing: content-box;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+}
+.row_bg_wrap_service {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  --scroll-bar-w: 13px;
+  margin-left: calc(-50vw + var(--scroll-bar-w) / 2);
+  left: 50%;
+  width: calc(100vw - var(--scroll-bar-w));
+}
+.inner_wrap_using_image_service {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+.image_load_service {
+  background-repeat: no-repeat;
+  background-image: url("https://www.gmeremit.com/wp-content/uploads/2023/01/Ultimate-solution.png");
+  transition: opacity 0.4s ease 0.2s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+.dark_center_service {
+  color: #191c1f;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  margin-bottom: 0 !important;
+  z-index: 10;
+  text-align: center;
+  width: auto;
+}
+.padding_phone_service {
+  float: none;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  background-position: center;
+  position: relative;
+}
+@media (min-width: 690px) {
+  .padding_phone_service {
+    width: 100%;
+  }
+}
+.vc_column_inner_service {
+  position: relative;
+}
+.wpb_wrapper_service {
+  text-align: center;
+}
+.vc_custom_heading_service {
+  font-size: 50px;
+  color: #ffffff;
+  text-align: center;
+}
+.divider_wrap_service {
+  margin-bottom: 0;
+}
+.carousel_service {
+  user-select: none;
+  display: flex;
+  margin-bottom: 24px;
+  position: relative;
+  text-align: center;
+  visibility: visible;
+}
+.flickity_viewport {
+  height: 400px;
+  width: 100%;
+  touch-action: pan-y;
+  margin: 50px 0 90px 0;
+  cursor: grab;
+  overflow: hidden;
+  position: relative;
+}
+.flickity_slider {
+  left: 500px;
+  /* transform: translate3d(-59.72%, 0px, 0px); */
+  display: flex;
+  flex-wrap: nowrap;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.cell {
+  display: flex;
+  position: absolute;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0px 5px;
+  /* counter-increment: gallery-cell;
+  transition: transform 0.45s ease;
+  overflow: hidden; */
+}
+.inner_wrap_outer {
+  height: 100%;
+  cursor: grab;
+  color: #191c1f;
+  text-align: center;
+}
+.inner_wrap_service {
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  height: 100%;
+  padding: 30px;
+}
+.img_animation_wrapper {
+  text-align: center;
+  line-height: 0;
+  margin-bottom: 0;
+}
+.inner_service {
+  display: block;
+  max-width: 60%;
+  height: 100%;
+}
+.hover_wrapper_service {
+  display: flex;
+  opacity: 1;
+  transition: all 0.65s cubic-bezier(0.05, 0.2, 0.1, 1) !important;
+  overflow: visible;
+  margin-bottom: 50px;
+  position: relative;
+}
+.image_load_service {
+  transition: transform 0.65s cubic-bezier(0.05, 0.2, 0.1, 1);
+  text-align: center;
+}
+.image_service {
+  opacity: 1;
+  position: absolute;
+  transition: opacity 0.5s ease;
+  margin: 0;
+  max-width: none;
+  width: 100%;
+  transform: none;
+  padding-right: 0;
+  padding-left: 0;
+  padding-bottom: 0;
+  display: flex;
+  min-height: 1px;
+  min-width: 1px;
+  height: auto;
+}
+.previous_button {
+  position: absolute;
+  left: 50px;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+  background-color: transparent !important;
+  transform: translateY(-50%);
+  font-size: 25px !important;
+}
+.next_button {
+  position: absolute;
+  right: 50px;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+  background-color: transparent !important;
+}
+.button_icon {
+  left: 10px;
+  width: 12px;
+  top: 9px;
+  transition: transform 0.45s cubic-bezier(0.15, 0.75, 0.5, 1);
+  position: absolute;
+}
+.carousel_main {
+  width: 100%;
+  overflow: hidden;
+}
+.carousel_container {
+  width: 100%;
+  position: relative;
+}
+.carousel_list {
+  display: flex;
+  gap: 20px;
+  position: relative;
+  flex-wrap: nowrap;
+  transition: all 0.5s ease-in-out;
+  transform: translateX();
+  transition: all ease 1s;
+  height: 400px;
+  touch-action: pan-y;
+}
+.card_wrapper {
+  position: relative;
+  min-width: 100px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  border-radius: 8px;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 2s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+}
+.card_detail {
+  width: 100%;
+  gap: 100px;
+  transition: 0.1s ease;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.card_image {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+}
+.card_image img {
+  width: 100%;
+  height: auto;
+  object-fit: fill;
+  margin: 0;
+  vertical-align: middle;
+  max-width: 50%;
+  width: 100%;
+  transform: none;
+  padding-right: 0;
+  padding-left: 0;
+  padding-bottom: 0;
+}
+.card_title {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.movie-row__button {
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.6); */
+  color: white;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  cursor: pointer;
+  overflow: hidden;
+}
+.movie-row__button--left {
+  left: 0px;
+}
+.movie-row__button--right {
+  right: 0px;
+}
+.flickity-button-icon {
+  left: 10px;
+  width: 12px;
+  top: 9px;
+  transition: transform 0.45s cubic-bezier(0.15, 0.75, 0.5, 1);
+  height: 55%;
+  cursor: pointer;
+}

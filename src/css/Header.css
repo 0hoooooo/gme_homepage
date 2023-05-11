@@ -446,10 +446,7 @@ li a:hover:after {
   z-index: 10;
 }
 .nectar-menu-item-with-icon {
-  padding: 6px 6px;
   border-bottom: none;
-  display: flex;
-  align-items: flex-start;
 }
 .icon_image {
   margin-right: 15px;

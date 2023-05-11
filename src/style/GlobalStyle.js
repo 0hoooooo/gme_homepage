@@ -4,7 +4,6 @@ import reset from "styled-reset";
 const GlobalStyles = createGlobalStyle`
     ${reset}
     // 적용시킬 css 입력
-    @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
     a{
         text-decoration: none;
         color: inherit;
@@ -21,9 +20,6 @@ const GlobalStyles = createGlobalStyle`
         padding: 0;
         border: 0;
         vertical-align: baseline;
-    }
-    p{
-        padding-bottom: 27px;
     }
     html{
         max-width: 100%;

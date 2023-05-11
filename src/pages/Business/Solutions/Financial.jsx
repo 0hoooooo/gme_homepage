@@ -126,33 +126,29 @@ const Financial = () => {
         </div>
       </div>
 
-      <div
-        id="solutions"
-        class="wpb_row vc_row-fluid vc_row full-width-section  vc_row-o-equal-height vc_row-flex   top_padding_phone_60px bottom_padding_phone_60px "
-        style={{ paddingTop: 120, paddingBottom: 120 }}
-      >
-        <div class="row-bg-wrap">
-          <div class="inner_wrap_using_image">
-            <div class="row_bg_using_image_loaded2"></div>
+      <div id="solutions" style={{ paddingTop: 30, paddingBottom: 60 }}>
+        <div className="row-bg-wrap">
+          <div className="inner_wrap_using_image">
+            <div className="row_bg_using_image_loaded2"></div>
           </div>
         </div>
 
-        <div class="dark_left_solution">
-          <div class="extr">
-            <div class="vc_column_inner_solution">
-              <div class="wpb_wrapper">
-                <h1 class="vc_custom_heading_solution">
+        <div className="dark_left_solution">
+          <div className="extr">
+            <div className="vc_column_inner_solution">
+              <div className="wpb_wrapper_solution">
+                <h1 className="vc_custom_heading_solution">
                   Our Payment Solutions are designed for
                 </h1>
-                <div class="divider-wrap" data-alignment="default">
-                  <div class="divider"></div>
+                <div className="divider-wrap" data-alignment="default">
+                  <div className="divider"></div>
                 </div>
 
-                <div id="fws_645b54dd95cb3" class="solution_list">
-                  <div class="row_bg_wrap">
-                    <div class="row-bg"></div>
+                <div id="fws_645b54dd95cb3" className="solution_list">
+                  <div className="row_bg_wrap">
+                    <div className="row-bg"></div>
                   </div>
-                  <div class="solution_left">
+                  <div className="solution_left">
                     {upperlist.map((item, id) => {
                       return (
                         <div key={id} className="padding_phone">
@@ -169,7 +165,7 @@ const Financial = () => {
                                     </div>
                                   </div>
                                 </div>
-                                {item.title}
+                                <h6 className="title_solution">{item.title}</h6>
                               </div>
                             </div>
                           </div>
@@ -179,25 +175,28 @@ const Financial = () => {
                   </div>
                 </div>
 
-                <div id="fws_645b54dd95cb3" class="solution_list">
-                  <div class="row_bg_wrap">
-                    <div class="row-bg"></div>
+                <div id="fws_645b54dd95cb3" className="solution_list">
+                  <div className="row_bg_wrap">
+                    <div className="row-bg"></div>
                   </div>
-                  <div class="row_col_wrap_12_inner col span_12  left">
+                  <div className="solution_left">
                     {downlist.map((item, id) => {
                       return (
                         <div key={id} className="padding_phone">
                           <div className="vc_column_inner_solution">
                             <div className="wpb_wrapper_solution">
                               <div className="image_wrapper_solution">
-                                <div className="inner">
+                                <div className="inner_solution">
                                   <div className="hover_wrapper">
                                     <div className="hover_wrapper_image">
-                                      <img src={item.src} />
+                                      <img
+                                        className="solution_image"
+                                        src={item.src}
+                                      />
                                     </div>
                                   </div>
                                 </div>
-                                {item.title}
+                                <h6 className="title_solution">{item.title}</h6>
                               </div>
                             </div>
                           </div>
