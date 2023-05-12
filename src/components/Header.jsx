@@ -65,7 +65,10 @@ const Header = () => {
                     </a>
                     <ul className="sub_menu">
                       <li id="menu-item-16863" className="business_left">
-                        <a href="https://www.gmeremit.com/business/">
+                        <a
+                          onClick={goSolution}
+                          className="business_solutions_a"
+                        >
                           <div className="business_left_banner">
                             <div className="business_left_image_layer">
                               <div className="business_left_image_layer_loaded"></div>
@@ -90,10 +93,7 @@ const Header = () => {
                           <span className="menu-title-text">Solutions</span>
                         </a>
                         <ul className="sub-menu">
-                          <li
-                            id="menu-item-16718"
-                            className="sub-menu-li"
-                          >
+                          <li id="menu-item-16718" className="sub-menu-li">
                             <a
                               href="#!"
                               className="nectar-menu-item-with-icon2"
@@ -113,13 +113,10 @@ const Header = () => {
                               </span>
                             </a>
                           </li>
-                          <li
-                            id="menu-item-16728"
-                            className="sub-menu-li"
-                          >
+                          <li id="menu-item-16728" className="sub-menu-li">
                             <a
-                              href="https://www.gmeremit.com/business/#sps"
                               className="nectar-menu-item-with-icon2"
+                              onClick={goSolution}
                             >
                               <img
                                 src="https://www.gmeremit.com/wp-content/uploads/2023/01/payment.png"
@@ -129,19 +126,16 @@ const Header = () => {
                                 height="96"
                               />
                               <span className="nectar-menu-icon-text">
-                                <span className="menu-title-text">
+                                <span className="menu_title_text">
                                   GME – SPS
                                 </span>
                               </span>
                             </a>
                           </li>
-                          <li
-                            id="menu-item-16732"
-                            className="sub-menu-li"
-                          >
+                          <li id="menu-item-16732" className="sub-menu-li">
                             <a
-                              href="https://www.gmeremit.com/business/#vas"
                               className="nectar-menu-item-with-icon2"
+                              onClick={goSolution}
                             >
                               <img
                                 src="https://www.gmeremit.com/wp-content/uploads/2023/01/real-time-analysis.png"
@@ -157,13 +151,10 @@ const Header = () => {
                               </span>
                             </a>
                           </li>
-                          <li
-                            id="menu-item-16738"
-                            className="sub-menu-li"
-                          >
+                          <li id="menu-item-16738" className="sub-menu-li">
                             <a
-                              href="https://www.gmeremit.com/business/#service"
                               className="nectar-menu-item-with-icon2"
+                              onClick={goSolution}
                             >
                               <img
                                 src="https://www.gmeremit.com/wp-content/uploads/2023/01/service-provider.png"
@@ -179,13 +170,10 @@ const Header = () => {
                               </span>
                             </a>
                           </li>
-                          <li
-                            id="menu-item-16739"
-                            className="sub-menu-li"
-                          >
+                          <li id="menu-item-16739" className="sub-menu-li">
                             <a
-                              href="https://www.gmeremit.com/business/#partners"
                               className="nectar-menu-item-with-icon2"
+                              onClick={goSolution}
                             >
                               <img
                                 src="https://www.gmeremit.com/wp-content/uploads/2023/01/partnership.png"
@@ -205,16 +193,13 @@ const Header = () => {
                       </li>
                       <li id="menu-item-16716" className="developers">
                         <a
-                          href="https://www.gmeremit.com/developers/"
                           className="business_solutions_a"
+                          onClick={goSolution}
                         >
                           <span className="menu-title-text">Developers</span>
                         </a>
                         <ul className="sub-menu">
-                          <li
-                            id="menu-item-16778"
-                            className="sub-menu-li"
-                          >
+                          <li id="menu-item-16778" className="sub-menu-li">
                             <a
                               href="https://www.gmeremit.com/api-documentation/"
                               className="nectar-menu-item-with-icon2"
@@ -231,13 +216,11 @@ const Header = () => {
                               </span>
                             </a>
                           </li>
-                          <li
-                            id="menu-item-16780"
-                            className="sub-menu-li"
-                          >
+                          <li id="menu-item-16780" className="sub-menu-li">
                             <a
                               href="https://www.gmeremit.com/api-documentation/"
                               className="nectar-menu-item-with-icon2"
+                              onClick={goSolution}
                             >
                               <img
                                 src="https://www.gmeremit.com/wp-content/uploads/2023/01/view.png"
@@ -255,21 +238,16 @@ const Header = () => {
                           </li>
                         </ul>
                       </li>
-                      <li
-                        id="menu-item-16717"
-                        className="platform"
-                      >
+                      <li id="menu-item-16717" className="platform">
                         <a
                           href="https://www.gmeremit.com/developers/#platform"
                           className="business_solutions_a"
+                          onClick={goSolution}
                         >
                           <span className="menu-title-text">Platform</span>
                         </a>
                         <ul className="sub-menu">
-                          <li
-                            id="menu-item-16782"
-                            className="sub-menu-li"
-                          >
+                          <li id="menu-item-16782" className="sub-menu-li">
                             <a
                               href="https://www.gmeremit.com/gme-hom/"
                               className="nectar-menu-item-with-icon2"
@@ -286,13 +264,11 @@ const Header = () => {
                               </span>
                             </a>
                           </li>
-                          <li
-                            id="menu-item-16784"
-                            className="sub-menu-li"
-                          >
+                          <li id="menu-item-16784" className="sub-menu-li">
                             <a
                               href="#collect"
                               className="nectar-menu-item-with-icon2"
+                              onClick={goSolution}
                             >
                               <img
                                 src="https://www.gmeremit.com/wp-content/uploads/2023/01/data-collection.png"
@@ -308,13 +284,11 @@ const Header = () => {
                               </span>
                             </a>
                           </li>
-                          <li
-                            id="menu-item-16788"
-                            className="sub-menu-li"
-                          >
+                          <li id="menu-item-16788" className="sub-menu-li">
                             <a
                               href="#make"
                               className="nectar-menu-item-with-icon2"
+                              onClick={goSolution}
                             >
                               <img
                                 src="https://www.gmeremit.com/wp-content/uploads/2023/01/global-payments.png"
@@ -330,13 +304,11 @@ const Header = () => {
                               </span>
                             </a>
                           </li>
-                          <li
-                            id="menu-item-16789"
-                            className="sub-menu-li"
-                          >
+                          <li id="menu-item-16789" className="sub-menu-li">
                             <a
                               href="#multiple"
                               className="nectar-menu-item-with-icon2"
+                              onClick={goSolution}
                             >
                               <img
                                 src="https://www.gmeremit.com/wp-content/uploads/2023/01/multiple-targets.png"
@@ -352,13 +324,11 @@ const Header = () => {
                               </span>
                             </a>
                           </li>
-                          <li
-                            id="menu-item-16793"
-                            className="sub-menu-li"
-                          >
+                          <li id="menu-item-16793" className="sub-menu-li">
                             <a
                               href="#collect"
                               className="nectar-menu-item-with-icon2"
+                              onClick={goSolution}
                             >
                               <img
                                 src="https://www.gmeremit.com/wp-content/uploads/2023/01/china.png"

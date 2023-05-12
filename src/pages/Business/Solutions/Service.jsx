@@ -1,18 +1,21 @@
 import { useLayoutEffect, useRef, useState } from "react";
 import "../../../css/Solutions/Service.css";
+
+import Carousel from "react-elastic-carousel";
+
 const Service = () => {
-  const listRef = useRef();
-  const btnRef = useRef();
-  const [startX, setstartX] = useState(0);
+  // const listRef = useRef();
+  // const btnRef = useRef();
+  // const [startX, setstartX] = useState(0);
 
-  useLayoutEffect(() => {
-    const getCoordinate = () => {
-      const listLeft = listRef.current.getBoundingClientRect().left;
+  // useLayoutEffect(() => {
+  //   const getCoordinate = () => {
+  //     const listLeft = listRef.current.getBoundingClientRect().left;
 
-      setstartX(listLeft);
-    };
-    getCoordinate();
-  }, []);
+  //     setstartX(listLeft);
+  //   };
+  //   getCoordinate();
+  // }, []);
 
   const product = [
     {
@@ -47,30 +50,30 @@ const Service = () => {
       src: "https://www.gmeremit.com/wp-content/uploads/2022/02/Technology.png",
     },
   ];
-  const handleClick = (direction) => {
-    let currenX = listRef.current.getBoundingClientRect().x;
-    let btnLeft = btnRef.current.getBoundingClientRect().left;
-    let listWidth = listRef.current.getBoundingClientRect().width;
-    let listRef_NodeWidth =
-      product.length > 0
-        ? listRef.current.childNodes[0].getBoundingClientRect().width
-        : 0;
-    const slideDistance = listRef_NodeWidth * 3;
+  // const handleClick = (direction) => {
+  //   let currenX = listRef.current.getBoundingClientRect().x;
+  //   let btnLeft = btnRef.current.getBoundingClientRect().left;
+  //   let listWidth = listRef.current.getBoundingClientRect().width;
+  //   let listRef_NodeWidth =
+  //     product.length > 0
+  //       ? listRef.current.childNodes[0].getBoundingClientRect().width
+  //       : 0;
+  //   const slideDistance = listRef_NodeWidth * 3;
 
-    let calculate_distance = 0;
-    if (direction === "left") {
-      calculate_distance = currenX + slideDistance;
-      if (startX < calculate_distance) {
-        calculate_distance = 0;
-      }
-    } else if (direction === "right") {
-      calculate_distance = currenX - slideDistance;
-      if (btnLeft - startX - listWidth > calculate_distance) {
-        calculate_distance = btnLeft - startX - listWidth;
-      }
-    }
-    listRef.current.style.transform = `translateX(${calculate_distance}px)`;
-  };
+  //   let calculate_distance = 0;
+  //   if (direction === "left") {
+  //     calculate_distance = currenX + slideDistance;
+  //     if (startX < calculate_distance) {
+  //       calculate_distance = 0;
+  //     }
+  //   } else if (direction === "right") {
+  //     calculate_distance = currenX - slideDistance;
+  //     if (btnLeft - startX - listWidth > calculate_distance) {
+  //       calculate_distance = btnLeft - startX - listWidth;
+  //     }
+  //   }
+  //   listRef.current.style.transform = `translateX(${calculate_distance}px)`;
+  // };
   return (
     <div id="service">
       <div className="row_bg_wrap_service">
@@ -83,7 +86,7 @@ const Service = () => {
         <div className="padding_phone_service">
           <div className="carousel_main">
             <div className="carousel_container">
-              <div
+              {/* <div
                 className="movie-row__button movie-row__button--left"
                 onClick={() => handleClick("left")}
               >
@@ -118,9 +121,13 @@ const Service = () => {
                     ></path>
                   </svg>
                 </button>
-              </div>
-
-              <div className="carousel_list" ref={listRef}>
+              </div> */}
+              <Carousel
+                enableAutoPlay={true}
+                itemsToShow={3}
+                itemPadding={[15]}
+                style={{ innerWidth: 400 }}
+              >
                 {product.length > 0 &&
                   product.map((item, index) => (
                     <div className="card_wrapper" key={index}>
@@ -129,7 +136,7 @@ const Service = () => {
                       </div>
                       <div className="card_detail">
                         <div className="card_title">
-                          <h6>{item.title}</h6>
+                          <h6 className="item_title">{item.title}</h6>
                         </div>
                         <div className="card_content">
                           <ul>
@@ -141,35 +148,63 @@ const Service = () => {
                       </div>
                     </div>
                   ))}
+              </Carousel>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="fws_645d7d8c03918" className="wpb_row_service">
+        <div className="row-bg-wrap_service">
+          {" "}
+          <div className="row-bg"></div>{" "}
+        </div>
+        <div className="dark_left_service">
+          <div className="padding_phone_service">
+            <div className="vc_column_inner_service">
+              <div className="wpb_wrapper">
+                <div className="divider-wrap" data-alignment="default">
+                  <div className="divider" style={{ height: 24 }}></div>
+                </div>
+                <h1
+                  className="vc_custom_heading_service"
+                  style={{ fontSize: 45, color: "#ffffff" }}
+                >
+                  ULTIMATE SOLUTIONS
+                </h1>
+                <h1
+                  className="vc_custom_heading_service"
+                  style={{ fontSize: 30, color: "#ffffff" }}
+                >
+                  GET THE REAL DEAL, NO COMMISSION IN TRANSITION
+                </h1>
               </div>
             </div>
           </div>
         </div>
       </div>
-
       {/* <div
-        class="flickity-slider"
+        className="flickity-slider"
         style="left: 0px; transform: translateX(-0.45%);"
       >
         <div
-          class="cell"
+          className="cell"
           aria-selected="false"
           style="position: absolute; left: 0%; height: 383.55px;"
         >
-          <div class="inner-wrap-outer">
-            <div class="inner-wrap" style=" background-color: #ffffff;">
+          <div className="inner-wrap-outer">
+            <div className="inner-wrap" style=" background-color: #ffffff;">
               <div
-                class="img-with-aniamtion-wrap center custom-width-60pct"
+                className="img-with-aniamtion-wrap center custom-width-60pct"
                 data-max-width="custom"
                 data-max-width-mobile="default"
                 data-shadow="none"
                 data-animation="fade-in"
               >
-                <div class="inner">
-                  <div class="hover-wrap" style="opacity: 1;">
-                    <div class="hover-wrap-inner img-loaded">
+                <div className="inner">
+                  <div className="hover-wrap" style="opacity: 1;">
+                    <div className="hover-wrap-inner img-loaded">
                       <img
-                        class="img-with-animation skip-lazy nectar-lazy loaded animated-in"
+                        className="img-with-animation skip-lazy nectar-lazy loaded animated-in"
                         data-delay="0"
                         height="2480"
                         width="2480"
@@ -184,11 +219,11 @@ const Service = () => {
                   </div>
                 </div>
               </div>
-              <h6 style="text-align: center" class="vc_custom_heading">
+              <h6 style="text-align: center" className="vc_custom_heading">
                 Flexibility
               </h6>
-              <div class="wpb_text_column wpb_content_element ">
-                <div class="wpb_wrapper">
+              <div className="wpb_text_column wpb_content_element ">
+                <div className="wpb_wrapper">
                   <ul>
                     <li style="text-align: left;">Exchange Fund &amp; Pay</li>
                     <li style="text-align: left;">Pay as you Exchange</li>
@@ -200,24 +235,24 @@ const Service = () => {
           </div>
         </div>
         <div
-          class="cell is-selected"
+          className="cell is-selected"
           aria-selected="true"
           style="position: absolute; left: 33.64%; height: 383.55px;"
         >
-          <div class="inner-wrap-outer">
-            <div class="inner-wrap" style=" background-color: #ffffff;">
+          <div className="inner-wrap-outer">
+            <div className="inner-wrap" style=" background-color: #ffffff;">
               <div
-                class="img-with-aniamtion-wrap center custom-width-60pct"
+                className="img-with-aniamtion-wrap center custom-width-60pct"
                 data-max-width="custom"
                 data-max-width-mobile="default"
                 data-shadow="none"
                 data-animation="fade-in"
               >
-                <div class="inner">
-                  <div class="hover-wrap" style="opacity: 1;">
-                    <div class="hover-wrap-inner img-loaded">
+                <div className="inner">
+                  <div className="hover-wrap" style="opacity: 1;">
+                    <div className="hover-wrap-inner img-loaded">
                       <img
-                        class="img-with-animation skip-lazy nectar-lazy loaded animated-in"
+                        className="img-with-animation skip-lazy nectar-lazy loaded animated-in"
                         data-delay="0"
                         height="2480"
                         width="2480"
@@ -232,11 +267,11 @@ const Service = () => {
                   </div>
                 </div>
               </div>
-              <h6 style="text-align: center" class="vc_custom_heading">
+              <h6 style="text-align: center" className="vc_custom_heading">
                 Dynamic
               </h6>
-              <div class="wpb_text_column wpb_content_element ">
-                <div class="wpb_wrapper">
+              <div className="wpb_text_column wpb_content_element ">
+                <div className="wpb_wrapper">
                   <ul>
                     <li style="text-align: left;">Choose one of the methods</li>
                     <li style="text-align: left;">
@@ -252,24 +287,24 @@ const Service = () => {
           </div>
         </div>
         <div
-          class="cell"
+          className="cell"
           aria-selected="false"
           style="position: absolute; left: 67.27%; height: 383.55px;"
         >
-          <div class="inner-wrap-outer">
-            <div class="inner-wrap" style=" background-color: #ffffff;">
+          <div className="inner-wrap-outer">
+            <div className="inner-wrap" style=" background-color: #ffffff;">
               <div
-                class="img-with-aniamtion-wrap center custom-width-60pct"
+                className="img-with-aniamtion-wrap center custom-width-60pct"
                 data-max-width="custom"
                 data-max-width-mobile="default"
                 data-shadow="none"
                 data-animation="fade-in"
               >
-                <div class="inner">
-                  <div class="hover-wrap" style="opacity: 1;">
-                    <div class="hover-wrap-inner img-loaded">
+                <div className="inner">
+                  <div className="hover-wrap" style="opacity: 1;">
+                    <div className="hover-wrap-inner img-loaded">
                       <img
-                        class="img-with-animation skip-lazy nectar-lazy loaded animated-in"
+                        className="img-with-animation skip-lazy nectar-lazy loaded animated-in"
                         data-delay="0"
                         height="2480"
                         width="2480"
@@ -284,11 +319,11 @@ const Service = () => {
                   </div>
                 </div>
               </div>
-              <h6 style="text-align: center" class="vc_custom_heading">
+              <h6 style="text-align: center" className="vc_custom_heading">
                 Netout
               </h6>
-              <div class="wpb_text_column wpb_content_element ">
-                <div class="wpb_wrapper">
+              <div className="wpb_text_column wpb_content_element ">
+                <div className="wpb_wrapper">
                   <ul>
                     <li style="text-align: left;">Lower your cost</li>
                     <li style="text-align: left;">Leverage in your funding</li>
@@ -300,24 +335,24 @@ const Service = () => {
           </div>
         </div>
         <div
-          class="cell"
+          className="cell"
           aria-selected="false"
           style="position: absolute; left: 100.91%; height: 383.55px;"
         >
-          <div class="inner-wrap-outer">
-            <div class="inner-wrap" style=" background-color: #ffffff;">
+          <div className="inner-wrap-outer">
+            <div className="inner-wrap" style=" background-color: #ffffff;">
               <div
-                class="img-with-aniamtion-wrap center custom-width-60pct"
+                className="img-with-aniamtion-wrap center custom-width-60pct"
                 data-max-width="custom"
                 data-max-width-mobile="default"
                 data-shadow="none"
                 data-animation="fade-in"
               >
-                <div class="inner">
-                  <div class="hover-wrap" style="opacity: 1;">
-                    <div class="hover-wrap-inner img-loaded">
+                <div className="inner">
+                  <div className="hover-wrap" style="opacity: 1;">
+                    <div className="hover-wrap-inner img-loaded">
                       <img
-                        class="img-with-animation skip-lazy nectar-lazy animated-in loaded"
+                        className="img-with-animation skip-lazy nectar-lazy animated-in loaded"
                         data-delay="0"
                         height="2480"
                         width="2480"
@@ -332,11 +367,11 @@ const Service = () => {
                   </div>
                 </div>
               </div>
-              <h6 style="text-align: center" class="vc_custom_heading">
+              <h6 style="text-align: center" className="vc_custom_heading">
                 Technology
               </h6>
-              <div class="wpb_text_column wpb_content_element ">
-                <div class="wpb_wrapper">
+              <div className="wpb_text_column wpb_content_element ">
+                <div className="wpb_wrapper">
                   <ul>
                     <li style="text-align: left;">
                       Micro Service Architecture
@@ -348,31 +383,31 @@ const Service = () => {
                 </div>
               </div>
 
-              <div class="wpb_text_column wpb_content_element ">
-                <div class="wpb_wrapper"></div>
+              <div className="wpb_text_column wpb_content_element ">
+                <div className="wpb_wrapper"></div>
               </div>
             </div>
           </div>
         </div>
         <div
-          class="cell"
+          className="cell"
           aria-selected="false"
           style="position: absolute; left: 134.54%; height: 383.55px;"
         >
-          <div class="inner-wrap-outer">
-            <div class="inner-wrap" style=" background-color: #ffffff;">
+          <div className="inner-wrap-outer">
+            <div className="inner-wrap" style=" background-color: #ffffff;">
               <div
-                class="img-with-aniamtion-wrap center custom-width-60pct"
+                className="img-with-aniamtion-wrap center custom-width-60pct"
                 data-max-width="custom"
                 data-max-width-mobile="default"
                 data-shadow="none"
                 data-animation="fade-in"
               >
-                <div class="inner">
-                  <div class="hover-wrap" style="opacity: 1;">
-                    <div class="hover-wrap-inner img-loaded">
+                <div className="inner">
+                  <div className="hover-wrap" style="opacity: 1;">
+                    <div className="hover-wrap-inner img-loaded">
                       <img
-                        class="img-with-animation skip-lazy nectar-lazy animated-in loaded"
+                        className="img-with-animation skip-lazy nectar-lazy animated-in loaded"
                         data-delay="0"
                         height="2480"
                         width="2480"
@@ -387,11 +422,11 @@ const Service = () => {
                   </div>
                 </div>
               </div>
-              <h6 style="text-align: center" class="vc_custom_heading">
+              <h6 style="text-align: center" className="vc_custom_heading">
                 Accounting
               </h6>
-              <div class="wpb_text_column wpb_content_element ">
-                <div class="wpb_wrapper">
+              <div className="wpb_text_column wpb_content_element ">
+                <div className="wpb_wrapper">
                   <ul>
                     <li style="text-align: left;">Easy Reconciliation</li>
                   </ul>
@@ -401,24 +436,24 @@ const Service = () => {
           </div>
         </div>
         <div
-          class="cell"
+          className="cell"
           aria-selected="false"
           style="position: absolute; left: 168.18%; height: 383.55px;"
         >
-          <div class="inner-wrap-outer">
-            <div class="inner-wrap" style=" background-color: #ffffff;">
+          <div className="inner-wrap-outer">
+            <div className="inner-wrap" style=" background-color: #ffffff;">
               <div
-                class="img-with-aniamtion-wrap center custom-width-60pct"
+                className="img-with-aniamtion-wrap center custom-width-60pct"
                 data-max-width="custom"
                 data-max-width-mobile="default"
                 data-shadow="none"
                 data-animation="fade-in"
               >
-                <div class="inner">
-                  <div class="hover-wrap" style="opacity: 1;">
-                    <div class="hover-wrap-inner img-loaded">
+                <div className="inner">
+                  <div className="hover-wrap" style="opacity: 1;">
+                    <div className="hover-wrap-inner img-loaded">
                       <img
-                        class="img-with-animation skip-lazy nectar-lazy loaded animated-in"
+                        className="img-with-animation skip-lazy nectar-lazy loaded animated-in"
                         data-delay="0"
                         height="2480"
                         width="2480"
@@ -433,13 +468,13 @@ const Service = () => {
                   </div>
                 </div>
               </div>
-              <h6 style="text-align: center" class="vc_custom_heading">
+              <h6 style="text-align: center" className="vc_custom_heading">
                 Payment on Behalf of
                 <br />
                 (POBO)
               </h6>
-              <div class="wpb_text_column wpb_content_element ">
-                <div class="wpb_wrapper">
+              <div className="wpb_text_column wpb_content_element ">
+                <div className="wpb_wrapper">
                   <ul>
                     <li style="text-align: left;">
                       High Level of Transparency &amp;
