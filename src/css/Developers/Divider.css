@@ -1,0 +1,59 @@
+.row_fluid_divider {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  position: relative;
+  margin-bottom: 35px;
+}
+.row_bg_wrap_divider {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.inner_wrap_divider {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+.row_bg_divider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+.dark_left_divider {
+  display: flex;
+  flex-wrap: wrap;
+  float: none;
+  margin-bottom: 0 !important;
+  z-index: 10;
+  width: auto;
+  position: relative;
+}
+.padding_phone_divider {
+  float: none;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+  background-position: center;
+  position: relative;
+  display: block;
+}
+@media only screen and (min-width: 690px) {
+  .padding_phone_divider {
+    width: 100%;
+  }
+}
+.vc_column_inner_divider {
+  position: relative;
+}
+.wpb_content_element_divider {
+  margin-bottom: 0;
+}

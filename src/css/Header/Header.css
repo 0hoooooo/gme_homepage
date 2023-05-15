@@ -2,28 +2,30 @@
 
 #header_outer {
   width: 100%;
-  padding: 30px 0 0 0;
+  padding: 30px 30px;
   overflow: visible;
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
   z-index: 9999;
-  transition: transform 0.3s ease 0s, background-color 0.3s ease 0s,
-    opacity 0.3s ease 0s, box-shadow 0.3s ease 0s, border-color 0.3s ease 0s,
-    margin 0.25s ease-out 0s;
+
+  background-color: rgba(255, 255, 255, 100);
 }
+
 #header_outer_scrolled {
   width: 100%;
   top: 0;
   left: 0;
   position: fixed;
-  padding: 20px 20px;
+  padding: 10px 10px;
   background-color: #fff;
   z-index: 9999;
   overflow: visible;
   background-color: rgba(255, 255, 255, 100);
   box-shadow: 0 0 10px rgba(241, 90, 110, 0.5);
+  transition: transform 0.3s ease 0s, background-color 0.3s ease 0s,
+    opacity 0.3s ease 0s, box-shadow 0.3s ease 0s, border-color 0.3s ease 0s,
+    margin 0.25s ease-out 0s;
 }
 
 #top {

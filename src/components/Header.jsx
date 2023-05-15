@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "../css/Header.css";
+import "../css/Header/Header.css";
 import { styled } from "styled-components";
 import { useNavigate } from "react-router-dom";
 const Header = () => {
@@ -14,15 +14,25 @@ const Header = () => {
   useEffect(() => {
     console.log(scrollPosition);
   });
-
+  const goPlatform = () => {
+    console.log("이동");
+    navigate("/business/platform");
+    window.location.reload();
+  };
   const goSolution = () => {
     console.log("이동");
     navigate("/business/solutions");
     window.location.reload();
   };
+  const goDeveloper = () => {
+    console.log("이동");
+    navigate("/business/developers");
+    window.location.reload();
+  };
   const goHome = () => {
     console.log("홈으로 이동");
     navigate("/main/home");
+    window.location.reload();
   };
   return (
     <div id={scrollPosition < 100 ? "header_outer" : "header_outer_scrolled"}>
@@ -46,7 +56,7 @@ const Header = () => {
               <nav className="menu-nav">
                 <ul className="sf-menu">
                   <li className="menu_item1">
-                    <a href="https://www.gmeremit.com/">
+                    <a className="business_solutions_a" onClick={goHome}>
                       <span
                         className="menu-title-text"
                         style={{
@@ -194,7 +204,7 @@ const Header = () => {
                       <li id="menu-item-16716" className="developers">
                         <a
                           className="business_solutions_a"
-                          onClick={goSolution}
+                          onClick={goDeveloper}
                         >
                           <span className="menu-title-text">Developers</span>
                         </a>
@@ -240,17 +250,16 @@ const Header = () => {
                       </li>
                       <li id="menu-item-16717" className="platform">
                         <a
-                          href="https://www.gmeremit.com/developers/#platform"
                           className="business_solutions_a"
-                          onClick={goSolution}
+                          onClick={goPlatform}
                         >
                           <span className="menu-title-text">Platform</span>
                         </a>
                         <ul className="sub-menu">
                           <li id="menu-item-16782" className="sub-menu-li">
                             <a
-                              href="https://www.gmeremit.com/gme-hom/"
                               className="nectar-menu-item-with-icon2"
+                              onClick={goPlatform}
                             >
                               <img
                                 src="https://www.gmeremit.com/wp-content/uploads/2023/01/financial-institutions.png"

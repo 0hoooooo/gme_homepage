@@ -1,0 +1,151 @@
+#developers {
+  padding-top: 75px;
+  padding-bottom: 30px;
+  margin-bottom: 0;
+  box-sizing: content-box;
+  position: relative;
+  background-size: cover;
+  width: 100%;
+}
+.row_bg_wrap_api {
+  overflow: hidden;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  --scroll-bar-w: 13px;
+  margin-left: calc(-50vw + var(--scroll-bar-w) / 2);
+  left: 50%;
+  width: calc(100vw - var(--scroll-bar-w));
+}
+.inner_wrap_api {
+  transform: scale(1) translateZ(0);
+  transition: transform 0.95s 0s cubic-bezier(0.3, 0.58, 0.42, 0.9);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+.using_image_api {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("https://www.gmeremit.com/wp-content/uploads/2022/09/background5.png");
+  transition: opacity 0.4s ease 0.2s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+.dark_left_api {
+  color: #191c1f;
+  float: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0 !important;
+  z-index: 10;
+  width: auto;
+  position: relative;
+}
+.padding_left_api {
+  position: relative;
+  float: none;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  box-shadow: none;
+  background-position: center;
+}
+@media only screen and (min-width: 690px) {
+  .padding_left_api {
+    width: 100%;
+  }
+}
+.vc_column_inner_api {
+  position: relative;
+}
+.divider_api {
+  height: 25px;
+}
+.inner_row_api {
+  position: relative;
+}
+.row_bg_wrap_detail {
+  margin-left: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.row_bg_detail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+.col_inner_api {
+  display: flex;
+  flex-wrap: wrap;
+  float: none;
+  margin-bottom: 0 !important;
+  z-index: 10;
+  width: auto;
+  position: relative;
+  padding-top: 30px;
+}
+.container_padding_api {
+  float: none;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+  box-shadow: none;
+  background-position: center;
+  position: relative;
+  display: block;
+}
+@media only screen and (min-width: 690px) {
+  .container_padding_api {
+    width: 100%;
+  }
+}
+.vc_custom_heading_api {
+  font-size: 36px;
+  color: #fe5656;
+  text-align: center;
+}
+.inner_api {
+  max-width: 2000px;
+  height: 100%;
+}
+.hover_wrap_api {
+  opacity: 1;
+  margin-bottom: 0;
+  overflow: visible;
+  transition: all 0.65s cubic-bezier(0.05, 0.2, 0.1, 1) !important;
+  position: relative;
+}
+.hover_image_loaded {
+  transition: transform 0.65s cubic-bezier(0.05, 0.2, 0.1, 1);
+}
+.animatin_image {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  transform: none;
+  padding-right: 0;
+  padding-left: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  display: block;
+  min-height: 1px;
+  min-width: 1px;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+}

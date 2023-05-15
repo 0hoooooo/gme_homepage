@@ -8,6 +8,10 @@ const GlobalStyles = createGlobalStyle`
         text-decoration: none;
         color: inherit;
     }
+    b{
+        font-family: Poppins;
+        font-weight: 600;
+    }
     *{
         box-sizing: border-box;
     }
@@ -27,17 +31,17 @@ const GlobalStyles = createGlobalStyle`
         overflow-x: hidden;
     }
     body{
-        line-height: 1;
-        background-color: #FFF;
-        margin-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
         font-family: Poppins;
-        font-size: 36px;
-        line-height: 36px;
-        font-weight: 600;
         font-size: 16px;
         line-height: 24px;
         font-weight: 400;
-        
+        max-width: 100%;
+        overflow: hidden;
+        background: white;
+        position: relative;
     }
     ol, ul{
         list-style: none;

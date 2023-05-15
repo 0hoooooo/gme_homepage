@@ -2,6 +2,8 @@ import { Navigate, useRoutes } from "react-router-dom";
 import MainLayout from "../layout/MainLayout";
 import Home from "../pages/Home";
 import Solution from "../pages/Business/Solutions";
+import Developer from "../pages/Business/Developers";
+import Platform from "../pages/Business/Platform";
 
 const Routes = () => {
   const rootRoutes = {
@@ -29,6 +31,14 @@ const Routes = () => {
       {
         path: "solutions",
         element: <Solution />,
+      },
+      {
+        path: "developers",
+        element: <Developer />,
+      },
+      {
+        path: "platform",
+        element: <Platform />,
       },
     ],
   };

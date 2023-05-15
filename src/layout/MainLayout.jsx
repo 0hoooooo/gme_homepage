@@ -24,7 +24,7 @@ const MainLayout = () => {
   return loading === false ? (
     <Loading />
   ) : (
-    <MainWrapper>
+    <>
       <Header />
       <AjaxContentWrapper>
         <ContainerWrapper>
@@ -36,7 +36,7 @@ const MainLayout = () => {
           <Footer />
         </ContainerWrapper>
       </AjaxContentWrapper>
-    </MainWrapper>
+    </>
   );
 };
 export default MainLayout;

@@ -1,0 +1,111 @@
+#platform {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 0;
+  position: relative;
+  background-size: cover;
+  width: 100%;
+}
+.row_bg_wrap_platform {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  --scroll-bar-w: 13px;
+  margin-left: calc(-50vw + var(--scroll-bar-w) / 2);
+  left: 50%;
+  width: calc(100vw - var(--scroll-bar-w));
+}
+.inner_wrap_using_image_platform {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+.using_image_platform {
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-image: url("https://www.gmeremit.com/wp-content/uploads/2022/09/background7.png");
+  transition: opacity 0.4s ease 0.2s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+.dark_left_platform {
+  color: #191c1f;
+  float: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0 !important;
+  z-index: 10;
+  width: auto;
+  position: relative;
+}
+.container_padding_platform {
+  float: none;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  background-position: center;
+  position: relative;
+  display: block;
+}
+@media only screen and (min-width: 690px) {
+  .container_padding_platform {
+    width: 100%;
+  }
+}
+.vc_column_inner_platform {
+  position: relative;
+}
+.divider_wrap_platform {
+  margin-bottom: 0;
+}
+.divider_platform {
+  height: 50px;
+}
+.vc_custom_heading_platform {
+  font-size: 36px;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 30px !important;
+  line-height: 1.25 !important;
+}
+.animation_wrapper {
+  margin-top: -100px;
+  line-height: 0;
+  margin-bottom: 0;
+}
+.inner_wrapper {
+  height: 100%;
+}
+.hover_wrapper_platform {
+  opacity: 1;
+  margin-bottom: 0;
+  transition: all 0.65s cubic-bezier(0.05, 0.2, 0.1, 1) !important;
+  position: relative;
+}
+.hover_inner_img_loaded {
+  transition: transform 0.65s cubic-bezier(0.05, 0.2, 0.1, 1);
+}
+.img_platform {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  transform: none;
+  padding-right: 0;
+  padding-left: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  display: block;
+  min-height: 1px;
+  min-width: 1px;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+}
