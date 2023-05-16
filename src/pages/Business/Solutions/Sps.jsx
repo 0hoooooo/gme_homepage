@@ -100,7 +100,7 @@ const Sps = () => {
                       <div className="wpb_wrapper_vas">
                         <h1 className="vc_custom_heading_vas">GME VAS</h1>
                         <div className="animation_image_vas">
-                          <div className="cascading_image">
+                          <div className="cascading_image_top">
                             <div className="inner_wrap_sps">
                               <div className="bg_layer_sps">
                                 <div className="image_upload_sps">

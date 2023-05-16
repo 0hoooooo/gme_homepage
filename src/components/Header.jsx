@@ -53,7 +53,7 @@ const Header = () => {
               <div className="widget-area">
                 <div></div>
               </div>
-              <nav className="menu-nav">
+              <nav className="menu_nav">
                 <ul className="sf-menu">
                   <li className="menu_item1">
                     <a className="business_solutions_a" onClick={goHome}>
@@ -248,7 +248,7 @@ const Header = () => {
                           </li>
                         </ul>
                       </li>
-                      <li id="menu-item-16717" className="platform">
+                      <li id="menu-item-16717" className="careers">
                         <a
                           className="business_solutions_a"
                           onClick={goPlatform}
@@ -356,32 +356,272 @@ const Header = () => {
                         </ul>
                       </li>
                     </ul>
-
-                    {/* <DetailMenuUl>
-                      <DetailMenuLi>
-                        <DetailMenuA href="https://www.gmeremit.com/business/">
-                          <ItemStyleDefault>
-                            <ImageLayerOuter>
-                              <ImageLayerLoaded />
-                              <ColorOverlay />
-                            </ImageLayerOuter>
-                            <InnerContent>
-                              <span>
-                                <InnerSpan>B2B</InnerSpan>
-                              </span>
-                              <span className="menu-item-desc">
-                                Reduce Cost on Business Transfers
-                              </span>
-                            </InnerContent>
-                          </ItemStyleDefault>
-                        </DetailMenuA>
-                      </DetailMenuLi>
-                    </DetailMenuUl> */}
                   </li>
-                  <li id="menu-item3">
-                    <MenuA href="https://www.gmeremit.com/" aria-current="page">
+                  <li className="menu_item3">
+                    <a href="https://www.gmeremit.com/about-us/">
                       <span className="menu-title-text">Company</span>
-                    </MenuA>
+                    </a>
+                    <ul className="sub_menu2">
+                      <li id="menu-item-17554" className="business_left">
+                        <a href="#" className="business_solutions_a">
+                          <div className="business_left_banner">
+                            <div className="business_left_image_layer">
+                              <div className="business_left_image_layer_loaded2"></div>
+                              <div className="business_left_color_overlay"></div>
+                            </div>
+                            <div className="business_left_inner_content">
+                              <span className="title_business">
+                                <span className="title_menu">GME</span>
+                              </span>
+                              <span className="menu_item_desc">
+                                No.1 Money Transfer Company in South Korea
+                              </span>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li id="menu-item-17530" className="careers">
+                        <a className="business_solutions_a">
+                          <span className="menu-title-text">About Us</span>
+                        </a>
+                        <ul className="sub-menu">
+                          <li id="menu-item-17532" className="sub-menu-li">
+                            <a
+                              href="https://www.gmeremit.com/about-us/#ceo"
+                              className="nectar-menu-item-with-icon2"
+                            >
+                              <img
+                                src="https://www.gmeremit.com/wp-content/uploads/2023/01/ceo.png"
+                                className="icon_image"
+                                alt=""
+                                width="96"
+                                height="96"
+                              />
+                              <span className="nectar-menu-icon-text">
+                                <span className="menu_title_text">
+                                  CEO’s Message
+                                </span>
+                              </span>
+                            </a>
+                          </li>
+                          <li id="menu-item-17533" className="sub-menu-li">
+                            <a
+                              href="https://www.gmeremit.com/about-us/#services"
+                              className="nectar-menu-item-with-icon2"
+                            >
+                              <img
+                                src="https://www.gmeremit.com/wp-content/uploads/2023/01/micro-services.png"
+                                className="icon_image"
+                                alt=""
+                                width="96"
+                                height="96"
+                              />
+                              <span className="nectar-menu-icon-text">
+                                <span className="menu_title_text">
+                                  Services
+                                </span>
+                              </span>
+                            </a>
+                          </li>
+                          <li id="menu-item-17534" className="sub-menu-li">
+                            <a
+                              href="https://www.gmeremit.com/about-us/#history"
+                              className="nectar-menu-item-with-icon2"
+                            >
+                              <img
+                                src="https://www.gmeremit.com/wp-content/uploads/2023/01/history.png"
+                                className="icon_image"
+                                alt=""
+                                width="96"
+                                height="96"
+                              />
+                              <span className="nectar-menu-icon-text">
+                                <span className="menu-title-text">History</span>
+                              </span>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li id="menu-item-17744" className="careers">
+                        <a className="business_solutions_a">
+                          <span className="menu-title-text">Blog</span>
+                        </a>
+                        <ul className="sub-menu">
+                          <li id="menu-item-17539" className="sub-menu-li">
+                            <a
+                              href="https://www.gmeremitblog.com/#all"
+                              className="nectar-menu-item-with-icon2"
+                            >
+                              <img
+                                src="https://www.gmeremit.com/wp-content/uploads/2023/01/blog.png"
+                                className="icon_image"
+                                alt=""
+                                width="96"
+                                height="96"
+                              />
+                              <span className="nectar-menu-icon-text">
+                                <span className="menu-title-text">All</span>
+                              </span>
+                            </a>
+                          </li>
+                          <li id="menu-item-17540" className="sub-menu-li">
+                            <a
+                              href="https://www.gmeremitblog.com/#event"
+                              className="nectar-menu-item-with-icon2"
+                            >
+                              <img
+                                src="https://www.gmeremit.com/wp-content/uploads/2023/01/event.png"
+                                className="icon_image"
+                                alt=""
+                                width="96"
+                                height="96"
+                              />
+                              <span className="nectar-menu-icon-text">
+                                <span className="menu-title-text">Event</span>
+                              </span>
+                            </a>
+                          </li>
+                          <li id="menu-item-17541" className="sub-menu-li">
+                            <a
+                              href="https://www.gmeremitblog.com/#businessnews"
+                              className="nectar-menu-item-with-icon2"
+                            >
+                              <img
+                                src="https://www.gmeremit.com/wp-content/uploads/2023/01/news.png"
+                                className="icon_image"
+                                alt=""
+                                width="96"
+                                height="96"
+                              />
+                              <span className="nectar-menu-icon-text">
+                                <span className="menu-title-text">News</span>
+                              </span>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li id="menu-item-39950" className="careers">
+                        <a
+                          href="https://www.gmeremit.com/careers/"
+                          className="business_solutions_a"
+                        >
+                          <span className="menu-title-text">Careers</span>
+                        </a>
+                        <ul className="sub-menu">
+                          <li id="menu-item-17544" className="sub-menu-li">
+                            <a href="https://www.gmeremit.com/careers/#perks">
+                              <div className="nectar_image_above_text">
+                                <div className="image_layer_outer_hover">
+                                  <div className="image_layer_loaded"></div>
+                                  <div className="color_overlay"></div>
+                                </div>
+                                <div className="inner_content">
+                                  <span className="title_inherit">
+                                    <img
+                                      src="https://www.gmeremit.com/wp-content/uploads/2023/01/financial-rewards.png"
+                                      className="icon_image"
+                                      alt=""
+                                      width="96"
+                                      height="96"
+                                    />
+                                    <span className="menu_title_text">
+                                      Perks &amp; Benefits
+                                    </span>
+                                  </span>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li id="menu-item-17545" className="sub-menu-li">
+                            <a
+                              href="https://www.gmeremit.com/careers/#staff"
+                              className="nectar-menu-item-with-icon2"
+                            >
+                              <img
+                                src="https://www.gmeremit.com/wp-content/uploads/2023/01/staff-training.png"
+                                className="icon_image"
+                                alt=""
+                                width="96"
+                                height="96"
+                              />
+                              <span className="nectar-menu-icon-text">
+                                <span className="menu_title_text">
+                                  Our Staff
+                                </span>
+                              </span>
+                            </a>
+                          </li>
+                          <li
+                            id="menu-item-17546"
+                            className="menu-item menu-item-type-custom menu-item-object-custom nectar-regular-menu-item menu-item-has-icon menu-item-17546"
+                          >
+                            <a
+                              href="https://www.gmeremit.com/job-application/"
+                              className="nectar-menu-item-with-icon2"
+                            >
+                              <img
+                                src="https://www.gmeremit.com/wp-content/uploads/2023/01/add-user.png"
+                                className="icon_image"
+                                alt=""
+                                width="96"
+                                height="96"
+                              />
+                              <span className="nectar-menu-icon-text">
+                                <span className="menu-title-text">Join Us</span>
+                              </span>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li id="menu-item-17547" className="careers">
+                        <a
+                          href="https://www.gmeremit.com/contact-us/"
+                          className="sf-with-ul"
+                        >
+                          <span className="menu-title-text">Contact Us</span>
+                        </a>
+                        <ul className="sub-menu">
+                          <li id="menu-item-17550" className="sub-menu-li">
+                            <a
+                              href="https://www.gmeremit.com/contact-us/#help"
+                              className="nectar-menu-item-with-icon2"
+                            >
+                              <img
+                                src="https://www.gmeremit.com/wp-content/uploads/2023/01/customer-service.png"
+                                className="icon_image"
+                                alt=""
+                                width="96"
+                                height="96"
+                              />
+                              <span className="nectar-menu-icon-text">
+                                <span className="menu-title-text">
+                                  Customer Service
+                                </span>
+                              </span>
+                            </a>
+                          </li>
+                          <li id="menu-item-17552" className="sub-menu-li">
+                            <a
+                              href="https://www.gmeremit.com/contact-us/#branches"
+                              className="nectar-menu-item-with-icon2"
+                            >
+                              <img
+                                src="https://www.gmeremit.com/wp-content/uploads/2023/01/banking-network.png"
+                                className="icon_image"
+                                alt=""
+                                width="96"
+                                height="96"
+                              />
+                              <span className="nectar-menu-icon-text">
+                                <span className="menu-title-text">
+                                  Branches
+                                </span>
+                              </span>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
                   </li>
                 </ul>
               </nav>
@@ -606,7 +846,7 @@ const InnerSpan = styled.span`
   font-weight: 600;
 `;
 const RightContents = styled.div`
-  margin-left: 300px;
+  margin-left: auto;
   @media only screen and (min-width: 1000px) {
     display: flex;
     float: none;

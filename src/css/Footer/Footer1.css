@@ -222,6 +222,7 @@ a {
   margin-right: 0;
   margin-left: 0;
   margin-bottom: 0;
+  text-align: center;
   background-position: center;
 }
 @media (min-width: 690px) {
@@ -259,5 +260,4 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 60px;
 }

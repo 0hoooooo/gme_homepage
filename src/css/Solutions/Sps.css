@@ -101,13 +101,20 @@
   text-align: center;
   pointer-events: none;
 }
+.cascading_image_top {
+  padding: 0%;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  pointer-events: none;
+}
 .inner_wrap_sps {
   opacity: 1;
   transform: translateX(0px) translateY(0px) scale(1, 1) translateZ(0px);
   transition: transform 1.1s cubic-bezier(0.3, 0.95, 0.3, 0.95),
     opacity 0.3s ease;
   display: inline-block;
-  width: 100%;
+  width: 70%;
   text-align: center;
   position: relative;
 }
@@ -135,6 +142,8 @@
   line-height: 0;
   max-width: 100%;
   height: auto;
+}
+.cascading_image_top {
 }
 .cascading_image_2 {
   padding: 0%;

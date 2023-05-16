@@ -4,6 +4,9 @@ import reset from "styled-reset";
 const GlobalStyles = createGlobalStyle`
     ${reset}
     // 적용시킬 css 입력
+    header{
+        display: block;
+    }
     a{
         text-decoration: none;
         color: inherit;
@@ -63,6 +66,7 @@ const GlobalStyles = createGlobalStyle`
     h5 {
         font-family: Poppins;
         font-weight: 600;
+        font-size: 24px;
     }
 `;
 
