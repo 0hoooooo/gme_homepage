@@ -4,6 +4,7 @@ import Home from "../pages/Home";
 import Solution from "../pages/Business/Solutions";
 import Developer from "../pages/Business/Developers";
 import Platform from "../pages/Business/Platform";
+import About from "../pages/Company/About";
 
 const Routes = () => {
   const rootRoutes = {
@@ -42,8 +43,24 @@ const Routes = () => {
       },
     ],
   };
+  const companyRoutes = {
+    path: "/company",
+    element: <MainLayout />,
+    children: [
+      {
+        path: "aboutUs",
+        element: <About />,
+      },
+    ],
+  };
 
-  const routes = [rootRoutes, noMatchRoutes, mainRoutes, businessRoutes];
+  const routes = [
+    rootRoutes,
+    noMatchRoutes,
+    mainRoutes,
+    businessRoutes,
+    companyRoutes,
+  ];
 
   return useRoutes(routes);
 };

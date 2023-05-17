@@ -34,6 +34,11 @@ const Header = () => {
     navigate("/main/home");
     window.location.reload();
   };
+  const goAboutUs = () => {
+    console.log("이동");
+    navigate("/company/aboutUs");
+    window.location.reload();
+  };
   return (
     <div id={scrollPosition < 100 ? "header_outer" : "header_outer_scrolled"}>
       <header id="top">
@@ -95,7 +100,7 @@ const Header = () => {
                           </div>
                         </a>
                       </li>
-                      <li id="menu-item-16714" className="business_solutions">
+                      <li id="menu-item-16714" className="developers">
                         <a
                           className="business_solutions_a"
                           onClick={goSolution}
@@ -248,7 +253,7 @@ const Header = () => {
                           </li>
                         </ul>
                       </li>
-                      <li id="menu-item-16717" className="careers">
+                      <li id="menu-item-16717" className="developers">
                         <a
                           className="business_solutions_a"
                           onClick={goPlatform}
@@ -381,14 +386,14 @@ const Header = () => {
                         </a>
                       </li>
                       <li id="menu-item-17530" className="careers">
-                        <a className="business_solutions_a">
+                        <a className="business_solutions_a" onClick={goAboutUs}>
                           <span className="menu-title-text">About Us</span>
                         </a>
                         <ul className="sub-menu">
                           <li id="menu-item-17532" className="sub-menu-li">
                             <a
                               href="https://www.gmeremit.com/about-us/#ceo"
-                              className="nectar-menu-item-with-icon2"
+                              className="nectar-menu-item-with-icon3"
                             >
                               <img
                                 src="https://www.gmeremit.com/wp-content/uploads/2023/01/ceo.png"
@@ -407,7 +412,7 @@ const Header = () => {
                           <li id="menu-item-17533" className="sub-menu-li">
                             <a
                               href="https://www.gmeremit.com/about-us/#services"
-                              className="nectar-menu-item-with-icon2"
+                              className="nectar-menu-item-with-icon3"
                             >
                               <img
                                 src="https://www.gmeremit.com/wp-content/uploads/2023/01/micro-services.png"
@@ -426,7 +431,7 @@ const Header = () => {
                           <li id="menu-item-17534" className="sub-menu-li">
                             <a
                               href="https://www.gmeremit.com/about-us/#history"
-                              className="nectar-menu-item-with-icon2"
+                              className="nectar-menu-item-with-icon3"
                             >
                               <img
                                 src="https://www.gmeremit.com/wp-content/uploads/2023/01/history.png"
@@ -450,7 +455,7 @@ const Header = () => {
                           <li id="menu-item-17539" className="sub-menu-li">
                             <a
                               href="https://www.gmeremitblog.com/#all"
-                              className="nectar-menu-item-with-icon2"
+                              className="nectar-menu-item-with-icon3"
                             >
                               <img
                                 src="https://www.gmeremit.com/wp-content/uploads/2023/01/blog.png"
@@ -467,7 +472,7 @@ const Header = () => {
                           <li id="menu-item-17540" className="sub-menu-li">
                             <a
                               href="https://www.gmeremitblog.com/#event"
-                              className="nectar-menu-item-with-icon2"
+                              className="nectar-menu-item-with-icon3"
                             >
                               <img
                                 src="https://www.gmeremit.com/wp-content/uploads/2023/01/event.png"
@@ -484,7 +489,7 @@ const Header = () => {
                           <li id="menu-item-17541" className="sub-menu-li">
                             <a
                               href="https://www.gmeremitblog.com/#businessnews"
-                              className="nectar-menu-item-with-icon2"
+                              className="nectar-menu-item-with-icon3"
                             >
                               <img
                                 src="https://www.gmeremit.com/wp-content/uploads/2023/01/news.png"
@@ -509,33 +514,28 @@ const Header = () => {
                         </a>
                         <ul className="sub-menu">
                           <li id="menu-item-17544" className="sub-menu-li">
-                            <a href="https://www.gmeremit.com/careers/#perks">
-                              <div className="nectar_image_above_text">
-                                <div className="image_layer_outer_hover">
-                                  <div className="image_layer_loaded"></div>
-                                  <div className="color_overlay"></div>
-                                </div>
-                                <div className="inner_content">
-                                  <span className="title_inherit">
-                                    <img
-                                      src="https://www.gmeremit.com/wp-content/uploads/2023/01/financial-rewards.png"
-                                      className="icon_image"
-                                      alt=""
-                                      width="96"
-                                      height="96"
-                                    />
-                                    <span className="menu_title_text">
-                                      Perks &amp; Benefits
-                                    </span>
-                                  </span>
-                                </div>
-                              </div>
+                            <a
+                              href="https://www.gmeremit.com/careers/#perks"
+                              className="nectar-menu-item-with-icon3"
+                            >
+                              <img
+                                src="https://www.gmeremit.com/wp-content/uploads/2023/01/financial-rewards.png"
+                                className="icon_image"
+                                alt=""
+                                width="96"
+                                height="96"
+                              />
+                              <span className="nectar-menu-icon-text">
+                                <span className="menu_title_text">
+                                  Perks &amp; Benefits
+                                </span>
+                              </span>
                             </a>
                           </li>
                           <li id="menu-item-17545" className="sub-menu-li">
                             <a
                               href="https://www.gmeremit.com/careers/#staff"
-                              className="nectar-menu-item-with-icon2"
+                              className="nectar-menu-item-with-icon3"
                             >
                               <img
                                 src="https://www.gmeremit.com/wp-content/uploads/2023/01/staff-training.png"
@@ -551,13 +551,10 @@ const Header = () => {
                               </span>
                             </a>
                           </li>
-                          <li
-                            id="menu-item-17546"
-                            className="menu-item menu-item-type-custom menu-item-object-custom nectar-regular-menu-item menu-item-has-icon menu-item-17546"
-                          >
+                          <li id="menu-item-17546" className="sub-menu-li">
                             <a
                               href="https://www.gmeremit.com/job-application/"
-                              className="nectar-menu-item-with-icon2"
+                              className="nectar-menu-item-with-icon3"
                             >
                               <img
                                 src="https://www.gmeremit.com/wp-content/uploads/2023/01/add-user.png"
@@ -576,7 +573,7 @@ const Header = () => {
                       <li id="menu-item-17547" className="careers">
                         <a
                           href="https://www.gmeremit.com/contact-us/"
-                          className="sf-with-ul"
+                          className="business_solutions_a"
                         >
                           <span className="menu-title-text">Contact Us</span>
                         </a>
@@ -584,7 +581,7 @@ const Header = () => {
                           <li id="menu-item-17550" className="sub-menu-li">
                             <a
                               href="https://www.gmeremit.com/contact-us/#help"
-                              className="nectar-menu-item-with-icon2"
+                              className="nectar-menu-item-with-icon3"
                             >
                               <img
                                 src="https://www.gmeremit.com/wp-content/uploads/2023/01/customer-service.png"
@@ -603,7 +600,7 @@ const Header = () => {
                           <li id="menu-item-17552" className="sub-menu-li">
                             <a
                               href="https://www.gmeremit.com/contact-us/#branches"
-                              className="nectar-menu-item-with-icon2"
+                              className="nectar-menu-item-with-icon3"
                             >
                               <img
                                 src="https://www.gmeremit.com/wp-content/uploads/2023/01/banking-network.png"

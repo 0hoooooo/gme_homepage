@@ -1,0 +1,109 @@
+.first_section {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  min-height: 100vh;
+  z-index: 100;
+  margin-top: 0 !important;
+  margin-bottom: 0;
+  position: relative;
+  background-size: cover;
+  width: 100%;
+}
+.row_bg_about {
+  overflow: hidden;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  --scroll-bar-w: 13px;
+  margin-left: calc(-50vw + var(--scroll-bar-w) / 2);
+  left: 50%;
+  width: calc(100vw - var(--scroll-bar-w));
+}
+.inner_wrap_about {
+  transform: scale(1) translateZ(0);
+  transition: transform 0.95s 0s cubic-bezier(0.3, 0.58, 0.42, 0.9);
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+.row_bg_about {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+.video_color_overlay_about {
+  opacity: 0.7;
+  border-radius: 20px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  padding-bottom: 0;
+  z-index: 3;
+  --scroll-bar-w: 13px;
+  margin-left: calc(-50vw + var(--scroll-bar-w) / 2);
+  left: 50%;
+  width: calc(100vw - var(--scroll-bar-w));
+}
+.video_wrap_position_loaded {
+  opacity: 1;
+  height: 100%;
+  margin-left: -50vw;
+  left: 50%;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  padding-bottom: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+.video_inner_about {
+  height: 100%;
+}
+.video_bg_about {
+  visibility: visible;
+  width: 1536px;
+  height: 864px;
+  opacity: 1;
+  transition: opacity 0.25s ease;
+}
+.dark_left_about {
+  min-height: 100vh;
+  color: #191c1f;
+  display: flex !important;
+  align-content: center;
+  float: none;
+  flex-wrap: wrap;
+  margin-bottom: 0 !important;
+  z-index: 10;
+  width: auto;
+}
+.padding_phone_about {
+  margin-left: 0;
+  align-items: stretch;
+  display: flex;
+  position: relative;
+  float: none;
+  margin-right: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  background-position: center;
+}
+@media (min-width: 690px) {
+  .padding_phone_about {
+    width: 100%;
+  }
+}
+.vc_column_inner_about {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}

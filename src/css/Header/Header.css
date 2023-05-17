@@ -278,7 +278,7 @@ li a:hover:after {
   z-index: 10;
   color: #191c1f;
 }
-.sub_menu li {
+/* .sub_menu li {
   display: flex;
   float: none;
   width: 25%;
@@ -292,8 +292,8 @@ li a:hover:after {
   position: relative;
   margin: 0;
   z-index: 10;
-}
-.sub_menu2 li {
+} */
+/* .sub_menu2 li {
   display: flex;
   float: none;
   width: 25%;
@@ -307,7 +307,7 @@ li a:hover:after {
   position: relative;
   margin: 0;
   z-index: 10;
-}
+} */
 .business_left {
   width: 25%;
   flex: none;
@@ -402,7 +402,7 @@ li a:hover:after {
   top: 0;
   left: 0;
   width: 100%;
-  height: 120%;
+  height: 100%;
   overflow: hidden;
   list-style: none outside none;
   margin: 0;
@@ -455,8 +455,9 @@ li a:hover:after {
   top: 0;
   left: 0;
   width: 100%;
-  height: 120%;
+  height: 100%;
   overflow: hidden;
+  transition: opacity 0.5s cubic-bezier(0.15, 0.75, 0.5, 1);
   list-style: none outside none;
   margin: 0;
   padding: 0;
@@ -487,13 +488,16 @@ li a:hover:after {
   background-repeat: no-repeat;
   background-size: 0% 2px;
   background-image: linear-gradient(to right, #825cff 0%, #825cff 100%);
-  -webkit-transition: background-size 0.55s cubic-bezier(0.2, 0.75, 0.5, 1);
   transition: background-size 0.55s cubic-bezier(0.2, 0.75, 0.5, 1);
   background-position: left bottom;
   font-family: Poppins;
   font-size: 30px;
   line-height: 30px;
   font-weight: 600;
+  list-style: none outside none;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
 }
 .business_solutions {
   padding: 30px;
@@ -525,20 +529,24 @@ li a:hover:after {
   line-height: 30px;
   transition: none;
   letter-spacing: 0;
+  outline: 0 none;
   display: block;
   position: relative;
   flex-direction: row;
   text-decoration: none;
   list-style: none outside none;
+  z-index: 10;
   margin: 0;
   padding: 0;
-  z-index: 10;
+  text-align: left;
   cursor: pointer;
   padding: 6px 6px;
 }
 .menu-title-text {
   position: relative;
   list-style: none outside none;
+  text-align: left;
+  justify-content: flex-start;
   margin: 0;
   padding: 0;
   z-index: 10;
@@ -584,6 +592,7 @@ li a:hover:after {
   margin: 0;
   padding: 0;
   z-index: 10;
+  text-align: left;
 }
 .menu-item-16718 {
   float: none;
@@ -605,7 +614,7 @@ li a:hover:after {
   padding: 10px 10px;
   font-family: Poppins;
   font-size: 16px;
-  line-height: 28px;
+  line-height: 40px;
   font-weight: 400;
   transition: none;
   letter-spacing: 0;
@@ -619,9 +628,28 @@ li a:hover:after {
   z-index: 10;
   cursor: pointer;
 }
+.nectar-menu-item-with-icon3 {
+  border-bottom: none;
+  padding: 10px 10px;
+  font-family: Poppins;
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: 400;
+  transition: none;
+  letter-spacing: 0;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  outline: 0 none;
+  position: relative;
+  text-decoration: none;
+  list-style: none outside none;
+  z-index: 10;
+  cursor: pointer;
+}
 .icon_image {
   margin-right: 15px;
-  width: 50px;
+  width: 40px;
   line-height: inherit;
   display: inline-block;
   margin-bottom: 0;
@@ -632,7 +660,7 @@ li a:hover:after {
   max-width: 100%;
 }
 .developers {
-  padding: 30px;
+  padding: 20px;
   float: none;
   width: 25%;
   flex: none;
@@ -753,22 +781,21 @@ li a:hover:after {
   padding: 0;
 }
 .careers {
-  padding: 30px;
-  float: none;
-  width: 20%;
-  flex: none;
-  display: flex;
-  flex-direction: column;
-  border: none;
+  padding: 20px;
+  width: 15%;
   background-size: cover;
   background-position: center;
-  outline: 0 none;
-  line-height: 0;
-  position: relative;
+  display: block;
+  flex: 1;
+  float: none;
+  border: none;
+  transform: translate3d(0, 13px, 0);
+  margin: 0;
+  z-index: 10;
+  flex-direction: column;
   list-style: none;
   outline: 0 none;
   line-height: 0;
   font-size: 12px;
   position: relative;
-  transform: translate3d(0, 13px, 0);
 }

@@ -8,13 +8,12 @@
   box-sizing: content-box;
 }
 .row-bg-wrap_partner {
+  margin-left: 0;
+  left: 0;
+  width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
-  --scroll-bar-w: 13px;
-  margin-left: calc(-50vw + var(--scroll-bar-w) / 2);
-  left: 50%;
-  width: calc(100vw - var(--scroll-bar-w));
 }
 .inner-wrap_partner {
   height: 100%;
@@ -56,10 +55,16 @@
   background-position: center;
   position: relative;
 }
+@media (min-width: 690px) {
+  .padding_phone_partner {
+    width: 100%;
+  }
+}
 .vc_column-inner_partner {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .vc_custom_heading_partner {
   font-size: 36px;
@@ -71,4 +76,129 @@
 .inner_partner {
   margin-bottom: 24px;
   position: relative;
+}
+.inner_left_partner {
+  display: flex;
+  flex-wrap: wrap;
+  float: none;
+  margin-bottom: 0 !important;
+  z-index: 10;
+  width: auto;
+}
+.container_phone1 {
+  display: block;
+  float: none;
+  margin-right: 0;
+  margin-left: 0;
+  box-shadow: none;
+  background-position: center;
+  position: relative;
+}
+@media (min-width: 690px) {
+  .container_phone1 {
+    width: 16.66666667%;
+  }
+}
+.vc_column-inner {
+  position: relative;
+}
+.container_phone2 {
+  display: block;
+  float: none;
+  margin-right: 0;
+  margin-left: 0;
+  box-shadow: none;
+  background-position: center;
+  position: relative;
+}
+@media (min-width: 690px) {
+  .container_phone2 {
+    width: 66.66666667%;
+  }
+}
+.container_phone3 {
+  display: block;
+  float: none;
+  margin-right: 0;
+  margin-left: 0;
+  box-shadow: none;
+  background-position: center;
+  position: relative;
+}
+@media (min-width: 690px) {
+  .container_phone3 {
+    width: 16.66666667%;
+  }
+}
+.carousel-outer {
+  overflow: hidden;
+  margin-right: 2px;
+  margin-bottom: 0;
+}
+.carousel-wrap {
+  margin-bottom: 0;
+  position: relative;
+  overflow: hidden;
+  margin: 0 -10px 0 -10px;
+}
+.carousel-heading {
+  z-index: 100;
+  position: relative;
+  margin-bottom: 7px;
+  min-height: 23px;
+}
+.carousel_container {
+  margin: 0 auto;
+  position: relative;
+}
+@media (min-width: 690px) {
+  .carousel_container {
+    max-width: 1100px;
+  }
+}
+.control_wrap {
+  right: 10px;
+  top: 0;
+  text-align: center;
+  position: absolute;
+}
+.carousel_prev {
+  right: 30px;
+  position: relative;
+  display: block;
+  float: left;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-right: 0;
+  background-color: transparent;
+  height: 23px;
+  width: 10px;
+  line-height: 22px;
+  font-size: 14px;
+  cursor: pointer;
+  top: 1px;
+  box-sizing: content-box;
+}
+.carousel_prev i {
+  color: #000;
+  font-size: 22px;
+  line-height: 18px;
+  height: 23px;
+  display: inline-block;
+  word-spacing: 1px;
+  position: relative;
+  text-align: center;
+  top: -2px;
+  vertical-align: middle;
+  max-width: 100%;
+}
+.caroufredsel_wrapper {
+  text-align: start;
+  float: none;
+  position: relative;
+  inset: 0px;
+  z-index: auto;
+  width: 1116px;
+  height: 284px;
+  overflow: hidden;
 }

@@ -68,6 +68,10 @@ const GlobalStyles = createGlobalStyle`
         font-weight: 600;
         font-size: 24px;
     }
+    strong{
+        font-family: Poppins;
+        font-weight: 600;
+    }
 `;
 
 export default GlobalStyles;

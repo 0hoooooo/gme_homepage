@@ -256,8 +256,8 @@
   flex-wrap: wrap;
   position: relative;
   z-index: 10;
-  margin-left: -1%;
-  margin-right: -1%;
+  margin-left: 5%;
+  margin-right: 5%;
   width: auto;
 }
 .extr {

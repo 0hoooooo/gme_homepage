@@ -1,5 +1,24 @@
+import EmblaCarousel from "../../../components/EmblaCarousel";
 import "../../../css/Solutions/Partners.css";
 const Partners = () => {
+  const list = [
+    {
+      id: 1,
+      src: "https://www.gmeremit.com/wp-content/uploads/2023/03/ria-money-transfer.png",
+    },
+    {
+      id: 2,
+      src: "https://www.gmeremit.com/wp-content/uploads/2023/03/thunes.png",
+    },
+    {
+      id: 3,
+      src: "https://www.gmeremit.com/wp-content/uploads/2023/03/xe.png",
+    },
+    {
+      id: 4,
+      src: "https://www.gmeremit.com/wp-content/uploads/2023/01/hanabank.png",
+    },
+  ];
   return (
     <div id="fws_645d7d8c04d58" className="section_partner">
       <div className="row-bg-wrap_partner">
@@ -21,14 +40,14 @@ const Partners = () => {
                 <div className="row-bg-wrap_partner">
                   <div className="row-bg"></div>
                 </div>
-                <div className="row_col_wrap_12_inner col span_12  left">
-                  <div className="vc_col-sm-2 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone ">
+                <div className="inner_left_partner">
+                  <div className="container_phone1">
                     <div className="vc_column-inner">
-                      <div className="wpb_wrapper"></div>
+                      <div className="wpb_wrapper_partner"></div>
                     </div>
                   </div>
 
-                  <div className="vc_col-sm-8 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone ">
+                  <div className="container_phone2">
                     <div className="vc_column-inner">
                       <div className="wpb_wrapper_partner">
                         <h1 className="vc_custom_heading_partner">
@@ -38,7 +57,7 @@ const Partners = () => {
                     </div>
                   </div>
 
-                  <div className="vc_col-sm-2 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone ">
+                  <div className="container_phone3">
                     <div className="vc_column-inner">
                       <div className="wpb_wrapper"></div>
                     </div>
@@ -48,13 +67,36 @@ const Partners = () => {
               <div className="divider-wrap" data-alignment="default">
                 <div className="divider"></div>
               </div>
+              {/* <EmblaCarousel autoplay delayLength={2000}>
+                {list.map((item, index) => (
+                  <div className="img-with-aniamtion-wrap center" key={index}>
+                    <div className="inner">
+                      <div className="hover-wrap">
+                        <div className="hover-wrap-inner img-loaded">
+                          <img
+                            className="img-with-animation skip-lazy nectar-lazy animated-in loaded"
+                            data-delay="0"
+                            height="455"
+                            width="455"
+                            data-animation="fade-in"
+                            src={item.src}
+                            alt=""
+                            sizes="(min-width: 1450px) 75vw, (min-width: 1000px) 85vw, 100vw"
+                            srcset="https://www.gmeremit.com/wp-content/uploads/2023/03/thunes.png 455w, https://www.gmeremit.com/wp-content/uploads/2023/03/thunes-300x300.png 300w, https://www.gmeremit.com/wp-content/uploads/2023/03/thunes-150x150.png 150w, https://www.gmeremit.com/wp-content/uploads/2023/03/thunes-100x100.png 100w, https://www.gmeremit.com/wp-content/uploads/2023/03/thunes-140x140.png 140w, https://www.gmeremit.com/wp-content/uploads/2023/03/thunes-350x350.png 350w"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </EmblaCarousel> */}
               <div className="carousel-outer">
                 <div className="carousel-wrap">
                   <div className="carousel-heading">
-                    <div className="container">
-                      <h2 className="uppercase"></h2>
-                      <div className="control-wrap">
-                        <a className="carousel-prev" href="#">
+                    <div className="carousel_container">
+                      <h2 className="uppercase" style={{ fontSize: 12 }}></h2>
+                      <div className="control_wrap">
+                        <a className="carousel_prev" href="#">
                           <i className="fa fa-angle-left"></i>
                         </a>
                         <div className="item-count">

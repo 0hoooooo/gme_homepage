@@ -84,6 +84,12 @@ const Service = () => {
 
       <div className="dark_center_service">
         <div className="padding_phone_service">
+          <h1 className="vc_custom_heading_service">
+            GME Payment Service Features
+          </h1>
+          <div className="divider-wrap">
+            <div style={{ height: 60 }} className="divider"></div>
+          </div>
           <div className="carousel_main">
             <div className="carousel_container">
               {/* <div
