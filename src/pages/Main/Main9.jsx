@@ -230,7 +230,6 @@ const Main9 = () => {
                                     src="https://www.gmeremit.com/wp-content/uploads/2021/08/qr_code.png"
                                     alt=""
                                     sizes="(min-width: 1450px) 75vw, (min-width: 1000px) 85vw, 100vw"
-                                    srcSet="https://www.gmeremit.com/wp-content/uploads/2021/08/qr_code.png 294w, https://www.gmeremit.com/wp-content/uploads/2021/08/qr_code-150x150.png 150w, https://www.gmeremit.com/wp-content/uploads/2021/08/qr_code-100x100.png 100w, https://www.gmeremit.com/wp-content/uploads/2021/08/qr_code-140x140.png 140w"
                                   />
                                 </div>
                               </div>
@@ -263,7 +262,6 @@ const Main9 = () => {
                           width="3000"
                           src="https://www.gmeremit.com/wp-content/uploads/2021/08/GME-UI-small-1.png"
                           sizes="(min-width: 1450px) 75vw, (min-width: 1000px) 85vw, 100vw"
-                          srcSet="https://www.gmeremit.com/wp-content/uploads/2021/08/GME-UI-small-1.png 3000w, https://www.gmeremit.com/wp-content/uploads/2021/08/GME-UI-small-1-300x180.png 300w, https://www.gmeremit.com/wp-content/uploads/2021/08/GME-UI-small-1-1024x614.png 1024w, https://www.gmeremit.com/wp-content/uploads/2021/08/GME-UI-small-1-768x461.png 768w, https://www.gmeremit.com/wp-content/uploads/2021/08/GME-UI-small-1-1536x922.png 1536w, https://www.gmeremit.com/wp-content/uploads/2021/08/GME-UI-small-1-2048x1229.png 2048w"
                         />
                       </div>
                     </div>

@@ -2,7 +2,7 @@ import Api from "./Api";
 import Api2 from "./Api2";
 import Api3 from "./Api3";
 import Divider from "./Divider";
-import Feature from "./Feature";
+import Api4 from "./Api4";
 
 const Developer = () => {
   return (
@@ -11,7 +11,7 @@ const Developer = () => {
       <Api2 />
       <Divider />
       <Api3 />
-      <Feature />
+      <Api4 />
     </>
   );
 };

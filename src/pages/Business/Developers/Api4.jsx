@@ -1,5 +1,5 @@
 import "../../../css/Developers/Feature.css";
-const Feature = () => {
+const Api4 = () => {
   return (
     <div
       id="platform"
@@ -35,7 +35,6 @@ const Feature = () => {
                         src="https://www.gmeremit.com/wp-content/uploads/2022/09/icon24.png"
                         alt=""
                         sizes="(min-width: 1450px) 75vw, (min-width: 1000px) 85vw, 100vw"
-                        srcset="https://www.gmeremit.com/wp-content/uploads/2022/09/icon24.png 1376w, https://www.gmeremit.com/wp-content/uploads/2022/09/icon24-300x182.png 300w, https://www.gmeremit.com/wp-content/uploads/2022/09/icon24-1024x621.png 1024w, https://www.gmeremit.com/wp-content/uploads/2022/09/icon24-768x465.png 768w"
                       />
                     </div>
                   </div>
@@ -48,4 +47,4 @@ const Feature = () => {
     </div>
   );
 };
-export default Feature;
+export default Api4;

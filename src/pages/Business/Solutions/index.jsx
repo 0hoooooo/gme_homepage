@@ -1,6 +1,6 @@
 import Financial from "./Financial";
 import Partners from "./Partners";
-import Service from "./Service";
+import Features from "./Features";
 import Sps from "./Sps";
 
 const Solution = () => {
@@ -8,7 +8,7 @@ const Solution = () => {
     <>
       <Financial />
       <Sps />
-      <Service />
+      <Features />
       <Partners />
     </>
   );

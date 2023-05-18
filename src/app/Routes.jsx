@@ -4,7 +4,7 @@ import Home from "../pages/Home";
 import Solution from "../pages/Business/Solutions";
 import Developer from "../pages/Business/Developers";
 import Platform from "../pages/Business/Platform";
-import About from "../pages/Company/About";
+import AboutUs from "../pages/Company/AboutUs";
 
 const Routes = () => {
   const rootRoutes = {
@@ -49,7 +49,7 @@ const Routes = () => {
     children: [
       {
         path: "aboutUs",
-        element: <About />,
+        element: <AboutUs />,
       },
     ],
   };

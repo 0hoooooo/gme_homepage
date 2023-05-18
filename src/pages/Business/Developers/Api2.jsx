@@ -67,7 +67,6 @@ const Api2 = () => {
                                   src="https://www.gmeremit.com/wp-content/uploads/2022/08/Developers2.png"
                                   alt=""
                                   sizes="(min-width: 1450px) 75vw, (min-width: 1000px) 85vw, 100vw"
-                                  srcset="https://www.gmeremit.com/wp-content/uploads/2022/08/Developers2.png 1535w, https://www.gmeremit.com/wp-content/uploads/2022/08/Developers2-300x215.png 300w, https://www.gmeremit.com/wp-content/uploads/2022/08/Developers2-1024x735.png 1024w, https://www.gmeremit.com/wp-content/uploads/2022/08/Developers2-768x551.png 768w"
                                 />
                               </div>
                             </div>

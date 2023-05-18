@@ -79,7 +79,6 @@ const Ceo = () => {
                         src="https://www.gmeremit.com/wp-content/uploads/2023/02/Ceo-picture.png"
                         alt=""
                         sizes="(min-width: 1450px) 75vw, (min-width: 1000px) 85vw, 100vw"
-                        srcset="https://www.gmeremit.com/wp-content/uploads/2023/02/Ceo-picture.png 310w, https://www.gmeremit.com/wp-content/uploads/2023/02/Ceo-picture-146x300.png 146w"
                       />
                     </div>
                   </div>

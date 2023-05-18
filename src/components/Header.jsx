@@ -11,9 +11,6 @@ const Header = () => {
   useEffect(() => {
     window.addEventListener("scroll", updateScroll);
   });
-  useEffect(() => {
-    console.log(scrollPosition);
-  });
   const goPlatform = () => {
     console.log("이동");
     navigate("/business/platform");

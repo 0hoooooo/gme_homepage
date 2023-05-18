@@ -201,7 +201,6 @@ const Hom = () => {
                           width="478"
                           className="hom_image"
                           alt=""
-                          srcset="https://www.gmeremit.com/wp-content/uploads/2023/01/GME-HoM-1.png 478w, https://www.gmeremit.com/wp-content/uploads/2023/01/GME-HoM-1-281x300.png 281w"
                         />
                       </div>
                     </div>
@@ -218,7 +217,6 @@ const Hom = () => {
                           width="478"
                           className="hom_image"
                           alt=""
-                          srcset="https://www.gmeremit.com/wp-content/uploads/2023/01/GME-HoM.png 478w, https://www.gmeremit.com/wp-content/uploads/2023/01/GME-HoM-281x300.png 281w"
                         />{" "}
                       </div>
                     </div>

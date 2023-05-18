@@ -1,22 +1,8 @@
-import { useLayoutEffect, useRef, useState } from "react";
-import "../../../css/Solutions/Service.css";
+import "../../../css/Solutions/Features.css";
 
 import Carousel from "react-elastic-carousel";
 
-const Service = () => {
-  // const listRef = useRef();
-  // const btnRef = useRef();
-  // const [startX, setstartX] = useState(0);
-
-  // useLayoutEffect(() => {
-  //   const getCoordinate = () => {
-  //     const listLeft = listRef.current.getBoundingClientRect().left;
-
-  //     setstartX(listLeft);
-  //   };
-  //   getCoordinate();
-  // }, []);
-
+const Features = () => {
   const product = [
     {
       id: 1,
@@ -75,16 +61,16 @@ const Service = () => {
   //   listRef.current.style.transform = `translateX(${calculate_distance}px)`;
   // };
   return (
-    <div id="service">
-      <div className="row_bg_wrap_service">
-        <div className="inner_wrap_using_image_service">
-          <div className="image_load_service"></div>
+    <div id="feature">
+      <div className="row_bg_wrap_feature">
+        <div className="inner_wrap_using_image_feature">
+          <div className="image_load_feature"></div>
         </div>
       </div>
 
-      <div className="dark_center_service">
-        <div className="padding_phone_service">
-          <h1 className="vc_custom_heading_service">
+      <div className="dark_center_feature">
+        <div className="padding_phone_feature">
+          <h1 className="vc_custom_heading_feature">
             GME Payment Service Features
           </h1>
           <div className="divider-wrap">
@@ -138,7 +124,7 @@ const Service = () => {
                   product.map((item, index) => (
                     <div className="card_wrapper" key={index}>
                       <div className="card_image">
-                        <img src={item.src} />
+                        <img src={item.src} alt="" />
                       </div>
                       <div className="card_detail">
                         <div className="card_title">
@@ -159,26 +145,26 @@ const Service = () => {
           </div>
         </div>
       </div>
-      <div id="fws_645d7d8c03918" className="wpb_row_service">
-        <div className="row-bg-wrap_service">
+      <div id="fws_645d7d8c03918" className="wpb_row_feature">
+        <div className="row-bg-wrap_feature">
           {" "}
           <div className="row-bg"></div>{" "}
         </div>
-        <div className="dark_left_service">
-          <div className="padding_phone_service">
-            <div className="vc_column_inner_service">
+        <div className="dark_left_feature">
+          <div className="padding_phone_feature">
+            <div className="vc_column_inner_feature">
               <div className="wpb_wrapper">
                 <div className="divider-wrap" data-alignment="default">
                   <div className="divider" style={{ height: 24 }}></div>
                 </div>
                 <h1
-                  className="vc_custom_heading_service"
+                  className="vc_custom_heading_feature"
                   style={{ fontSize: 45, color: "#ffffff" }}
                 >
                   ULTIMATE SOLUTIONS
                 </h1>
                 <h1
-                  className="vc_custom_heading_service"
+                  className="vc_custom_heading_feature"
                   style={{ fontSize: 30, color: "#ffffff" }}
                 >
                   GET THE REAL DEAL, NO COMMISSION IN TRANSITION
@@ -496,4 +482,4 @@ const Service = () => {
     </div>
   );
 };
-export default Service;
+export default Features;

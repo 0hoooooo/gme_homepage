@@ -49,6 +49,7 @@ const GlobalStyles = createGlobalStyle`
     ol, ul{
         list-style: none;
     }
+    
     button {
         border: 0;
         background: transparent;
@@ -58,6 +59,12 @@ const GlobalStyles = createGlobalStyle`
         margin-bottom: 7px;
         font-weight: 600;
         line-height: 1.25 !important;
+    }
+    body h2 {
+        font-family: Poppins;
+        font-size: 32px;
+        line-height: 32px;
+        font-weight: 600;
     }
     h3 {
         font-family: Poppins;
