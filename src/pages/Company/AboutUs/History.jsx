@@ -7,7 +7,7 @@ const History = () => {
       tag.style.opacity = 0;
     });
     const fadeIn = function () {
-      let delay = 0.05;
+      let delay = 0.5;
       animatedTags.forEach((tag) => {
         const tagTop = tag.getBoundingClientRect().top;
         const tagBottom = tag.getBoundingClientRect().bottom;

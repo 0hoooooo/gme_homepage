@@ -3,6 +3,7 @@ import Api2 from "./Api2";
 import Api3 from "./Api3";
 import Divider from "./Divider";
 import Api4 from "./Api4";
+import ViewApi from "./ViewApi";
 
 const Developer = () => {
   return (
@@ -12,6 +13,7 @@ const Developer = () => {
       <Divider />
       <Api3 />
       <Api4 />
+      <ViewApi />
     </>
   );
 };

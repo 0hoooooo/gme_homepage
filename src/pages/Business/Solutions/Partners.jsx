@@ -82,7 +82,7 @@ const Partners = () => {
                             src={item.src}
                             alt=""
                             sizes="(min-width: 1450px) 75vw, (min-width: 1000px) 85vw, 100vw"
-                            srcset="https://www.gmeremit.com/wp-content/uploads/2023/03/thunes.png 455w, https://www.gmeremit.com/wp-content/uploads/2023/03/thunes-300x300.png 300w, https://www.gmeremit.com/wp-content/uploads/2023/03/thunes-150x150.png 150w, https://www.gmeremit.com/wp-content/uploads/2023/03/thunes-100x100.png 100w, https://www.gmeremit.com/wp-content/uploads/2023/03/thunes-140x140.png 140w, https://www.gmeremit.com/wp-content/uploads/2023/03/thunes-350x350.png 350w"
+                            srcSet="https://www.gmeremit.com/wp-content/uploads/2023/03/thunes.png 455w, https://www.gmeremit.com/wp-content/uploads/2023/03/thunes-300x300.png 300w, https://www.gmeremit.com/wp-content/uploads/2023/03/thunes-150x150.png 150w, https://www.gmeremit.com/wp-content/uploads/2023/03/thunes-100x100.png 100w, https://www.gmeremit.com/wp-content/uploads/2023/03/thunes-140x140.png 140w, https://www.gmeremit.com/wp-content/uploads/2023/03/thunes-350x350.png 350w"
                           />
                         </div>
                       </div>
@@ -125,7 +125,7 @@ const Partners = () => {
                                   src="https://www.gmeremit.com/wp-content/uploads/2023/03/ria-money-transfer.png"
                                   alt=""
                                   sizes="(min-width: 1450px) 75vw, (min-width: 1000px) 85vw, 100vw"
-                                  srcset="https://www.gmeremit.com/wp-content/uploads/2023/03/ria-money-transfer.png 455w, https://www.gmeremit.com/wp-content/uploads/2023/03/ria-money-transfer-300x300.png 300w, https://www.gmeremit.com/wp-content/uploads/2023/03/ria-money-transfer-150x150.png 150w, https://www.gmeremit.com/wp-content/uploads/2023/03/ria-money-transfer-100x100.png 100w, https://www.gmeremit.com/wp-content/uploads/2023/03/ria-money-transfer-140x140.png 140w, https://www.gmeremit.com/wp-content/uploads/2023/03/ria-money-transfer-350x350.png 350w"
+                                  srcSet="https://www.gmeremit.com/wp-content/uploads/2023/03/ria-money-transfer.png 455w, https://www.gmeremit.com/wp-content/uploads/2023/03/ria-money-transfer-300x300.png 300w, https://www.gmeremit.com/wp-content/uploads/2023/03/ria-money-transfer-150x150.png 150w, https://www.gmeremit.com/wp-content/uploads/2023/03/ria-money-transfer-100x100.png 100w, https://www.gmeremit.com/wp-content/uploads/2023/03/ria-money-transfer-140x140.png 140w, https://www.gmeremit.com/wp-content/uploads/2023/03/ria-money-transfer-350x350.png 350w"
                                 />
                               </div>
                             </div>
@@ -146,7 +146,7 @@ const Partners = () => {
                                   src="https://www.gmeremit.com/wp-content/uploads/2023/03/thunes.png"
                                   alt=""
                                   sizes="(min-width: 1450px) 75vw, (min-width: 1000px) 85vw, 100vw"
-                                  srcset="https://www.gmeremit.com/wp-content/uploads/2023/03/thunes.png 455w, https://www.gmeremit.com/wp-content/uploads/2023/03/thunes-300x300.png 300w, https://www.gmeremit.com/wp-content/uploads/2023/03/thunes-150x150.png 150w, https://www.gmeremit.com/wp-content/uploads/2023/03/thunes-100x100.png 100w, https://www.gmeremit.com/wp-content/uploads/2023/03/thunes-140x140.png 140w, https://www.gmeremit.com/wp-content/uploads/2023/03/thunes-350x350.png 350w"
+                                  srcSet="https://www.gmeremit.com/wp-content/uploads/2023/03/thunes.png 455w, https://www.gmeremit.com/wp-content/uploads/2023/03/thunes-300x300.png 300w, https://www.gmeremit.com/wp-content/uploads/2023/03/thunes-150x150.png 150w, https://www.gmeremit.com/wp-content/uploads/2023/03/thunes-100x100.png 100w, https://www.gmeremit.com/wp-content/uploads/2023/03/thunes-140x140.png 140w, https://www.gmeremit.com/wp-content/uploads/2023/03/thunes-350x350.png 350w"
                                 />
                               </div>
                             </div>
@@ -167,7 +167,7 @@ const Partners = () => {
                                   src="https://www.gmeremit.com/wp-content/uploads/2023/03/xe.png"
                                   alt=""
                                   sizes="(min-width: 1450px) 75vw, (min-width: 1000px) 85vw, 100vw"
-                                  srcset="https://www.gmeremit.com/wp-content/uploads/2023/03/xe.png 455w, https://www.gmeremit.com/wp-content/uploads/2023/03/xe-300x300.png 300w, https://www.gmeremit.com/wp-content/uploads/2023/03/xe-150x150.png 150w, https://www.gmeremit.com/wp-content/uploads/2023/03/xe-100x100.png 100w, https://www.gmeremit.com/wp-content/uploads/2023/03/xe-140x140.png 140w, https://www.gmeremit.com/wp-content/uploads/2023/03/xe-350x350.png 350w"
+                                  srcSet="https://www.gmeremit.com/wp-content/uploads/2023/03/xe.png 455w, https://www.gmeremit.com/wp-content/uploads/2023/03/xe-300x300.png 300w, https://www.gmeremit.com/wp-content/uploads/2023/03/xe-150x150.png 150w, https://www.gmeremit.com/wp-content/uploads/2023/03/xe-100x100.png 100w, https://www.gmeremit.com/wp-content/uploads/2023/03/xe-140x140.png 140w, https://www.gmeremit.com/wp-content/uploads/2023/03/xe-350x350.png 350w"
                                 />
                               </div>
                             </div>
@@ -188,7 +188,7 @@ const Partners = () => {
                                   src="https://www.gmeremit.com/wp-content/uploads/2023/01/hanabank.png"
                                   alt=""
                                   sizes="(min-width: 1450px) 75vw, (min-width: 1000px) 85vw, 100vw"
-                                  srcset="https://www.gmeremit.com/wp-content/uploads/2023/01/hanabank.png 455w, https://www.gmeremit.com/wp-content/uploads/2023/01/hanabank-300x300.png 300w, https://www.gmeremit.com/wp-content/uploads/2023/01/hanabank-150x150.png 150w, https://www.gmeremit.com/wp-content/uploads/2023/01/hanabank-100x100.png 100w, https://www.gmeremit.com/wp-content/uploads/2023/01/hanabank-140x140.png 140w, https://www.gmeremit.com/wp-content/uploads/2023/01/hanabank-350x350.png 350w"
+                                  srcSet="https://www.gmeremit.com/wp-content/uploads/2023/01/hanabank.png 455w, https://www.gmeremit.com/wp-content/uploads/2023/01/hanabank-300x300.png 300w, https://www.gmeremit.com/wp-content/uploads/2023/01/hanabank-150x150.png 150w, https://www.gmeremit.com/wp-content/uploads/2023/01/hanabank-100x100.png 100w, https://www.gmeremit.com/wp-content/uploads/2023/01/hanabank-140x140.png 140w, https://www.gmeremit.com/wp-content/uploads/2023/01/hanabank-350x350.png 350w"
                                 />
                               </div>
                             </div>
@@ -212,7 +212,7 @@ const Partners = () => {
                                   src="https://www.gmeremit.com/wp-content/uploads/2023/01/skyee.png"
                                   alt=""
                                   sizes="(min-width: 1450px) 75vw, (min-width: 1000px) 85vw, 100vw"
-                                  srcset="https://www.gmeremit.com/wp-content/uploads/2023/01/skyee.png 455w, https://www.gmeremit.com/wp-content/uploads/2023/01/skyee-300x300.png 300w, https://www.gmeremit.com/wp-content/uploads/2023/01/skyee-150x150.png 150w, https://www.gmeremit.com/wp-content/uploads/2023/01/skyee-100x100.png 100w, https://www.gmeremit.com/wp-content/uploads/2023/01/skyee-140x140.png 140w, https://www.gmeremit.com/wp-content/uploads/2023/01/skyee-350x350.png 350w"
+                                  srcSet="https://www.gmeremit.com/wp-content/uploads/2023/01/skyee.png 455w, https://www.gmeremit.com/wp-content/uploads/2023/01/skyee-300x300.png 300w, https://www.gmeremit.com/wp-content/uploads/2023/01/skyee-150x150.png 150w, https://www.gmeremit.com/wp-content/uploads/2023/01/skyee-100x100.png 100w, https://www.gmeremit.com/wp-content/uploads/2023/01/skyee-140x140.png 140w, https://www.gmeremit.com/wp-content/uploads/2023/01/skyee-350x350.png 350w"
                                 />
                               </div>
                             </div>
@@ -233,7 +233,7 @@ const Partners = () => {
                                   src="https://www.gmeremit.com/wp-content/uploads/2023/01/ripple.png"
                                   alt=""
                                   sizes="(min-width: 1450px) 75vw, (min-width: 1000px) 85vw, 100vw"
-                                  srcset="https://www.gmeremit.com/wp-content/uploads/2023/01/ripple.png 455w, https://www.gmeremit.com/wp-content/uploads/2023/01/ripple-300x300.png 300w, https://www.gmeremit.com/wp-content/uploads/2023/01/ripple-150x150.png 150w, https://www.gmeremit.com/wp-content/uploads/2023/01/ripple-100x100.png 100w, https://www.gmeremit.com/wp-content/uploads/2023/01/ripple-140x140.png 140w, https://www.gmeremit.com/wp-content/uploads/2023/01/ripple-350x350.png 350w"
+                                  srcSet="https://www.gmeremit.com/wp-content/uploads/2023/01/ripple.png 455w, https://www.gmeremit.com/wp-content/uploads/2023/01/ripple-300x300.png 300w, https://www.gmeremit.com/wp-content/uploads/2023/01/ripple-150x150.png 150w, https://www.gmeremit.com/wp-content/uploads/2023/01/ripple-100x100.png 100w, https://www.gmeremit.com/wp-content/uploads/2023/01/ripple-140x140.png 140w, https://www.gmeremit.com/wp-content/uploads/2023/01/ripple-350x350.png 350w"
                                 />
                               </div>
                             </div>
@@ -257,7 +257,7 @@ const Partners = () => {
                                   src="https://www.gmeremit.com/wp-content/uploads/2023/01/Cogo.png"
                                   alt=""
                                   sizes="(min-width: 1450px) 75vw, (min-width: 1000px) 85vw, 100vw"
-                                  srcset="https://www.gmeremit.com/wp-content/uploads/2023/01/Cogo.png 455w, https://www.gmeremit.com/wp-content/uploads/2023/01/Cogo-300x300.png 300w, https://www.gmeremit.com/wp-content/uploads/2023/01/Cogo-150x150.png 150w, https://www.gmeremit.com/wp-content/uploads/2023/01/Cogo-100x100.png 100w, https://www.gmeremit.com/wp-content/uploads/2023/01/Cogo-140x140.png 140w, https://www.gmeremit.com/wp-content/uploads/2023/01/Cogo-350x350.png 350w"
+                                  srcSet="https://www.gmeremit.com/wp-content/uploads/2023/01/Cogo.png 455w, https://www.gmeremit.com/wp-content/uploads/2023/01/Cogo-300x300.png 300w, https://www.gmeremit.com/wp-content/uploads/2023/01/Cogo-150x150.png 150w, https://www.gmeremit.com/wp-content/uploads/2023/01/Cogo-100x100.png 100w, https://www.gmeremit.com/wp-content/uploads/2023/01/Cogo-140x140.png 140w, https://www.gmeremit.com/wp-content/uploads/2023/01/Cogo-350x350.png 350w"
                                 />
                               </div>
                             </div>
@@ -287,7 +287,7 @@ const Partners = () => {
                                   src="https://www.gmeremit.com/wp-content/uploads/2023/01/Lian.png"
                                   alt=""
                                   sizes="(min-width: 1450px) 75vw, (min-width: 1000px) 85vw, 100vw"
-                                  srcset="https://www.gmeremit.com/wp-content/uploads/2023/01/Lian.png 455w, https://www.gmeremit.com/wp-content/uploads/2023/01/Lian-300x300.png 300w, https://www.gmeremit.com/wp-content/uploads/2023/01/Lian-150x150.png 150w, https://www.gmeremit.com/wp-content/uploads/2023/01/Lian-100x100.png 100w, https://www.gmeremit.com/wp-content/uploads/2023/01/Lian-140x140.png 140w, https://www.gmeremit.com/wp-content/uploads/2023/01/Lian-350x350.png 350w"
+                                  srcSet="https://www.gmeremit.com/wp-content/uploads/2023/01/Lian.png 455w, https://www.gmeremit.com/wp-content/uploads/2023/01/Lian-300x300.png 300w, https://www.gmeremit.com/wp-content/uploads/2023/01/Lian-150x150.png 150w, https://www.gmeremit.com/wp-content/uploads/2023/01/Lian-100x100.png 100w, https://www.gmeremit.com/wp-content/uploads/2023/01/Lian-140x140.png 140w, https://www.gmeremit.com/wp-content/uploads/2023/01/Lian-350x350.png 350w"
                                 />
                               </div>
                             </div>
@@ -308,7 +308,7 @@ const Partners = () => {
                                   src="https://www.gmeremit.com/wp-content/uploads/2023/01/pingpong.png"
                                   alt=""
                                   sizes="(min-width: 1450px) 75vw, (min-width: 1000px) 85vw, 100vw"
-                                  srcset="https://www.gmeremit.com/wp-content/uploads/2023/01/pingpong.png 455w, https://www.gmeremit.com/wp-content/uploads/2023/01/pingpong-300x300.png 300w, https://www.gmeremit.com/wp-content/uploads/2023/01/pingpong-150x150.png 150w, https://www.gmeremit.com/wp-content/uploads/2023/01/pingpong-100x100.png 100w, https://www.gmeremit.com/wp-content/uploads/2023/01/pingpong-140x140.png 140w, https://www.gmeremit.com/wp-content/uploads/2023/01/pingpong-350x350.png 350w"
+                                  srcSet="https://www.gmeremit.com/wp-content/uploads/2023/01/pingpong.png 455w, https://www.gmeremit.com/wp-content/uploads/2023/01/pingpong-300x300.png 300w, https://www.gmeremit.com/wp-content/uploads/2023/01/pingpong-150x150.png 150w, https://www.gmeremit.com/wp-content/uploads/2023/01/pingpong-100x100.png 100w, https://www.gmeremit.com/wp-content/uploads/2023/01/pingpong-140x140.png 140w, https://www.gmeremit.com/wp-content/uploads/2023/01/pingpong-350x350.png 350w"
                                 />
                               </div>
                             </div>
@@ -329,7 +329,7 @@ const Partners = () => {
                                   src="https://www.gmeremit.com/wp-content/uploads/2023/01/taxapay.png"
                                   alt=""
                                   sizes="(min-width: 1450px) 75vw, (min-width: 1000px) 85vw, 100vw"
-                                  srcset="https://www.gmeremit.com/wp-content/uploads/2023/01/taxapay.png 455w, https://www.gmeremit.com/wp-content/uploads/2023/01/taxapay-300x300.png 300w, https://www.gmeremit.com/wp-content/uploads/2023/01/taxapay-150x150.png 150w, https://www.gmeremit.com/wp-content/uploads/2023/01/taxapay-100x100.png 100w, https://www.gmeremit.com/wp-content/uploads/2023/01/taxapay-140x140.png 140w, https://www.gmeremit.com/wp-content/uploads/2023/01/taxapay-350x350.png 350w"
+                                  srcSet="https://www.gmeremit.com/wp-content/uploads/2023/01/taxapay.png 455w, https://www.gmeremit.com/wp-content/uploads/2023/01/taxapay-300x300.png 300w, https://www.gmeremit.com/wp-content/uploads/2023/01/taxapay-150x150.png 150w, https://www.gmeremit.com/wp-content/uploads/2023/01/taxapay-100x100.png 100w, https://www.gmeremit.com/wp-content/uploads/2023/01/taxapay-140x140.png 140w, https://www.gmeremit.com/wp-content/uploads/2023/01/taxapay-350x350.png 350w"
                                 />
                               </div>
                             </div>
@@ -350,7 +350,7 @@ const Partners = () => {
                                   src="https://www.gmeremit.com/wp-content/uploads/2023/01/payer-max.png"
                                   alt=""
                                   sizes="(min-width: 1450px) 75vw, (min-width: 1000px) 85vw, 100vw"
-                                  srcset="https://www.gmeremit.com/wp-content/uploads/2023/01/payer-max.png 455w, https://www.gmeremit.com/wp-content/uploads/2023/01/payer-max-300x300.png 300w, https://www.gmeremit.com/wp-content/uploads/2023/01/payer-max-150x150.png 150w, https://www.gmeremit.com/wp-content/uploads/2023/01/payer-max-100x100.png 100w, https://www.gmeremit.com/wp-content/uploads/2023/01/payer-max-140x140.png 140w, https://www.gmeremit.com/wp-content/uploads/2023/01/payer-max-350x350.png 350w"
+                                  srcSet="https://www.gmeremit.com/wp-content/uploads/2023/01/payer-max.png 455w, https://www.gmeremit.com/wp-content/uploads/2023/01/payer-max-300x300.png 300w, https://www.gmeremit.com/wp-content/uploads/2023/01/payer-max-150x150.png 150w, https://www.gmeremit.com/wp-content/uploads/2023/01/payer-max-100x100.png 100w, https://www.gmeremit.com/wp-content/uploads/2023/01/payer-max-140x140.png 140w, https://www.gmeremit.com/wp-content/uploads/2023/01/payer-max-350x350.png 350w"
                                 />
                               </div>
                             </div>

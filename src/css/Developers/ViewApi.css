@@ -1,0 +1,83 @@
+.wpb_row {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 1.5em;
+}
+.row_bg_wrap_view {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.inner_wrap_view {
+  transform: scale(1.11) translateZ(0);
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+.row_bg_view {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+.dark_left_view {
+  display: flex;
+  flex-wrap: wrap;
+  float: none;
+  margin-bottom: 0 !important;
+  z-index: 10;
+  width: auto;
+  position: relative;
+}
+.padding_phone_view {
+  float: none;
+  margin-right: 0;
+  margin-left: 0;
+  background-position: center;
+  position: relative;
+  display: block;
+}
+@media only screen and (min-width: 690px) {
+  .padding_phone_view {
+    width: 25%;
+  }
+}
+.vc_column_inner_view {
+  position: relative;
+}
+.padding_phone2_view {
+  float: none;
+  margin-right: 0;
+  margin-left: 0;
+  background-position: center;
+  position: relative;
+  display: block;
+}
+@media only screen and (min-width: 690px) {
+  .padding_phone2_view {
+    width: 50%;
+  }
+}
+.wpb_content_raw_html_view {
+  margin-bottom: 0;
+}
+#view_document {
+  padding: 0px;
+  margin: 0px;
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  overflow: hidden;
+  opacity: 1;
+  visibility: visible;
+  height: 894.4px;
+}
