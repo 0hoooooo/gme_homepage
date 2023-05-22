@@ -2,11 +2,7 @@ import { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
 
 const GlobalStyles = createGlobalStyle`
-    ${reset}
     // 적용시킬 css 입력
-    header{
-        display: block;
-    }
     a{
         text-decoration: none;
         color: inherit;

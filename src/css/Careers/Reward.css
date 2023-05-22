@@ -1,0 +1,206 @@
+#reward {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 0;
+  position: relative;
+  --scroll-bar-w: 13px;
+  margin-left: calc(-50vw + var(--scroll-bar-w) / 2);
+  left: 50%;
+  width: calc(100vw - var(--scroll-bar-w));
+}
+.row_bg_wrap_reward {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.inner_wrap_reward {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+.row_bg_reward {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+.darK_left_reward {
+  color: #191c1f;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  float: none;
+  margin-bottom: 0;
+  z-index: 10;
+  width: auto;
+  position: relative;
+}
+.padding_left_reward {
+  min-height: auto;
+  margin-left: 0;
+  align-items: stretch;
+  display: flex;
+  padding: 0;
+  float: none;
+  margin-right: 0;
+  background-position: center;
+  position: relative;
+}
+@media only screen and (min-width: 690px) {
+  .padding_left_reward {
+    width: 50%;
+  }
+}
+.vc_column_inner_reward {
+  justify-content: center;
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.vc_column_inner2_reward {
+  justify-content: center;
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: calc(100vw * 0.1);
+}
+.colum_image_reward {
+  z-index: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.column_image_loaded_reward {
+  background-image: url("https://www.gmeremit.com/wp-content/uploads/2023/02/incentives-scaled.jpg");
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  transition: opacity 0.4s ease 0.2s;
+}
+.wpb_wrapper_reward {
+  min-height: 1px;
+  margin: 0;
+  position: relative;
+  z-index: 2;
+}
+.padding_right_reward {
+  margin-left: 0;
+  align-items: stretch;
+  display: flex;
+  padding: 0;
+  float: none;
+  margin-right: 0;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+@media only screen and (min-width: 690px) {
+  .padding_right_reward {
+    width: 50%;
+  }
+}
+.column_wrap_reward {
+  opacity: 1;
+  pointer-events: none;
+  position: absolute;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  content: " ";
+  display: block;
+}
+.column_overlay_reward {
+  opacity: 1;
+  background-color: #ffffff;
+  pointer-events: none;
+  position: absolute;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  content: " ";
+  display: block;
+}
+.row_inner_reward {
+  margin: 0;
+  position: relative;
+}
+.dark_right_reward {
+  min-height: 0px;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  float: none;
+  margin-bottom: 0 !important;
+  z-index: 10;
+  width: auto;
+  position: relative;
+}
+.column_right_reward {
+  opacity: 1;
+  transform: none;
+  min-height: 0px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  padding: 0;
+  display: block;
+  float: none;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+@media only screen and (min-width: 690px) {
+  .column_right_reward {
+    width: 100%;
+  }
+}
+.row_bg_wrap2_reward {
+  margin-left: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.vc_column_inner_right_reward {
+  position: relative;
+}
+.vc_custom_heading_reward {
+  font-size: 40px;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  margin-bottom: 7px;
+  line-height: 0px;
+  line-height: 1.25 !important;
+}
+.vc_custom_content_reward {
+  color: rgba(10, 10, 10, 0.6);
+  text-align: left;
+  padding-bottom: 0;
+}

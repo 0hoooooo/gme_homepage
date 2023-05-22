@@ -5,6 +5,7 @@ import Solution from "../pages/Business/Solutions";
 import Developer from "../pages/Business/Developers";
 import Platform from "../pages/Business/Platform";
 import AboutUs from "../pages/Company/AboutUs";
+import Careers from "../pages/Company/Careers";
 
 const Routes = () => {
   const rootRoutes = {
@@ -50,6 +51,10 @@ const Routes = () => {
       {
         path: "aboutUs",
         element: <AboutUs />,
+      },
+      {
+        path: "careers",
+        element: <Careers />,
       },
     ],
   };

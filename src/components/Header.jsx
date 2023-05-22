@@ -36,6 +36,11 @@ const Header = () => {
     navigate("/company/aboutUs");
     window.location.reload();
   };
+  const goCareers = () => {
+    console.log("이동");
+    navigate("/company/careers");
+    window.location.reload();
+  };
   return (
     <div id={scrollPosition < 100 ? "header_outer" : "header_outer_scrolled"}>
       <header id="top">
@@ -503,10 +508,7 @@ const Header = () => {
                         </ul>
                       </li>
                       <li id="menu-item-39950" className="careers">
-                        <a
-                          href="https://www.gmeremit.com/careers/"
-                          className="business_solutions_a"
-                        >
+                        <a onClick={goCareers} className="business_solutions_a">
                           <span className="menu-title-text">Careers</span>
                         </a>
                         <ul className="sub-menu">
