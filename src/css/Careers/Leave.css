@@ -1,0 +1,214 @@
+#leave {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  position: relative;
+  --scroll-bar-w: 13px;
+  margin-left: calc(-50vw + var(--scroll-bar-w) / 2);
+  left: 50%;
+  width: calc(100vw - var(--scroll-bar-w));
+  margin-bottom: 0;
+}
+.row_bg_wrap_leave {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.inner_wrap_leave {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+.row_bg_leave {
+  background-color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+.dark_left_leave {
+  color: #191c1f;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  float: none;
+  margin-bottom: 0 !important;
+  z-index: 10;
+  width: auto;
+  position: relative;
+}
+.padding_left_leave {
+  float: none;
+  margin-right: 0;
+  margin-left: 0;
+  align-items: stretch;
+  display: flex;
+  padding: 0;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+@media only screen and (min-width: 690px) {
+  .padding_left_leave {
+    width: 50%;
+  }
+}
+.vc_column_inner_left_leave {
+  justify-content: center;
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: calc(100vw * 0.1);
+  position: relative;
+}
+.column_wrap_leave {
+  opacity: 1;
+  pointer-events: none;
+  position: absolute;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  content: " ";
+  display: block;
+}
+.column_overlay_leave {
+  opacity: 1;
+  background-color: #f4f4f4;
+  pointer-events: none;
+  position: absolute;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  content: " ";
+  display: block;
+}
+.wpb_wrapper_leave {
+  min-height: 1px;
+  margin: 0;
+  position: relative;
+  z-index: 2;
+}
+.row_inner_leave {
+  margin: 0;
+  position: relative;
+}
+.row_bg_wrap2_leave {
+  margin-left: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.row_bg2_leave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+.dark_left2_leave {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  float: none;
+  margin-bottom: 0 !important;
+  z-index: 10;
+  width: auto;
+  position: relative;
+}
+.padding_left2_leave {
+  opacity: 1;
+  transform: none;
+  float: none;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding: 0;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: block;
+}
+@media only screen and (min-width: 690px) {
+  .padding_left2_leave {
+    width: 100%;
+  }
+}
+.vc_column_inner_leave {
+  position: relative;
+}
+.vc_custom_heading_leave {
+  font-size: 40px;
+  text-align: left;
+  margin-bottom: 7px;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: 1.25 !important;
+}
+.vc_custom_content_leave {
+  color: rgba(10, 10, 10, 0.6);
+  text-align: left;
+  padding-bottom: 0;
+}
+.padding_right_leave {
+  min-height: auto;
+  float: none;
+  margin-right: 0;
+  margin-left: 0;
+  align-items: stretch;
+  display: flex;
+  margin-bottom: 0;
+  padding: 0;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+@media only screen and (min-width: 690px) {
+  .padding_right_leave {
+    width: 50%;
+  }
+}
+.vc_column_inner_right_leave {
+  min-height: auto;
+  justify-content: center;
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.column_image_bg_wrap_leave {
+  z-index: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.column_image_loaded_leave {
+  background-image: url("https://www.gmeremit.com/wp-content/uploads/2023/02/front-view-young-male-preparing-trip-with-his-yellow-bag-pointing-out-blue-wall-scaled.jpg");
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
