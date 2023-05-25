@@ -30,17 +30,9 @@ const GlobalStyles = createGlobalStyle`
         overflow-x: hidden;
     }
     body{
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
         font-family: Poppins;
         font-size: 16px;
-        line-height: 24px;
         font-weight: 400;
-        max-width: 100%;
-        overflow: hidden;
-        background: white;
-        position: relative;
     }
     ol, ul{
         list-style: none;
