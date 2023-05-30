@@ -4,6 +4,10 @@
   position: relative;
   margin-bottom: 35px;
 }
+#help2::before {
+  content: "";
+  display: table;
+}
 .row_bg_wrap_help2 {
   width: 100%;
   height: 100%;
@@ -50,6 +54,7 @@
   margin-right: 0;
   margin-left: 0;
   margin-bottom: 0;
+  position: relative;
 }
 @media only screen and (min-width: 690px) {
   .padding_phone_help2 {
@@ -76,6 +81,10 @@
 .row_inner_help2 {
   margin-bottom: 24px;
   position: relative;
+}
+.row_inner_help2::before {
+  content: "";
+  display: table;
 }
 .row_left_help2 {
   display: flex;
@@ -221,6 +230,8 @@
   margin-bottom: 0;
   align-items: stretch;
   background-position: center;
+  padding-left: 1%;
+  padding-right: 1%;
 }
 @media only screen and (min-width: 690px) {
   .padding_phone_content_help2 {

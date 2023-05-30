@@ -222,7 +222,6 @@ const Help = () => {
                             </div>
                           </div>
                         </div>
-
                         <div className="facebook_row_center">
                           <div className="vc_column_inner_right_center">
                             <div className="wpb_wrapper_center">
@@ -237,7 +236,7 @@ const Help = () => {
                                     className="fa fa-facebook"
                                     style={{
                                       fontSize: 24,
-                                      lineHeight: 36,
+                                      lineHeight: "36px",
                                       height: 36,
                                       width: 36,
                                       color: "#3b5998",

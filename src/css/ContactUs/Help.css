@@ -39,6 +39,7 @@
   width: auto;
   position: relative;
 }
+
 .padding_phone_help {
   float: none;
   margin-right: 0;
@@ -201,6 +202,7 @@
   text-align: right;
   background-position: center;
   position: relative;
+  display: block;
 }
 @media only screen and (min-width: 690px) {
   .facebook_row_center {
@@ -215,6 +217,7 @@
   position: relative;
 }
 .icon_wrap_center {
+  text-align: right;
   margin-bottom: 0;
   display: inline-block;
   position: relative;
@@ -254,6 +257,10 @@
 .down_row_center {
   margin-bottom: 0;
   position: relative;
+}
+.down_row_center::before {
+  content: "";
+  display: table;
 }
 .content_left_center {
   display: flex;

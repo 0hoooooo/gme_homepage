@@ -120,7 +120,7 @@ const Help2 = () => {
                               className="fa fa-facebook"
                               style={{
                                 fontSize: 24,
-                                lineHeight: 36,
+                                lineHeight: "36px",
                                 height: 36,
                                 width: 36,
                                 color: "#3b5998",
@@ -142,7 +142,7 @@ const Help2 = () => {
               </div>
               <div className="content_row_help2">
                 <div className="row_bg_wrap_help2">
-                  <div className="row_bg_help2s"></div>
+                  <div className="row_bg_help2"></div>
                 </div>
                 <div className="content_wrapper_help2">
                   <div className="padding_phone_content_help2">
