@@ -130,18 +130,18 @@
     width: 16.66666667%;
   }
 }
-.carousel-outer {
+.carousel_outer {
   overflow: hidden;
   margin-right: 2px;
   margin-bottom: 0;
 }
-.carousel-wrap {
+.carousel_wrap {
   margin-bottom: 0;
   position: relative;
   overflow: hidden;
   margin: 0 -10px 0 -10px;
 }
-.carousel-heading {
+.carousel_heading {
   z-index: 100;
   position: relative;
   margin-bottom: 7px;
@@ -155,6 +155,15 @@
   .carousel_container {
     max-width: 1100px;
   }
+}
+.carousel_container::before {
+  content: " ";
+  display: table;
+}
+.carousel_container::after {
+  clear: both;
+  content: " ";
+  display: table;
 }
 .control_wrap {
   right: 10px;
@@ -178,12 +187,17 @@
   cursor: pointer;
   top: 1px;
   box-sizing: content-box;
+  margin-left: 5px;
+  background-repeat: no-repeat;
+  border-radius: 1px;
+  text-align: center;
 }
 .carousel_prev i {
   color: #000;
   font-size: 22px;
   line-height: 18px;
   height: 23px;
+  background-color: transparent;
   display: inline-block;
   word-spacing: 1px;
   position: relative;
@@ -191,6 +205,19 @@
   top: -2px;
   vertical-align: middle;
   max-width: 100%;
+}
+.carousel_prev::after {
+  transform: translateX(20px);
+  display: block;
+  content: " ";
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background-color: #000;
+  top: 8px;
+  opacity: 0;
+  left: -4px;
+  cursor: pointer;
 }
 .caroufredsel_wrapper {
   text-align: start;
@@ -201,4 +228,69 @@
   width: 1116px;
   height: 284px;
   overflow: hidden;
+}
+.carousel_outer {
+  overflow: hidden;
+  margin-right: 2px;
+  margin-bottom: 0;
+}
+.item_count {
+  height: 23px;
+  top: -1px;
+  right: 15px;
+  line-height: 22px;
+  letter-spacing: 4px;
+  position: relative;
+  display: block;
+  float: left;
+  z-index: 10;
+  cursor: pointer;
+}
+.carousel_next {
+  left: 0 !important;
+  right: auto !important;
+  position: relative;
+  display: block;
+  float: left;
+  padding-left: 10px;
+  margin-left: 0;
+  background-color: transparent;
+  height: 23px;
+  width: 10px;
+  line-height: 22px;
+  font-size: 14px;
+  cursor: pointer;
+  top: 1px;
+  box-sizing: content-box;
+  background-repeat: no-repeat;
+  border-radius: 1px;
+  text-align: center;
+}
+.carousel_next i {
+  color: #000;
+  font-size: 22px;
+  line-height: 18px;
+  height: 23px;
+  background-color: transparent;
+  display: inline-block;
+  word-spacing: 1px;
+  position: relative;
+  text-align: center;
+  top: -2px;
+  vertical-align: middle;
+  max-width: 100%;
+}
+.carousel_next::after {
+  left: 5px;
+  display: block;
+  content: " ";
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background-color: #000;
+  top: 8px;
+  opacity: 0;
+  line-height: 22px;
+  font-size: 14px;
+  text-align: center;
 }

@@ -1,6 +1,8 @@
 import "../../../css/Solutions/Features.css";
-
+import { useState } from "react";
 import Carousel from "react-elastic-carousel";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Features = () => {
   const product = [
