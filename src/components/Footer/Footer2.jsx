@@ -5,7 +5,7 @@ const Footer2 = () => {
     <>
       <div id="footer_outer">
         <div className="footer_outer_row" id="copyright" data-layout="default">
-          <div className="container">
+          <div className="container_footer2">
             <div className="column1">
               <p>
                 © 2023 GME Remittance. |{" "}

@@ -1,6 +1,5 @@
-import { styled } from "styled-components";
 import "../../../css/Solutions/Partners.css";
-import { useEffect, useRef, useState } from "react";
+import Slider from "react-slick";
 const Partners = () => {
   const list = [
     {
@@ -48,44 +47,103 @@ const Partners = () => {
       src: "https://www.gmeremit.com/wp-content/uploads/2023/01/payer-max.png",
     },
   ];
-
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const slideRef = useRef(null);
-  const slides = 4; // For total 8 images
-
-  const Btn = ({ direction, onClick }) => {
-    return <Button onClick={onClick} direction={direction}></Button>;
+  const SampleNextArrow = (props) => {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{
+          display: "block",
+          background: "red",
+        }}
+        onClick={onClick}
+      />
+    );
   };
 
-  const handleNext = () => {
-    if (currentSlide >= slides) {
-      setCurrentSlide(0);
-    } else {
-      setCurrentSlide(currentSlide + 1);
-    }
+  const SamplePrevArrow = (props) => {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{
+          ...style,
+          display: "flex",
+          background: "green",
+          color: "black",
+        }}
+        onClick={onClick}
+      />
+    );
   };
 
-  const handlePrev = () => {
-    if (currentSlide === 0) {
-      setCurrentSlide(slides);
-    } else {
-      setCurrentSlide(currentSlide - 1);
-    }
+  const settings = {
+    dots: true,
+    infinite: true,
+    autoplay: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
   };
-
-  useEffect(() => {
-    slideRef.current.style.transition = "all 0.5s ease-in-out";
-    slideRef.current.style.transform = `translateX(-${currentSlide}00%)`;
-  }, [currentSlide]);
 
   return (
     <div id="fws_645d7d8c04d58" className="section_partner">
-      <div className="row-bg-wrap_partner">
+      <div id="partners" className="inner_partner">
+        <div className="row-bg-wrap_partner">
+          <div className="row-bg"></div>
+        </div>
+        <div className="inner_left_partner">
+          <div className="container_phone1">
+            <div className="vc_column-inner">
+              <div className="wpb_wrapper_partner"></div>
+            </div>
+          </div>
+
+          <div className="container_phone2">
+            <div className="vc_column-inner">
+              <div className="wpb_wrapper_partner">
+                <h1 className="vc_custom_heading_partner">
+                  Trusted and Partnered by
+                </h1>
+              </div>
+            </div>
+          </div>
+
+          <div className="container_phone3">
+            <div className="vc_column-inner">
+              <div className="wpb_wrapper"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <Slider {...settings}>
+        {list.map((item, index) => {
+          return (
+            <div
+              style={{
+                boxShadow: "20px 20px 5px grey",
+              }}
+              key={index}
+            >
+              <img
+                src={item.src}
+                style={{
+                  width: "100%",
+                }}
+              />
+            </div>
+          );
+        })}
+      </Slider>
+      {/* <div className="row-bg-wrap_partner">
         <div className="inner-wrap_partner">
           <div className="row-bg_partner"></div>
         </div>
-      </div>
-      <div className="dark_left_partner">
+      </div> */}
+
+      {/* <div className="dark_left_partner">
         <div className="padding_phone_partner">
           <div className="vc_column-inner_partner">
             <div className="wpb_wrapper">
@@ -127,16 +185,6 @@ const Partners = () => {
                 <div className="divider"></div>
               </div>
 
-              <Container>
-                <SliderContainer ref={slideRef}>
-                  {list.map((item, i) => (
-                    <img src={item.src} key={i} alt="something" />
-                  ))}
-                </SliderContainer>
-                <Btn direction="prev" onClick={handlePrev} />
-                <Btn direction="next" onClick={handleNext} />
-              </Container>
-
               <div className="carousel_outer">
                 <div className="carousel_wrap">
                   <div className="carousel_heading">
@@ -156,6 +204,7 @@ const Partners = () => {
                       </div>
                     </div>
                   </div>
+
                   <div className="caroufredsel_wrapper">
                     <ul className="row carousel finished-loading">
                       <li className="col span_4">
@@ -186,44 +235,9 @@ const Partners = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
-const Container = styled.div`
-  position: relative;
-  width: calc(290px * 4);
-  height: auto;
-  margin: 0 auto;
-  overflow: hidden;
-  transform: translateY(50px);
-  opacity: 0;
-`;
 
-const SliderContainer = styled.div`
-  width: 290px;
-  height: 290px;
-  display: flex;
-`;
-
-const Button = styled.button`
-  background-color: white;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  left: ${(props) => props.direction === "prev" && "1%"};
-  right: ${(props) => props.direction === "next" && "1%"};
-  z-index: 200;
-
-  img {
-    width: 25%;
-    height: 25%;
-  }
-`;
 export default Partners;
