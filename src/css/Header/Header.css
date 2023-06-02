@@ -259,6 +259,9 @@ li a:hover:after {
   z-index: 10;
   color: #191c1f;
 }
+#header_outer_scrolled .menu_item2:hover .sub_menu {
+  top: 90%;
+}
 .menu_item3 {
   display: inline-block;
 }
@@ -279,6 +282,9 @@ li a:hover:after {
   margin: 0;
   z-index: 10;
   color: #191c1f;
+}
+#header_outer_scrolled .menu_item3:hover .sub_menu2 {
+  top: 90%;
 }
 /* .sub_menu li {
   display: flex;
@@ -319,7 +325,7 @@ li a:hover:after {
   display: block;
   float: none;
   border: none;
-  transform: translate3d(0, 13px, 0);
+  transform: translate3d(0, 0, 0);
   list-style: none;
   outline: 0 none;
   line-height: 0px;

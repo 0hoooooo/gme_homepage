@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "../../../css/Solutions/Partners.css";
 import Slider from "react-slick";
 const Partners = () => {
@@ -78,7 +79,7 @@ const Partners = () => {
   };
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     autoplay: true,
     speed: 500,
@@ -131,6 +132,7 @@ const Partners = () => {
                 src={item.src}
                 style={{
                   width: "100%",
+                  objectFit: "cover",
                 }}
               />
             </div>
