@@ -129,7 +129,7 @@ const Header = () => {
                                 height="128"
                               />
                               <span className="nectar-menu-icon-text">
-                                <span className="menu_title_text">
+                                <span className="menu_title_text2">
                                   Financial Services
                                 </span>
                               </span>
@@ -148,7 +148,7 @@ const Header = () => {
                                 height="96"
                               />
                               <span className="nectar-menu-icon-text">
-                                <span className="menu_title_text">
+                                <span className="menu_title_text2">
                                   GME – SPS
                                 </span>
                               </span>
@@ -167,7 +167,7 @@ const Header = () => {
                                 height="96"
                               />
                               <span className="nectar-menu-icon-text">
-                                <span className="menu-title-text">
+                                <span className="menu_title_text2">
                                   GME – VAS
                                 </span>
                               </span>
@@ -186,7 +186,7 @@ const Header = () => {
                                 height="96"
                               />
                               <span className="nectar-menu-icon-text">
-                                <span className="menu-title-text">
+                                <span className="menu_title_text2">
                                   Service Features
                                 </span>
                               </span>
@@ -205,7 +205,7 @@ const Header = () => {
                                 height="96"
                               />
                               <span className="nectar-menu-icon-text">
-                                <span className="menu-title-text">
+                                <span className="menu_title_text2">
                                   Partners
                                 </span>
                               </span>
@@ -234,7 +234,7 @@ const Header = () => {
                                 height="96"
                               />
                               <span className="nectar-menu-icon-text">
-                                <span className="menu-title-text">API</span>
+                                <span className="menu_title_text2">API</span>
                               </span>
                             </a>
                           </li>
@@ -252,7 +252,7 @@ const Header = () => {
                                 height="96"
                               />
                               <span className="nectar-menu-icon-text">
-                                <span className="menu-title-text">
+                                <span className="menu_title_text2">
                                   View Documentation
                                 </span>
                               </span>
@@ -281,7 +281,9 @@ const Header = () => {
                                 height="96"
                               />
                               <span className="nectar-menu-icon-text">
-                                <span className="menu-title-text">GME-HoM</span>
+                                <span className="menu_title_text2">
+                                  GME-HoM
+                                </span>
                               </span>
                             </a>
                           </li>
@@ -299,7 +301,7 @@ const Header = () => {
                                 height="96"
                               />
                               <span className="nectar-menu-icon-text">
-                                <span className="menu-title-text">
+                                <span className="menu_title_text2">
                                   Collect globally
                                 </span>
                               </span>
@@ -319,7 +321,7 @@ const Header = () => {
                                 height="96"
                               />
                               <span className="nectar-menu-icon-text">
-                                <span className="menu-title-text">
+                                <span className="menu_title_text2">
                                   Make payments globally
                                 </span>
                               </span>
@@ -339,7 +341,7 @@ const Header = () => {
                                 height="96"
                               />
                               <span className="nectar-menu-icon-text">
-                                <span className="menu-title-text">
+                                <span className="menu_title_text2">
                                   Multiple payment methods
                                 </span>
                               </span>
@@ -359,7 +361,7 @@ const Header = () => {
                                 height="96"
                               />
                               <span className="nectar-menu-icon-text">
-                                <span className="menu-title-text">
+                                <span className="menu_title_text2">
                                   Collect&amp; Pay China
                                 </span>
                               </span>
@@ -404,13 +406,13 @@ const Header = () => {
                             >
                               <img
                                 src="https://www.gmeremit.com/wp-content/uploads/2023/01/ceo.png"
-                                className="icon_image"
+                                className="icon_image2"
                                 alt=""
-                                width="96"
-                                height="96"
+                                width="48"
+                                height="48"
                               />
                               <span className="nectar-menu-icon-text">
-                                <span className="menu_title_text">
+                                <span className="menu_title_text2">
                                   CEO’s Message
                                 </span>
                               </span>
@@ -423,13 +425,13 @@ const Header = () => {
                             >
                               <img
                                 src="https://www.gmeremit.com/wp-content/uploads/2023/01/micro-services.png"
-                                className="icon_image"
+                                className="icon_image2"
                                 alt=""
                                 width="96"
                                 height="96"
                               />
                               <span className="nectar-menu-icon-text">
-                                <span className="menu_title_text">
+                                <span className="menu_title_text2">
                                   Services
                                 </span>
                               </span>
@@ -442,13 +444,15 @@ const Header = () => {
                             >
                               <img
                                 src="https://www.gmeremit.com/wp-content/uploads/2023/01/history.png"
-                                className="icon_image"
+                                className="icon_image2"
                                 alt=""
                                 width="96"
                                 height="96"
                               />
                               <span className="nectar-menu-icon-text">
-                                <span className="menu-title-text">History</span>
+                                <span className="menu_title_text2">
+                                  History
+                                </span>
                               </span>
                             </a>
                           </li>
@@ -466,13 +470,13 @@ const Header = () => {
                             >
                               <img
                                 src="https://www.gmeremit.com/wp-content/uploads/2023/01/blog.png"
-                                className="icon_image"
+                                className="icon_image2"
                                 alt=""
                                 width="96"
                                 height="96"
                               />
                               <span className="nectar-menu-icon-text">
-                                <span className="menu-title-text">All</span>
+                                <span className="menu_title_text2">All</span>
                               </span>
                             </a>
                           </li>
@@ -483,13 +487,13 @@ const Header = () => {
                             >
                               <img
                                 src="https://www.gmeremit.com/wp-content/uploads/2023/01/event.png"
-                                className="icon_image"
+                                className="icon_image2"
                                 alt=""
                                 width="96"
                                 height="96"
                               />
                               <span className="nectar-menu-icon-text">
-                                <span className="menu-title-text">Event</span>
+                                <span className="menu_title_text2">Event</span>
                               </span>
                             </a>
                           </li>
@@ -500,13 +504,13 @@ const Header = () => {
                             >
                               <img
                                 src="https://www.gmeremit.com/wp-content/uploads/2023/01/news.png"
-                                className="icon_image"
+                                className="icon_image2"
                                 alt=""
                                 width="96"
                                 height="96"
                               />
                               <span className="nectar-menu-icon-text">
-                                <span className="menu-title-text">News</span>
+                                <span className="menu_title_text2">News</span>
                               </span>
                             </a>
                           </li>
@@ -524,13 +528,13 @@ const Header = () => {
                             >
                               <img
                                 src="https://www.gmeremit.com/wp-content/uploads/2023/01/financial-rewards.png"
-                                className="icon_image"
+                                className="icon_image2"
                                 alt=""
                                 width="96"
                                 height="96"
                               />
                               <span className="nectar-menu-icon-text">
-                                <span className="menu_title_text">
+                                <span className="menu_title_text2">
                                   Perks &amp; Benefits
                                 </span>
                               </span>
@@ -543,13 +547,13 @@ const Header = () => {
                             >
                               <img
                                 src="https://www.gmeremit.com/wp-content/uploads/2023/01/staff-training.png"
-                                className="icon_image"
+                                className="icon_image2"
                                 alt=""
                                 width="96"
                                 height="96"
                               />
                               <span className="nectar-menu-icon-text">
-                                <span className="menu_title_text">
+                                <span className="menu_title_text2">
                                   Our Staff
                                 </span>
                               </span>
@@ -562,13 +566,15 @@ const Header = () => {
                             >
                               <img
                                 src="https://www.gmeremit.com/wp-content/uploads/2023/01/add-user.png"
-                                className="icon_image"
+                                className="icon_image2"
                                 alt=""
                                 width="96"
                                 height="96"
                               />
                               <span className="nectar-menu-icon-text">
-                                <span className="menu-title-text">Join Us</span>
+                                <span className="menu_title_text2">
+                                  Join Us
+                                </span>
                               </span>
                             </a>
                           </li>
@@ -589,13 +595,13 @@ const Header = () => {
                             >
                               <img
                                 src="https://www.gmeremit.com/wp-content/uploads/2023/01/customer-service.png"
-                                className="icon_image"
+                                className="icon_image2"
                                 alt=""
                                 width="96"
                                 height="96"
                               />
                               <span className="nectar-menu-icon-text">
-                                <span className="menu-title-text">
+                                <span className="menu_title_text2">
                                   Customer Service
                                 </span>
                               </span>
@@ -608,13 +614,13 @@ const Header = () => {
                             >
                               <img
                                 src="https://www.gmeremit.com/wp-content/uploads/2023/01/banking-network.png"
-                                className="icon_image"
+                                className="icon_image2"
                                 alt=""
                                 width="96"
                                 height="96"
                               />
                               <span className="nectar-menu-icon-text">
-                                <span className="menu-title-text">
+                                <span className="menu_title_text2">
                                   Branches
                                 </span>
                               </span>
@@ -628,31 +634,37 @@ const Header = () => {
               </nav>
             </div>
             <RightContents>
-              <MenuNav>
-                <MenuUl>
-                  <MenuLi>
-                    <MenuA
+              <nav className="menu_nav">
+                <ul className="sf-menu">
+                  <li className="menu_item1">
+                    <a
+                      className="business_solutions_a"
                       href="https://www.gmeremit.com/contact-us/#help"
                       aria-current="page"
                     >
                       <span className="menu-title-text">Help</span>
-                    </MenuA>
-                  </MenuLi>
-                  <MenuLi>
-                    <MenuA
+                    </a>
+                  </li>
+                  <li className="menu_item1">
+                    <a
+                      className="business_solutions_a"
                       href="https://online.gmeremit.com/Login"
                       aria-current="page"
                     >
                       <span className="menu-title-text">Login</span>
-                    </MenuA>
-                  </MenuLi>
-                  <MenuLi>
-                    <MenuA href="https://www.gmeremit.com/" aria-current="page">
+                    </a>
+                  </li>
+                  <li className="menu_item1">
+                    <a
+                      className="businee_solutions_a"
+                      href="https://www.gmeremit.com/"
+                      aria-current="page"
+                    >
                       <span className="menu-title-text">English</span>
-                    </MenuA>
-                  </MenuLi>
-                </MenuUl>
-              </MenuNav>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
             </RightContents>
           </div>
         </div>

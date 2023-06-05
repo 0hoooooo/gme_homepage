@@ -215,10 +215,7 @@ li a {
   color: #191c1f;
   opacity: 1;
 }
-li a:hover {
-  color: red;
-  border-bottom: solid 3px #ea2129;
-}
+
 li a:hover:after {
   border-bottom: solid 3px #ea2129;
 }
@@ -321,7 +318,6 @@ li a:hover:after {
   flex: none;
   padding: 0;
   background-size: cover;
-  background-position: center;
   display: block;
   float: none;
   border: none;
@@ -563,10 +559,37 @@ li a:hover:after {
   list-style: none outside none;
   text-align: left;
   justify-content: flex-start;
+  align-items: flex-start;
   margin: 0;
   padding: 0;
   z-index: 10;
   text-transform: none !important;
+}
+.menu-title-text:hover {
+  color: red;
+  border-bottom: solid 3px #ea2129;
+}
+.menu_title_text2 {
+  color: #333;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+.menu_title_text2::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: blue;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.menu_title_text2:hover::after {
+  width: 100%;
+  left: 0;
 }
 .sub-menu {
   border-top: 0;
@@ -631,7 +654,7 @@ li a:hover:after {
   padding: 10px 10px;
   font-family: Poppins;
   font-size: 16px;
-  line-height: 40px;
+  line-height: 30px;
   font-weight: 400;
   transition: none;
   letter-spacing: 0;
@@ -656,7 +679,7 @@ li a:hover:after {
   letter-spacing: 0;
   margin-bottom: 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   outline: 0 none;
   position: relative;
   text-decoration: none;
@@ -672,6 +695,18 @@ li a:hover:after {
   margin-bottom: 0;
   max-height: 200px;
   height: auto;
+  vertical-align: middle;
+  transition: opacity 0.2s ease 0.05s;
+  max-width: 100%;
+}
+.icon_image2 {
+  margin-right: 15px;
+  width: 30px;
+  line-height: inherit;
+  display: inline-block;
+  margin-bottom: 0;
+  max-height: 100px;
+  height: 30px;
   vertical-align: middle;
   transition: opacity 0.2s ease 0.05s;
   max-width: 100%;
@@ -702,7 +737,7 @@ li a:hover:after {
   padding: 0;
   z-index: 10;
   visibility: visible;
-  width: 200px;
+  width: 170px;
 }
 .menu_title_text {
   display: inline;
@@ -798,8 +833,8 @@ li a:hover:after {
   padding: 0;
 }
 .careers {
-  padding: 20px;
-  width: 15%;
+  padding: 20px 0px 20px 20px;
+  width: 10%;
   background-size: cover;
   background-position: center;
   display: block;
@@ -808,7 +843,7 @@ li a:hover:after {
   border: none;
   transform: translate3d(0, 13px, 0);
   margin: 0;
-  z-index: 10;
+  z-index: 5;
   flex-direction: column;
   list-style: none;
   outline: 0 none;
