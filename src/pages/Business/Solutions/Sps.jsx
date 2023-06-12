@@ -1,5 +1,52 @@
+import { useEffect, useState } from "react";
 import "../../../css/Solutions/Sps.css";
 const Sps = () => {
+  const [fadeIn, setFadeIn] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const windowHeight = window.innerHeight;
+
+      const threshold = 200;
+
+      if (scrollPosition > windowHeight - threshold) {
+        setFadeIn(true);
+      } else {
+        setFadeIn(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    const animatedTags = document.querySelectorAll(".sps_image");
+    animatedTags.forEach((tag) => {
+      tag.style.opacity = 0;
+    });
+    const fadeIn = function () {
+      let delay = 0.5;
+      animatedTags.forEach((tag) => {
+        const tagTop = tag.getBoundingClientRect().top;
+        const tagBottom = tag.getBoundingClientRect().bottom;
+
+        if (tagTop < window.innerHeight && tagBottom > 0) {
+          tag.style.animation = `fadein 1s ${delay}s both`;
+          delay = delay + 0.5;
+        } else {
+          tag.style.opacity = 0;
+          tag.style.animation = "";
+        }
+      });
+    };
+    document.addEventListener("scroll", function () {
+      fadeIn();
+    });
+  }, []);
   return (
     <div
       id="sps"
