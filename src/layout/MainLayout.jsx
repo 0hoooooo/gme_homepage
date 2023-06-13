@@ -18,7 +18,6 @@ const MainLayout = () => {
     setTimeout(() => {
       api();
     }, 1000);
-    console.log(loading);
   }, [loading]);
 
   return loading === false ? (

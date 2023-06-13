@@ -31,7 +31,13 @@
 }
 @media only screen and (min-width: 1000px) {
   #header_outer_scrolled {
-    padding-top: 0;
+    padding-top: 20px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  #header_outer_scrolled {
+    padding-top: 30px;
+    height: 10%;
   }
 }
 #header_outer_scrolled .container {
@@ -115,18 +121,19 @@
 
 .menu {
   display: flex;
-  position: static;
   float: none;
   width: auto;
   vertical-align: baseline;
   position: static;
   margin-right: 0;
+  justify-content: space-between;
 }
 @media only screen and (min-width: 1000px) {
   .menu {
     display: flex;
     float: none;
     width: auto;
+    justify-content: space-between;
   }
 }
 .widget-area {
