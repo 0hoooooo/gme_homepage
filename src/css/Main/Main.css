@@ -43,7 +43,7 @@
 header .row {
   display: flex;
   margin-left: 0px;
-  margin-right: 0px;
+  margin-right: 20px;
 }
 .row-bg-wrap {
   --scroll-bar-w: 13px;

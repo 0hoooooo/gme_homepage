@@ -576,6 +576,26 @@ li a:hover:after {
   color: red;
   border-bottom: solid 3px #ea2129;
 }
+.nectar-menu-item-with-icon2 {
+  border-bottom: none;
+  padding: 10px 10px;
+  font-family: Poppins;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 400;
+  transition: none;
+  letter-spacing: 0;
+  margin-bottom: 0;
+  display: flex;
+  align-items: flex-start;
+  outline: 0 none;
+  position: relative;
+  text-decoration: none;
+  list-style: none outside none;
+  z-index: 10;
+  cursor: pointer;
+}
+
 .menu_title_text2 {
   color: #333;
   text-decoration: none;
@@ -594,9 +614,21 @@ li a:hover:after {
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
-.menu_title_text2:hover::after {
-  width: 100%;
-  left: 0;
+.nectar-menu-item-with-icon2:hover .menu_title_text2 {
+  text-decoration: underline;
+  text-decoration-color: blue;
+  text-decoration-line: underline;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 2px;
+  text-decoration-style: double;
+}
+.nectar-menu-item-with-icon3:hover .menu_title_text2 {
+  text-decoration: underline;
+  text-decoration-color: blue;
+  text-decoration-line: underline;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 2px;
+  text-decoration-style: double;
 }
 .sub-menu {
   border-top: 0;
@@ -656,25 +688,7 @@ li a:hover:after {
 .nectar-menu-item-with-icon {
   border-bottom: none;
 }
-.nectar-menu-item-with-icon2 {
-  border-bottom: none;
-  padding: 10px 10px;
-  font-family: Poppins;
-  font-size: 16px;
-  line-height: 30px;
-  font-weight: 400;
-  transition: none;
-  letter-spacing: 0;
-  margin-bottom: 0;
-  display: flex;
-  align-items: flex-start;
-  outline: 0 none;
-  position: relative;
-  text-decoration: none;
-  list-style: none outside none;
-  z-index: 10;
-  cursor: pointer;
-}
+
 .nectar-menu-item-with-icon3 {
   border-bottom: none;
   padding: 10px 10px;
@@ -857,4 +871,42 @@ li a:hover:after {
   line-height: 0;
   font-size: 12px;
   position: relative;
+}
+.MobileHeader {
+  display: none;
+}
+.hamburger {
+  display: none;
+}
+@media only screen and (max-width: 999px) {
+  .hamburger {
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+    float: left;
+    z-index: 10;
+    position: absolute !important;
+    right: 0;
+    top: 0;
+    z-index: 200;
+  }
+}
+@media only screen and (max-width: 999px) {
+  .MobileHeader {
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+    float: left;
+    z-index: 10;
+    position: absolute !important;
+    right: 0;
+    top: 0;
+    z-index: 200;
+  }
 }

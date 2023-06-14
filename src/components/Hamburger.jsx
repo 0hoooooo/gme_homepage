@@ -20,9 +20,15 @@ const Hamburger = ({ isOpen }) => {
             display: flex;
             justify-content: space-around;
             flex-flow: column nowrap;
+            float: left;
             z-index: 10;
+            position: absolute !important;
+            right: 0;
+            top: 0;
+            z-index: 200;
           }
           .burger {
+            cursor: pointer;
             width: 2rem;
             height: 0.25rem;
             border-radius: 10px;
@@ -32,7 +38,7 @@ const Hamburger = ({ isOpen }) => {
           }
           .burger1 {
             cursor: pointer;
-            transform: ${isOpen ? "rotate(25deg)" : "rotate(0)"};
+            transform: ${isOpen ? "rotate(45deg)" : "rotate(0)"};
           }
           .burger2 {
             cursor: pointer;
@@ -41,7 +47,7 @@ const Hamburger = ({ isOpen }) => {
           }
           .burger3 {
             cursor: pointer;
-            transform: ${isOpen ? "rotate(-30deg)" : "rotate(0)"};
+            transform: ${isOpen ? "rotate(-45deg)" : "rotate(0)"};
           }
         `}
       </style>
