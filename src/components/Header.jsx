@@ -67,10 +67,10 @@ const Header = () => {
               <Hamburger isOpen={hamburgerOpen} />
             </div> */}
             {open ? closeIcon : hamburgerIcon}
-            {open ? <MobileNavigation /> : null}
           </div>
         </div>
       </header>
+      {open ? <MobileNavigation /> : null}
       <style jsx>
         {`
           .hamburger {

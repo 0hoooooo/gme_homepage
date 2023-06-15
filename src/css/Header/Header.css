@@ -5,7 +5,7 @@
   top: 0;
   left: 0;
   position: fixed;
-  padding: 30px 0 0 0;
+  padding: 20px 0 0 0;
   overflow: visible;
   z-index: 9999;
   border-bottom-color: transparent;
@@ -335,7 +335,6 @@ li a:hover:after {
   position: relative;
   margin: 0;
   z-index: 10;
-  pointer-events: none;
   cursor: pointer;
 }
 .company_left {
@@ -355,7 +354,6 @@ li a:hover:after {
   position: relative;
   margin: 0;
   z-index: 10;
-  pointer-events: none;
   cursor: pointer;
 }
 .business_left:hover {
@@ -408,8 +406,21 @@ li a:hover:after {
   padding: 0;
   cursor: pointer;
 }
-.business_left_banner:hover {
-  cursor: pointer;
+.business_left_banner::after {
+  transition: opacity 1s ease;
+}
+.business_left_banner:hover .business_left_image_layer_loaded {
+  transition: opacity 0.25s ease 0.1s;
+}
+.business_left_banner:hover .business_left_inner_content {
+  text-decoration: underline;
+  text-decoration-color: blue;
+  text-decoration-line: underline;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 2px;
+  text-decoration-style: double;
+  opacity: 1.2;
+  background-color: transparent;
 }
 .business_left_image_layer {
   position: absolute;
@@ -436,7 +447,7 @@ li a:hover:after {
   overflow: hidden;
   background-size: cover;
   background-position: center;
-  transition: opacity 0.25s ease 0.1s;
+
   list-style: none outside none;
   margin: 0;
   padding: 0;
@@ -895,18 +906,122 @@ li a:hover:after {
   }
 }
 @media only screen and (max-width: 999px) {
+  .fullscreen_mobile {
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+    padding: 0 !important;
+    display: block;
+    background-color: transparent;
+    color: #191c1f;
+    position: fixed;
+    z-index: 9996;
+  }
+  .bg_inner_mobile {
+    background-color: #2e3049;
+    width: 100%;
+    height: 100%;
+  }
   .MobileHeader {
-    cursor: pointer;
-    width: 2rem;
-    height: 2rem;
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    right: auto;
+    left: 0;
+    z-index: 9999;
+    background-color: transparent !important;
+    text-align: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-right: 20px;
+    box-sizing: content-box;
+    color: #654cc4;
+  }
+  .inner_wrap_mobile {
+    padding-top: 35px;
+    height: 100%;
+    margin-right: -20px;
     display: flex;
-    justify-content: space-around;
-    flex-flow: column nowrap;
-    float: left;
-    z-index: 10;
-    position: absolute !important;
-    right: 0;
+    flex-direction: column;
+  }
+  .inner_mobile {
+    width: 100%;
+    position: relative;
     top: 0;
-    z-index: 200;
+    left: 0;
+    height: auto;
+    margin: auto;
+    padding: 30px 0;
+    text-align: center;
+    color: #654cc4;
+  }
+  .container_mobile {
+    opacity: 1;
+    margin: 0;
+    padding: 0 10%;
+    display: block;
+  }
+  .menu_wrap_menuwrapper {
+    height: 280px;
+    position: relative;
+    perspective: 1000px;
+    perspective-origin: center;
+    margin-right: 0;
+    display: block;
+  }
+  .menuopen {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    pointer-events: auto;
+    margin: 0;
+    position: relative;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    transform-style: preserve-3d;
+  }
+  .menu_item {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    margin: 0 0 8px 0;
+    position: relative;
+    list-style: none;
+    cursor: pointer;
+    z-index: 9999;
+  }
+  .menu_page {
+    cursor: pointer;
+    font-size: 25.2px !important;
+    line-height: 21.6px !important;
+    transition: color 0.2s;
+    display: inline-block;
+    position: relative;
+    color: rgba(255, 255, 255, 0.7);
+    opacity: 1;
+    padding-left: 0;
+    padding-right: 0;
+    letter-spacing: -1px;
+    padding: 6px 20px;
+    color: #fff;
+    outline: none;
+    text-decoration: none;
+    z-index: 9999;
+  }
+  .sub_menu_mobile_close {
+    margin: 0 !important;
+    padding: 0 !important;
+    display: none;
+    list-style: none;
+    transform-style: preserve-3d;
+  }
+  .sub_menu_mobile_open {
+    display: block;
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none;
+    transform-style: preserve-3d;
   }
 }
