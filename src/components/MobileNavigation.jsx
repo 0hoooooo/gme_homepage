@@ -3,9 +3,6 @@ import "../css/Header/Header.css";
 
 const MobileNavigation = () => {
   const [open, setOpen] = useState(false);
-  useEffect(() => {
-    console.log("오픈2: ", open);
-  });
   return (
     <>
       <div className="fullscreen_mobile">

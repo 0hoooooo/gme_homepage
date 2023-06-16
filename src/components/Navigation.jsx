@@ -1,6 +1,11 @@
+import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Link, ScrollLink } from "react-scroll";
-const Navigation = () => {
+const Navigation = (props) => {
+  const { list, handleClick } = props;
+  useEffect(() => {
+    console.log("navigation", list);
+  }, []);
   const navigate = useNavigate();
   const goPlatform = () => {
     console.log("이동");
@@ -38,6 +43,7 @@ const Navigation = () => {
     navigate("/main/home");
     window.location.reload();
   };
+
   return (
     <div
       className="menu"
@@ -50,7 +56,84 @@ const Navigation = () => {
       <div className="menu">
         <nav className="menu_nav">
           <ul className="sf-menu">
-            <li className="menu_item1">
+            {list.map((item, index) => (
+              <li
+                className="menu_item1"
+                key={item.id}
+                onClick={() => handleClick(item.name)}
+              >
+                <a className="businee_solutions_a">
+                  <span
+                    className="menu-title-text"
+                    style={{
+                      listStyle: "none outside none",
+                      margin: 0,
+                      padding: 0,
+                    }}
+                  >
+                    {item.name}
+                  </span>
+                </a>
+                {item.sub1_category ? (
+                  <ul className="sub_menu">
+                    <li id="menu-item-16863" className="business_left">
+                      <a onClick={goSolution} className="business_solutions_a">
+                        <div className="business_left_banner">
+                          <div className="business_left_image_layer">
+                            <div className="business_left_image_layer_loaded"></div>
+                            <div className="business_left_color_overlay"></div>
+                          </div>
+                          <div className="business_left_inner_content">
+                            <span className="title_business">
+                              <span className="title_menu">B2B</span>
+                            </span>
+                            <span className="menu_item_desc">
+                              Reduce Cost on Business Transfers
+                            </span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    {item.sub1_category?.map((item, index) => (
+                      <li id="menu-item-16714" className="developers">
+                        <a
+                          className="business_solutions_a"
+                          onClick={goSolution}
+                        >
+                          <span className="menu-title-text">{item.name}</span>
+                        </a>
+
+                        <ul className="sub-menu">
+                          {item.sub2_category?.map((item, index) => (
+                            <li id="menu-item-16718" className="sub-menu-li">
+                              <a
+                                href="#!"
+                                className="nectar-menu-item-with-icon2"
+                                onClick={goSolution}
+                              >
+                                <img
+                                  src="https://www.gmeremit.com/wp-content/uploads/2023/01/financial.png"
+                                  className="icon_image"
+                                  alt=""
+                                  width="128"
+                                  height="128"
+                                />
+                                <span className="nectar-menu-icon-text">
+                                  <span className="menu_title_text2">
+                                    {item.name}
+                                  </span>
+                                </span>
+                              </a>
+                            </li>
+                          ))}
+                        </ul>
+                      </li>
+                    ))}
+                  </ul>
+                ) : null}
+              </li>
+            ))}
+            {/* <li className="menu_item1">
               <a className="business_solutions_a" onClick={goHome}>
                 <span
                   className="menu-title-text"
@@ -580,7 +663,7 @@ const Navigation = () => {
                   </ul>
                 </li>
               </ul>
-            </li>
+            </li> */}
           </ul>
         </nav>
       </div>

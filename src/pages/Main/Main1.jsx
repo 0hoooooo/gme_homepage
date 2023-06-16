@@ -5,9 +5,7 @@ const Main1 = () => {
   const [fadeIn, setFadeIn] = useState("");
   const videoRef = useRef(null);
   const handleVideoEnd = () => {
-    console.log("video end");
     if (isShow === false) {
-      console.log(isShow);
       setFadeIn("fade-In");
       setTimeout(() => {
         setIsShow(!isShow);

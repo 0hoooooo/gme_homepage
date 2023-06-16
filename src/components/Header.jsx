@@ -18,6 +18,160 @@ const Header = () => {
     setHamburgerOpen(!hamburgerOpen);
   };
 
+  const [activeTab, setActiveTab] = useState();
+
+  const arrMenu = [
+    {
+      id: 1,
+      name: "Personal",
+    },
+    {
+      id: 2,
+      name: "Business",
+      sub1_category: [
+        {
+          id: 1,
+          name: "Solutions",
+          sub2_category: [
+            {
+              id: 1,
+              name: "Financial Services",
+            },
+            {
+              id: 2,
+              name: "GME - SPS",
+            },
+            {
+              id: 3,
+              name: "GME - VAS",
+            },
+            {
+              id: 4,
+              name: "Service Features",
+            },
+            {
+              id: 5,
+              name: "Partners",
+            },
+          ],
+        },
+        {
+          id: 2,
+          name: "Developers",
+          sub2_category: [
+            {
+              id: 1,
+              name: "API",
+            },
+            {
+              id: 2,
+              name: "View Documenatation",
+            },
+          ],
+        },
+        {
+          id: 3,
+          name: "Platform",
+          sub2_category: [
+            {
+              id: 1,
+              name: "GME-HoM",
+            },
+            {
+              id: 2,
+              name: "Collect Globally",
+            },
+            {
+              id: 3,
+              name: "Make Payments Globally",
+            },
+            {
+              id: 4,
+              name: "Multiple Payment methods",
+            },
+            {
+              id: 5,
+              name: "Collects & Pay China",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: 3,
+      name: "Company",
+      sub1_category: [
+        {
+          id: 1,
+          name: "About Us",
+          sub2_category: [
+            {
+              id: 1,
+              name: "CEO's Message",
+            },
+            {
+              id: 2,
+              name: "Services",
+            },
+            {
+              id: 3,
+              name: "History",
+            },
+          ],
+        },
+        {
+          id: 2,
+          name: "Blog",
+          sub2_category: [
+            {
+              id: 1,
+              name: "All",
+            },
+            {
+              id: 2,
+              name: "Event",
+            },
+            {
+              id: 3,
+              name: "News",
+            },
+          ],
+        },
+        {
+          id: 3,
+          name: "Careers",
+          sub2_category: [
+            {
+              id: 1,
+              name: "Perks & Benefits",
+            },
+            {
+              id: 2,
+              name: "Our Staff",
+            },
+            {
+              id: 3,
+              name: "Join Us",
+            },
+          ],
+        },
+        {
+          id: 4,
+          "Contact Us": [
+            {
+              id: 1,
+              name: "Customer Service",
+            },
+            {
+              id: 2,
+              name: "Branches",
+            },
+          ],
+        },
+      ],
+    },
+  ];
+
   useEffect(() => {
     console.log("hamburgerOpen:", hamburgerOpen);
   }, [hamburgerOpen]);
@@ -45,7 +199,9 @@ const Header = () => {
   const closeIcon = (
     <CgClose className="hamburger" onClick={() => setOpen(!open)} />
   );
-
+  const handleSubNavOn = (name) => {
+    setActiveTab(name);
+  };
   return (
     <div id={scrollPosition < 100 ? "header_outer" : "header_outer_scrolled"}>
       <header id="top">
@@ -61,7 +217,7 @@ const Header = () => {
                 />
               </a>
             </div>
-            <Navigation />
+            <Navigation list={arrMenu} handleClick={handleSubNavOn} />
 
             {/* <div className="hamburger" onClick={toggleHamburger}>
               <Hamburger isOpen={hamburgerOpen} />
