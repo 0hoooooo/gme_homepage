@@ -1,4 +1,5 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { FormattedMessage } from "react-intl";
 import { useNavigate } from "react-router-dom";
 import { Link, ScrollLink } from "react-scroll";
 const Navigation = (props) => {
@@ -44,6 +45,16 @@ const Navigation = (props) => {
     window.location.reload();
   };
 
+  const [locale, setLocale] = useState(localStorage.getItem("locale") ?? "ko");
+
+  useEffect(() => {
+    console.log("locale:", locale);
+    localStorage.setItem("locale", locale);
+  }, [locale]);
+  const chooseLan = (e) => {
+    setLocale(e.target.value);
+    window.location.reload();
+  };
   return (
     <div
       className="menu"
@@ -56,10 +67,10 @@ const Navigation = (props) => {
       <div className="menu">
         <nav className="menu_nav">
           <ul className="sf-menu">
-            {list.map((item, index) => (
+            {/* {list.map((item, index) => (
               <li
                 className="menu_item1"
-                key={item.id}
+                key={index}
                 onClick={() => handleClick(item.name)}
               >
                 <a className="businee_solutions_a">
@@ -94,46 +105,60 @@ const Navigation = (props) => {
                         </div>
                       </a>
                     </li>
-                    {item.sub1_category?.map((item, index) => (
-                      <li id="menu-item-16714" className="developers">
-                        <a
-                          className="business_solutions_a"
-                          onClick={goSolution}
-                        >
-                          <span className="menu-title-text">{item.name}</span>
-                        </a>
+                    {item.sub1_category?.map(
+                      (item, index) => (
+                        console.log("sub1_category:", item),
+                        (
+                          <li
+                            id="menu-item-16714"
+                            className="developers"
+                            key={index}
+                          >
+                            <a
+                              className="business_solutions_a"
+                              onClick={goSolution}
+                            >
+                              <span className="menu-title-text">
+                                {item.name}
+                              </span>
+                            </a>
 
-                        <ul className="sub-menu">
-                          {item.sub2_category?.map((item, index) => (
-                            <li id="menu-item-16718" className="sub-menu-li">
-                              <a
-                                href="#!"
-                                className="nectar-menu-item-with-icon2"
-                                onClick={goSolution}
-                              >
-                                <img
-                                  src="https://www.gmeremit.com/wp-content/uploads/2023/01/financial.png"
-                                  className="icon_image"
-                                  alt=""
-                                  width="128"
-                                  height="128"
-                                />
-                                <span className="nectar-menu-icon-text">
-                                  <span className="menu_title_text2">
-                                    {item.name}
-                                  </span>
-                                </span>
-                              </a>
-                            </li>
-                          ))}
-                        </ul>
-                      </li>
-                    ))}
+                            <ul className="sub-menu">
+                              {item.sub2_category?.map((item, index) => (
+                                <li
+                                  id="menu-item-16718"
+                                  className="sub-menu-li"
+                                >
+                                  <a
+                                    href="#!"
+                                    className="nectar-menu-item-with-icon2"
+                                    onClick={goSolution}
+                                  >
+                                    <img
+                                      src="https://www.gmeremit.com/wp-content/uploads/2023/01/financial.png"
+                                      className="icon_image"
+                                      alt=""
+                                      width="128"
+                                      height="128"
+                                    />
+                                    <span className="nectar-menu-icon-text">
+                                      <span className="menu_title_text2">
+                                        {item.name}
+                                      </span>
+                                    </span>
+                                  </a>
+                                </li>
+                              ))}
+                            </ul>
+                          </li>
+                        )
+                      )
+                    )}
                   </ul>
                 ) : null}
               </li>
-            ))}
-            {/* <li className="menu_item1">
+            ))} */}
+            <li className="menu_item1">
               <a className="business_solutions_a" onClick={goHome}>
                 <span
                   className="menu-title-text"
@@ -143,13 +168,15 @@ const Navigation = (props) => {
                     padding: 0,
                   }}
                 >
-                  Personal
+                  <FormattedMessage id="personal" />
                 </span>
               </a>
             </li>
             <li className="menu_item2">
               <a onClick={goSolution} className="business_solutions_a">
-                <span className="menu-title-text">Business</span>
+                <span className="menu-title-text">
+                  <FormattedMessage id="business" />
+                </span>
               </a>
               <ul className="sub_menu">
                 <li id="menu-item-16863" className="business_left">
@@ -161,10 +188,12 @@ const Navigation = (props) => {
                       </div>
                       <div className="business_left_inner_content">
                         <span className="title_business">
-                          <span className="title_menu">B2B</span>
+                          <span className="title_menu">
+                            <FormattedMessage id="b2b" />
+                          </span>
                         </span>
                         <span className="menu_item_desc">
-                          Reduce Cost on Business Transfers
+                          <FormattedMessage id="Reduce Cost on Business Transfers" />
                         </span>
                       </div>
                     </div>
@@ -420,7 +449,9 @@ const Navigation = (props) => {
             </li>
             <li className="menu_item3">
               <a className="business_solutions_a" onClick={goAboutUs}>
-                <span className="menu-title-text">Company</span>
+                <span className="menu-title-text">
+                  <FormattedMessage id="company" />
+                </span>
               </a>
               <ul className="sub_menu2">
                 <li id="menu-item-17554" className="business_left">
@@ -663,7 +694,7 @@ const Navigation = (props) => {
                   </ul>
                 </li>
               </ul>
-            </li> */}
+            </li>
           </ul>
         </nav>
       </div>
@@ -671,7 +702,7 @@ const Navigation = (props) => {
       <div
         className="menu"
         style={{
-          marginLeft: 500,
+          marginLeft: 450,
           textAlign: "right",
           alignContent: "flex-end",
         }}
@@ -684,7 +715,9 @@ const Navigation = (props) => {
                 href="https://www.gmeremit.com/contact-us/#help"
                 aria-current="page"
               >
-                <span className="menu-title-text">Help</span>
+                <span className="menu-title-text">
+                  <FormattedMessage id="help" />
+                </span>
               </a>
             </li>
             <li className="menu_item1">
@@ -693,18 +726,82 @@ const Navigation = (props) => {
                 href="https://online.gmeremit.com/Login"
                 aria-current="page"
               >
-                <span className="menu-title-text">Login</span>
+                <span className="menu-title-text">
+                  <FormattedMessage id="login" />
+                </span>
               </a>
             </li>
-            <li className="menu_item1">
+            <li>
+              <select
+                id="locale"
+                className="lang_menu"
+                value={locale}
+                onChange={(e) => chooseLan(e)}
+              >
+                <option value="ko" className="menu_item1">
+                  한국어(KOREAN)
+                </option>
+                <option value="eng">English</option>
+                <option value="chi">Chinese</option>
+              </select>
+            </li>
+
+            {/* <li className="menu_item1">
               <a
-                className="businee_solutions_a"
+                className="business_solutions_a"
                 href="https://www.gmeremit.com/"
                 aria-current="page"
               >
                 <span className="menu-title-text">English</span>
               </a>
-            </li>
+              <ul className="lan_menu">
+                <li
+                  id="menu-item-wpml-ls-5-ko"
+                  className="menu-item wpml-ls-slot-5 wpml-ls-item wpml-ls-item-ko wpml-ls-menu-item menu-item-type-wpml_ls_menu_item menu-item-object-wpml_ls_menu_item nectar-regular-menu-item menu-item-wpml-ls-5-ko"
+                >
+                  <a title="Korean" href="https://www.gmeremit.com/ko/">
+                    <span className="menu-title-text">
+                      <img
+                        className="wpml-ls-flag"
+                        src="https://www.gmeremit.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/ko.png"
+                        alt=""
+                      />
+                      <span className="wpml-ls-native" lang="ko">
+                        한국어
+                      </span>
+                      <span className="wpml-ls-display">
+                        <span className="wpml-ls-bracket"> (</span>Korean
+                        <span className="wpml-ls-bracket">)</span>
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  id="menu-item-wpml-ls-5-zh-hans"
+                  className="menu-item wpml-ls-slot-5 wpml-ls-item wpml-ls-item-zh-hans wpml-ls-menu-item wpml-ls-last-item menu-item-type-wpml_ls_menu_item menu-item-object-wpml_ls_menu_item nectar-regular-menu-item menu-item-wpml-ls-5-zh-hans"
+                >
+                  <a
+                    title="Chinese (Simplified)"
+                    href="https://www.gmeremit.com/zh-hans/"
+                  >
+                    <span className="menu-title-text">
+                      <img
+                        className="wpml-ls-flag"
+                        src="https://www.gmeremit.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/zh.png"
+                        alt=""
+                      />
+                      <span className="wpml-ls-native" lang="zh-hans">
+                        简体中文
+                      </span>
+                      <span className="wpml-ls-display">
+                        <span className="wpml-ls-bracket"> (</span>Chinese
+                        (Simplified)<span className="wpml-ls-bracket">)</span>
+                      </span>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </li> */}
           </ul>
         </nav>
       </div>

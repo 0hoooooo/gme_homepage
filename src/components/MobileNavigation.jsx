@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react";
 import "../css/Header/Header.css";
+import { FormattedMessage } from "react-intl";
 
 const MobileNavigation = () => {
   const [open, setOpen] = useState(false);
+  const [locale, setLocale] = useState(localStorage.getItem("locale") ?? "ko");
+
   return (
     <>
       <div className="fullscreen_mobile">
@@ -37,7 +40,10 @@ const MobileNavigation = () => {
                           <div className="nectar-ext-menu-item style-default">
                             <div className="inner-content">
                               <span className="title">
-                                <span className="menu-title-text">B2B</span>
+                                <span className="menu-title-text">
+                                  {" "}
+                                  <FormattedMessage id="b2b" />
+                                </span>
                               </span>
                               <span className="item_desc">
                                 Reduce Cost on Business Transfers

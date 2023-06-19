@@ -1,4 +1,5 @@
 import { useRef, useState } from "react";
+import { FormattedMessage } from "react-intl";
 
 const Main1 = () => {
   const [isShow, setIsShow] = useState(false);
@@ -124,7 +125,7 @@ const Main1 = () => {
                           >
                             No.1
                             <br />
-                            Money Transfer Company in South Korea
+                            <FormattedMessage id="Money Transfer Company in South Korea" />
                           </h1>
                         </div>
                       </div>
@@ -216,7 +217,9 @@ const Main1 = () => {
                             }}
                             href="https://online.gmeremit.com/register"
                           >
-                            <span>Register</span>
+                            <span>
+                              <FormattedMessage id="Register" />
+                            </span>
                           </a>
                           <a
                             className="login_button"
@@ -227,7 +230,9 @@ const Main1 = () => {
                             }}
                             href="https://online.gmeremit.com/Login"
                           >
-                            <span>Login</span>
+                            <span>
+                              <FormattedMessage id="login" />
+                            </span>
                           </a>
                         </div>
                       </div>
