@@ -1,5 +1,12 @@
+import { useNavigate } from "react-router-dom";
 import "../../css/Main/Main5.css";
 const Main5 = () => {
+  const navigate = useNavigate();
+  const goContactUs = () => {
+    console.log("이동");
+    navigate("/company/contactUs");
+    window.location.reload();
+  };
   return (
     <>
       <div
@@ -125,7 +132,7 @@ const Main5 = () => {
                               backgroundColor: "transparent",
                               paddingTop: 10,
                             }}
-                            href="https://www.gmeremit.com/contact-us/#help"
+                            onClick={goContactUs}
                           >
                             <span>Get help</span>
                           </a>

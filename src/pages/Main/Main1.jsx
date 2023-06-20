@@ -14,6 +14,9 @@ const Main1 = () => {
     }
     setIsShow(true);
   };
+  const goCheck = () => {
+    window.location.href = "https://online.gmeremit.com/";
+  };
   return (
     <div
       id="homepage-banner"
@@ -157,8 +160,11 @@ const Main1 = () => {
                         transform: "none",
                       }}
                     >
-                      <div className="vc_column_inner_check">
-                        <div className="wpb_wrapper">
+                      <div className="vc_column_inner_check" onClick={goCheck}>
+                        <div
+                          className="wpb_wrapper"
+                          style={{ cursor: "pointer" }}
+                        >
                           <h5
                             style={{
                               fontSize: 20,
@@ -167,7 +173,7 @@ const Main1 = () => {
                             }}
                             className="vc_custom_heading"
                           >
-                            Check the
+                            <FormattedMessage id="Check the" />
                           </h5>
                           <h3
                             style={{
@@ -178,8 +184,8 @@ const Main1 = () => {
                             }}
                             className="vc_custom_heading"
                           >
-                            <a href="https://online.gmeremit.com/">
-                              EXCHANGE RATE
+                            <a>
+                              <FormattedMessage id="EXCHANGE RATE" />
                             </a>
                           </h3>
                         </div>

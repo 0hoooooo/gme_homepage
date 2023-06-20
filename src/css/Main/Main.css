@@ -1069,7 +1069,7 @@ body .full-width {
   border-radius: 6px !important;
   box-shadow: none;
   border-width: 5px;
-
+  cursor: pointer;
   border: 2px solid rgba(255, 255, 255, 0.75);
   padding: 15px 22px;
   font-size: 16px !important;

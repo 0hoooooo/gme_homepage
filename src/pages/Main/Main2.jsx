@@ -1,3 +1,5 @@
+import { FormattedMessage } from "react-intl";
+
 const Main2 = () => {
   return (
     <>
@@ -64,14 +66,14 @@ const Main2 = () => {
                         </div>
                         <div className="wpb_wrapper">
                           <h1 className="vc_custom_heading">
-                            Easy &amp; Secure
+                            <FormattedMessage id="Easy Secure" />
                           </h1>
                           <div className="content_element">
                             <div className="wpb_wrapper">
                               <p>
-                                All-in-one mobile app.
+                                <FormattedMessage id="All-in-one mobile app." />
                                 <br />
-                                Government grade security.
+                                <FormattedMessage id="Government grade security." />
                               </p>
                             </div>
                           </div>
