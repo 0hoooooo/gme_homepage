@@ -627,7 +627,13 @@ li a:hover:after {
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
-.nectar-menu-item-with-icon2:hover .menu_title_text2 {
+.sub-menu-li:hover {
+  border-radius: 10px;
+  transform: translateY(-4px) scale(1.1);
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+  transition-duration: 0.5s;
+}
+/* .nectar-menu-item-with-icon2:hover .menu_title_text2 {
   text-decoration: underline;
   text-decoration-color: blue;
   text-decoration-line: underline;
@@ -642,7 +648,7 @@ li a:hover:after {
   text-underline-offset: 5px;
   text-decoration-thickness: 2px;
   text-decoration-style: double;
-}
+} */
 .sub-menu {
   border-top: 0;
   border-radius: 20px;

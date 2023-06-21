@@ -1,8 +1,13 @@
+import { useNavigate } from "react-router-dom";
 import "../../css/Footer/Footer1.css";
 import "../../css/Main/Main.css";
 
 import { BsLinkedin } from "react-icons/bs";
 const Footer1 = () => {
+  const navigate = useNavigate();
+  const goQrCode = () => {
+    navigate("/personal/qrcode");
+  };
   return (
     <div className="footer_container">
       <div className="footer_container_row">
@@ -57,50 +62,73 @@ const Footer1 = () => {
                             <div className="footer_personl_content_element">
                               <div className="footer_personal_content_element_wpb_wrapper">
                                 <p>
-                                  <span style={{ color: "#808080" }}>
+                                  <span>
                                     <a
-                                      style={{ color: "#808080" }}
+                                      style={{ color: "#b0aeae" }}
                                       href="https://online.gmeremit.com/Login"
+                                      target="_blank"
                                     >
-                                      Login
+                                      <span className="nectar-menu-icon-text">
+                                        <span className="menu-title-text">
+                                          Login
+                                        </span>
+                                      </span>
                                     </a>
                                   </span>
                                   <br />
-                                  <span style={{ color: "#808080" }}>
+                                  <span>
                                     <a
-                                      style={{ color: "#808080" }}
+                                      style={{ color: "#b0aeae" }}
                                       href="https://online.gmeremit.com/register"
+                                      target="_blank"
                                     >
-                                      Register
+                                      <span className="nectar-menu-icon-text">
+                                        <span className="menu-title-text">
+                                          Register
+                                        </span>
+                                      </span>
                                     </a>
                                   </span>
                                   <br />
-                                  <span style={{ color: "#808080" }}>
+                                  <span>
                                     <a
-                                      style={{ color: "#808080" }}
-                                      href="https://www.gmeremit.com/qr/"
-                                      data-type="URL"
-                                      data-id="https://www.gmeremit.com/qr/"
+                                      style={{ color: "#b0aeae" }}
+                                      href="/personal/qrcode"
+                                      target="_blank"
                                     >
-                                      QR Code
+                                      <span className="nectar-menu-icon-text">
+                                        <span className="menu-title-text">
+                                          QR Code
+                                        </span>
+                                      </span>
                                     </a>
                                   </span>
                                   <br />
-                                  <span style={{ color: "#808080" }}>
+                                  <span>
                                     <a
-                                      style={{ color: "#808080" }}
+                                      style={{ color: "#b0aeae" }}
                                       href="https://play.google.com/store/apps/details?id=com.gmeremit.online.gmeremittance_native"
+                                      target="_blank"
                                     >
-                                      Download on Google Play
+                                      <span className="nectar-menu-icon-text">
+                                        <span className="menu-title-text">
+                                          Download on Google Play
+                                        </span>
+                                      </span>
                                     </a>
                                   </span>
                                   <br />
-                                  <span style={{ color: "#808080" }}>
+                                  <span>
                                     <a
-                                      style={{ color: "#808080" }}
+                                      style={{ color: "#b0aeae" }}
                                       href="https://apps.apple.com/app/bars/id1439161261."
+                                      target="_blank"
                                     >
-                                      Download on App Store
+                                      <span className="nectar-menu-icon-text">
+                                        <span className="menu-title-text">
+                                          Download on App Store
+                                        </span>
+                                      </span>
                                     </a>
                                   </span>
                                 </p>
@@ -138,8 +166,12 @@ const Footer1 = () => {
                                     <strong>
                                       <a
                                         className="sf-with-ul"
-                                        style={{ color: "#808080" }}
-                                        href="https://www.gmeremit.com/business/#solutions"
+                                        style={{
+                                          color: "#808080",
+                                          fontSize: 20,
+                                          padding: 20,
+                                        }}
+                                        href="/business/solutions"
                                       >
                                         <span className="menu-title-text">
                                           <strong>Solutions</strong>
@@ -148,11 +180,11 @@ const Footer1 = () => {
                                     </strong>
                                   </span>
                                   <br />
-                                  <span style={{ color: "#808080" }}>
+                                  <span>
                                     <a
                                       className="nectar-menu-item-with-icon"
-                                      style={{ color: "#808080" }}
-                                      href="https://www.gmeremit.com/business/#solutions"
+                                      style={{ color: "#b0aeae" }}
+                                      href="/business/solutions"
                                     >
                                       <span className="nectar-menu-icon-text">
                                         <span className="menu-title-text">
@@ -162,11 +194,11 @@ const Footer1 = () => {
                                     </a>
                                   </span>
                                   <br />
-                                  <span style={{ color: "#808080" }}>
+                                  <span>
                                     <a
                                       className="nectar-menu-item-with-icon"
-                                      style={{ color: "#808080" }}
-                                      href="https://www.gmeremit.com/business/#sps"
+                                      style={{ color: "#b0aeae" }}
+                                      href="/business/solutions"
                                     >
                                       <span className="nectar-menu-icon-text">
                                         <span className="menu-title-text">
@@ -176,11 +208,11 @@ const Footer1 = () => {
                                     </a>
                                   </span>
                                   <br />
-                                  <span style={{ color: "#808080" }}>
+                                  <span>
                                     <a
                                       className="nectar-menu-item-with-icon"
-                                      style={{ color: "#808080" }}
-                                      href="https://www.gmeremit.com/business/#vas"
+                                      style={{ color: "#b0aeae" }}
+                                      href="/business/solutions"
                                     >
                                       <span className="nectar-menu-icon-text">
                                         <span className="menu-title-text">
@@ -190,11 +222,11 @@ const Footer1 = () => {
                                     </a>
                                   </span>
                                   <br />
-                                  <span style={{ color: "#808080" }}>
+                                  <span>
                                     <a
                                       className="nectar-menu-item-with-icon"
-                                      style={{ color: "#808080" }}
-                                      href="https://www.gmeremit.com/business/#service"
+                                      style={{ color: "#b0aeae" }}
+                                      href="/business/solutions"
                                     >
                                       <span className="nectar-menu-icon-text">
                                         <span className="menu-title-text">
@@ -204,11 +236,11 @@ const Footer1 = () => {
                                     </a>
                                   </span>
                                   <br />
-                                  <span style={{ color: "#808080" }}>
+                                  <span>
                                     <a
                                       className="nectar-menu-item-with-icon"
-                                      style={{ color: "#808080" }}
-                                      href="https://www.gmeremit.com/business/#partners"
+                                      style={{ color: "#b0aeae" }}
+                                      href="/business/solutions"
                                     >
                                       <span className="nectar-menu-icon-text">
                                         <span className="menu-title-text">
@@ -230,11 +262,17 @@ const Footer1 = () => {
                             <div className="footer_business_content_element">
                               <div className="footer_business_content_element_wpb_wrapper">
                                 <p>
-                                  <span style={{ color: "#808080" }}>
+                                  <span
+                                    style={{
+                                      color: "#808080",
+                                      fontSize: 20,
+                                      padding: 20,
+                                    }}
+                                  >
                                     <a
                                       className="sf-with-ul"
                                       style={{ color: "#808080" }}
-                                      href="https://www.gmeremit.com/developers/"
+                                      href="/business/developers"
                                     >
                                       <span className="menu-title-text">
                                         <strong>Developers</strong>
@@ -242,11 +280,11 @@ const Footer1 = () => {
                                     </a>
                                   </span>
                                   <br />
-                                  <span style={{ color: "#808080" }}>
+                                  <span>
                                     <a
                                       className="nectar-menu-item-with-icon"
-                                      style={{ color: "#808080" }}
-                                      href="https://www.gmeremit.com/api-documentation/"
+                                      style={{ color: "#b0aeae" }}
+                                      href="/business/developers"
                                     >
                                       <span className="nectar-menu-icon-text">
                                         <span className="menu-title-text">
@@ -256,11 +294,11 @@ const Footer1 = () => {
                                     </a>
                                   </span>
                                   <br />
-                                  <span style={{ color: "#808080" }}>
+                                  <span>
                                     <a
                                       className="nectar-menu-item-with-icon"
-                                      style={{ color: "#808080" }}
-                                      href="https://www.gmeremit.com/api-documentation/"
+                                      style={{ color: "#b0aeae" }}
+                                      href="/business/developers"
                                     >
                                       <span className="nectar-menu-icon-text">
                                         <span className="menu-title-text">
@@ -303,11 +341,17 @@ const Footer1 = () => {
                             <div className="footer_business_content_element">
                               <div className="footer_business_content_element_wpb_wrapper">
                                 <p>
-                                  <span style={{ color: "#808080" }}>
+                                  <span
+                                    style={{
+                                      color: "#808080",
+                                      fontSize: 20,
+                                      padding: 20,
+                                    }}
+                                  >
                                     <a
                                       className="sf-with-ul"
                                       style={{ color: "#808080" }}
-                                      href="https://www.gmeremit.com/developers/#platform"
+                                      href="/business/platform"
                                     >
                                       <span className="menu-title-text">
                                         <strong>Platform</strong>
@@ -315,10 +359,10 @@ const Footer1 = () => {
                                     </a>
                                   </span>
                                   <br />
-                                  <span style={{ color: "#808080" }}>
+                                  <span>
                                     <a
                                       className="nectar-menu-item-with-icon"
-                                      style={{ color: "#808080" }}
+                                      style={{ color: "#b0aeae" }}
                                       href="https://www.gmeremit.com/?post_type=salient_g_sections&amp;p=17089&amp;preview=true#GME-HoM"
                                     >
                                       <span className="nectar-menu-icon-text">
@@ -329,10 +373,10 @@ const Footer1 = () => {
                                     </a>
                                   </span>
                                   <br />
-                                  <span style={{ color: "#808080" }}>
+                                  <span>
                                     <a
                                       className="nectar-menu-item-with-icon"
-                                      style={{ color: "#808080" }}
+                                      style={{ color: "#b0aeae" }}
                                       href="https://www.gmeremit.com/?post_type=salient_g_sections&amp;p=17089&amp;preview=true#collect"
                                     >
                                       <span className="nectar-menu-icon-text">
@@ -343,10 +387,10 @@ const Footer1 = () => {
                                     </a>
                                   </span>
                                   <br />
-                                  <span style={{ color: "#808080" }}>
+                                  <span>
                                     <a
                                       className="nectar-menu-item-with-icon"
-                                      style={{ color: "#808080" }}
+                                      style={{ color: "#b0aeae" }}
                                       href="https://www.gmeremit.com/?post_type=salient_g_sections&amp;p=17089&amp;preview=true#make"
                                     >
                                       <span className="nectar-menu-icon-text">
@@ -357,10 +401,10 @@ const Footer1 = () => {
                                     </a>
                                   </span>
                                   <br />
-                                  <span style={{ color: "#808080" }}>
+                                  <span>
                                     <a
                                       className="nectar-menu-item-with-icon"
-                                      style={{ color: "#808080" }}
+                                      style={{ color: "#b0aeae" }}
                                       href="https://www.gmeremit.com/?post_type=salient_g_sections&amp;p=17089&amp;preview=true#multiple"
                                     >
                                       <span className="nectar-menu-icon-text">
@@ -372,10 +416,10 @@ const Footer1 = () => {
                                     </a>
                                   </span>
                                   <br />
-                                  <span style={{ color: "#808080" }}>
+                                  <span>
                                     <a
                                       className="nectar-menu-item-with-icon"
-                                      style={{ color: "#808080" }}
+                                      style={{ color: "#b0aeae" }}
                                       href="https://www.gmeremit.com/?post_type=salient_g_sections&amp;p=17089&amp;preview=true#collect"
                                     >
                                       <span className="nectar-menu-icon-text">
@@ -423,11 +467,17 @@ const Footer1 = () => {
                               <div className="footer_personal_content_element_wpb_wrapper">
                                 <p>
                                   <strong>
-                                    <span style={{ color: "#808080" }}>
+                                    <span
+                                      style={{
+                                        color: "#808080",
+                                        fontSize: 20,
+                                        padding: 20,
+                                      }}
+                                    >
                                       <a
                                         className="sf-with-ul"
                                         style={{ color: "#808080" }}
-                                        href="https://www.gmeremit.com/about-us/"
+                                        href="/company/aboutUs"
                                       >
                                         <span className="menu-title-text">
                                           <strong>About Us</strong>
@@ -436,11 +486,11 @@ const Footer1 = () => {
                                     </span>
                                   </strong>
                                   <br />
-                                  <span style={{ color: "#808080" }}>
+                                  <span>
                                     <a
                                       className="nectar-menu-item-with-icon"
-                                      style={{ color: "#808080" }}
-                                      href="https://www.gmeremit.com/about-us/#ceo"
+                                      style={{ color: "#b0aeae" }}
+                                      href="/company/aboutUs"
                                     >
                                       <span className="nectar-menu-icon-text">
                                         <span className="menu-title-text">
@@ -450,11 +500,11 @@ const Footer1 = () => {
                                     </a>
                                   </span>
                                   <br />
-                                  <span style={{ color: "#808080" }}>
+                                  <span>
                                     <a
                                       className="nectar-menu-item-with-icon"
-                                      style={{ color: "#808080" }}
-                                      href="https://www.gmeremit.com/about-us/#services"
+                                      style={{ color: "#b0aeae" }}
+                                      href="/company/aboutUs"
                                     >
                                       <span className="nectar-menu-icon-text">
                                         <span className="menu-title-text">
@@ -464,11 +514,11 @@ const Footer1 = () => {
                                     </a>
                                   </span>
                                   <br />
-                                  <span style={{ color: "#808080" }}>
+                                  <span>
                                     <a
                                       className="nectar-menu-item-with-icon"
-                                      style={{ color: "#808080" }}
-                                      href="https://www.gmeremit.com/about-us/#history"
+                                      style={{ color: "#b0aeae" }}
+                                      href="/company/aboutUs"
                                     >
                                       <span className="nectar-menu-icon-text">
                                         <span className="menu-title-text">
@@ -491,7 +541,13 @@ const Footer1 = () => {
                               <div className="footer_personal_content_element_wpb_wrapper">
                                 <p>
                                   <strong>
-                                    <span style={{ color: "#808080" }}>
+                                    <span
+                                      style={{
+                                        color: "#808080",
+                                        fontSize: 20,
+                                        padding: 20,
+                                      }}
+                                    >
                                       <a
                                         className="sf-with-ul"
                                         style={{ color: "#808080" }}
@@ -504,10 +560,10 @@ const Footer1 = () => {
                                     </span>
                                   </strong>
                                   <br />
-                                  <span style={{ color: "#808080" }}>
+                                  <span>
                                     <a
                                       className="nectar-menu-item-with-icon"
-                                      style={{ color: "#808080" }}
+                                      style={{ color: "#b0aeae" }}
                                       href="https://www.gmeremitblog.com/#all"
                                     >
                                       <span className="nectar-menu-icon-text">
@@ -518,10 +574,10 @@ const Footer1 = () => {
                                     </a>
                                   </span>
                                   <br />
-                                  <span style={{ color: "#808080" }}>
+                                  <span>
                                     <a
                                       className="nectar-menu-item-with-icon"
-                                      style={{ color: "#808080" }}
+                                      style={{ color: "#b0aeae" }}
                                       href="https://www.gmeremitblog.com/#event"
                                     >
                                       <span className="nectar-menu-icon-text">
@@ -532,10 +588,10 @@ const Footer1 = () => {
                                     </a>
                                   </span>
                                   <br />
-                                  <span style={{ color: "#808080" }}>
+                                  <span>
                                     <a
                                       className="nectar-menu-item-with-icon"
-                                      style={{ color: "#808080" }}
+                                      style={{ color: "#b0aeae" }}
                                       href="https://www.gmeremitblog.com/#businessnews"
                                     >
                                       <span className="nectar-menu-icon-text">
@@ -555,10 +611,7 @@ const Footer1 = () => {
                       <div className="footer_company">
                         <div className="footer_company_vc_column_inner">
                           <div className="footer_company_wpb_wrapper">
-                            <div
-                              className="divider-wrap"
-                              data-alignment="default"
-                            >
+                            <div className="divider-wrap">
                               <div
                                 style={{ height: 30 }}
                                 className="divider"
@@ -578,12 +631,17 @@ const Footer1 = () => {
                               <div className="wpb_wrapper">
                                 <p>
                                   <strong>
-                                    <span style={{ color: "#808080" }}>
+                                    <span
+                                      style={{
+                                        color: "#808080",
+                                        fontSize: 20,
+                                        padding: 20,
+                                      }}
+                                    >
                                       <a
                                         className="sf-with-ul"
                                         style={{ color: "#808080" }}
-                                        href="https://www.gmeremit.com/careers/"
-                                        aria-current="page"
+                                        href="/company/careers"
                                       >
                                         <span className="menu-title-text">
                                           <strong>Careers</strong>
@@ -592,21 +650,20 @@ const Footer1 = () => {
                                     </span>
                                   </strong>
                                   <br />
-                                  <span style={{ color: "#808080" }}>
+                                  <span>
                                     <a
-                                      style={{ color: "#808080" }}
-                                      href="https://www.gmeremit.com/careers/#perks"
+                                      style={{ color: "#b0aeae" }}
+                                      href="/company/careers"
                                     >
                                       Perks &amp; Benefits
                                     </a>
                                   </span>
                                   <br />
-                                  <span style={{ color: "#808080" }}>
+                                  <span>
                                     <a
                                       className="nectar-menu-item-with-icon"
-                                      style={{ color: "#808080" }}
-                                      href="https://www.gmeremit.com/careers/#staff"
-                                      aria-current="page"
+                                      style={{ color: "#b0aeae" }}
+                                      href="/company/careers"
                                     >
                                       <span className="nectar-menu-icon-text">
                                         <span className="menu-title-text">
@@ -616,12 +673,11 @@ const Footer1 = () => {
                                     </a>
                                   </span>
                                   <br />
-                                  <span style={{ color: "#808080" }}>
+                                  <span>
                                     <a
                                       className="nectar-menu-item-with-icon"
-                                      style={{ color: "#808080" }}
-                                      href="https://www.gmeremit.com/careers/#join"
-                                      aria-current="page"
+                                      style={{ color: "#b0aeae" }}
+                                      href="/company/careers"
                                     >
                                       <span className="nectar-menu-icon-text">
                                         <span className="menu-title-text">
@@ -644,11 +700,17 @@ const Footer1 = () => {
                               <div className="wpb_wrapper">
                                 <p>
                                   <strong>
-                                    <span style={{ color: "#808080" }}>
+                                    <span
+                                      style={{
+                                        color: "#808080",
+                                        fontSize: 20,
+                                        padding: 20,
+                                      }}
+                                    >
                                       <a
                                         className="sf-with-ul"
                                         style={{ color: "#808080" }}
-                                        href="https://www.gmeremit.com/contact-us/"
+                                        href="/company/contactUs"
                                       >
                                         <span className="menu-title-text">
                                           <strong>Contact Us</strong>
@@ -657,11 +719,11 @@ const Footer1 = () => {
                                     </span>
                                   </strong>
                                   <br />
-                                  <span style={{ color: "#808080" }}>
+                                  <span>
                                     <a
                                       className="nectar-menu-item-with-icon"
-                                      style={{ color: "#808080" }}
-                                      href="https://www.gmeremit.com/contact-us/#help"
+                                      style={{ color: "#b0aeae" }}
+                                      href="/company/contactUs"
                                     >
                                       <span className="nectar-menu-icon-text">
                                         <span className="menu-title-text">
@@ -671,11 +733,11 @@ const Footer1 = () => {
                                     </a>
                                   </span>
                                   <br />
-                                  <span style={{ color: "#808080" }}>
+                                  <span>
                                     <a
                                       className="nectar-menu-item-with-icon"
-                                      style={{ color: "#808080" }}
-                                      href="https://www.gmeremit.com/contact-us/#branches"
+                                      style={{ color: "#b0aeae" }}
+                                      href="/company/contactUs"
                                     >
                                       <span className="nectar-menu-icon-text">
                                         <span className="menu-title-text">
@@ -729,10 +791,12 @@ const Footer1 = () => {
                                   </span>
                                   <br />
                                   <span style={{ color: "#808080" }}>
-                                    Office: 325, Jong-ro, Jongno-gu, Seoul,{" "}
+                                    Office: 150, Yeongdeungpo-ro,
+                                    Yeongdeungpo-gu, Seoul,{" "}
                                   </span>
                                   <span style={{ color: "#808080" }}>
-                                    (03104) Glass Tower Building 601.
+                                    (07292) SaengGak Gongjang Building B 905 ~
+                                    911.
                                   </span>
                                   <br />
                                   <span style={{ color: "#808080" }}>

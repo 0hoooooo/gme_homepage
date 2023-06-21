@@ -1,0 +1,237 @@
+.qrcode_wrapper {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 0;
+  visibility: visible;
+  box-sizing: content-box;
+  position: relative;
+  background-size: cover;
+  width: 100%;
+}
+.qrcode_row_bg_wrap {
+  --scroll-bar-w: 13px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  margin-left: calc(-50vw + var(--scroll-bar-w) / 2);
+  left: 50%;
+  width: calc(100vw - var(--scroll-bar-w));
+}
+.qrcode_inner_wrap_using_image {
+  transform: scale(1) translateZ(0);
+  transition: transform 0.95s 0s cubic-bezier(0.3, 0.58, 0.42, 0.9);
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+.qrcode_row_bg_using_image_loaded {
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-image: url("https://www.gmeremit.com/wp-content/uploads/2022/02/Imrovement-Competition-Title-Page2.png");
+  transition: opacity 0.4s ease 0.2s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.qrcode_dark_left {
+  color: #191c1f;
+  float: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0 !important;
+  z-index: 10;
+  margin-left: -1%;
+  margin-right: -1%;
+  width: auto;
+  position: relative;
+}
+.qrcode_vc_column_container {
+  float: none;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-left: 1%;
+  padding-right: 1%;
+  box-shadow: none;
+  background-position: center;
+  position: relative;
+  display: block;
+}
+@media (min-width: 690px) {
+  .qrcode_vc_column_container {
+    width: 100%;
+  }
+}
+
+.qrcode_vc_column_inner {
+  position: relative;
+}
+.qrcode_divider_wrapper {
+  margin-bottom: 0;
+}
+.qrcode_divider {
+  height: 300px;
+}
+#qrcode_divider_wrapper2 {
+  transform: translateY(-50px);
+  margin-bottom: 24px;
+  position: relative;
+  color: #191c1f;
+}
+.qrcode_row_bg_wrap2 {
+  margin-left: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.qrcode_row_bg2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+.qrcode_inner_left {
+  display: flex;
+  flex-wrap: wrap;
+  float: none;
+  margin-bottom: 0 !important;
+  z-index: 10;
+  margin-left: -1%;
+  margin-right: -1%;
+  width: auto;
+  position: relative;
+}
+.qrcode_column_container {
+  float: none;
+  margin-right: 0;
+  margin-left: 0;
+  padding-left: 1%;
+  padding-right: 1%;
+  box-shadow: none;
+  position: relative;
+  min-height: 1px;
+  box-sizing: border-box;
+  background-position: center;
+  display: block;
+}
+@media (min-width: 690px) {
+  .qrcode_column_container {
+    width: 20%;
+  }
+}
+.image_qrcode_animation_wrapper {
+  line-height: 0;
+  margin-bottom: 0;
+}
+.qrcode_inner {
+  height: 100%;
+}
+.qrcode_hover_wrapper {
+  opacity: 1;
+  margin-bottom: 0;
+  overflow: visible;
+  position: relative;
+}
+.qrcode_image {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  transform: none;
+  padding-right: 0;
+  padding-left: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  box-shadow: none;
+  display: block;
+  min-height: 1px;
+  min-width: 1px;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+}
+.qrcode_divider_wrapper3 {
+  margin-bottom: 24px;
+  position: relative;
+}
+.qrcode_row_bg_wrap3 {
+  margin-left: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.qrcode_row_bg3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+.qrcode_column_container2 {
+  float: none;
+  margin-right: 0;
+  margin-left: 0;
+  padding-left: 1%;
+  padding-right: 1%;
+  box-shadow: none;
+  position: relative;
+  min-height: 1px;
+  box-sizing: border-box;
+  background-position: center;
+  display: block;
+}
+@media (min-width: 690px) {
+  .qrcode_column_container2 {
+    width: 25%;
+  }
+}
+.qrcode_hover_wrapper2 {
+  opacity: 1;
+  margin-bottom: 0;
+  transition: all 0.65s cubic-bezier(0.05, 0.2, 0.1, 1) !important;
+  overflow: visible;
+  position: relative;
+}
+.qrcode_color_overlay {
+  background-color: #ed474c;
+  transition: opacity 0.65s cubic-bezier(0.2, 1, 0.2, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 10;
+  opacity: 0;
+  pointer-events: none;
+}
+.google_qrcode {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  width: 100%;
+  transform: none;
+  padding-right: 0;
+  padding-left: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  display: block;
+  min-height: 1px;
+  min-width: 1px;
+  height: auto;
+  position: relative;
+}

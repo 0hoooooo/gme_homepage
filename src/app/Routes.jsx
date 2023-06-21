@@ -7,6 +7,7 @@ import Platform from "../pages/Business/Platform";
 import AboutUs from "../pages/Company/AboutUs";
 import Careers from "../pages/Company/Careers";
 import ContactUs from "../pages/Company/ContactUs";
+import QrCode from "../pages/Personal/Qrcode";
 
 const Routes = () => {
   const rootRoutes = {
@@ -24,6 +25,16 @@ const Routes = () => {
       {
         path: "home",
         element: <Home />,
+      },
+    ],
+  };
+  const personalRoutes = {
+    path: "/personal",
+    element: <MainLayout />,
+    children: [
+      {
+        path: "qrcode",
+        element: <QrCode />,
       },
     ],
   };
@@ -70,6 +81,7 @@ const Routes = () => {
     mainRoutes,
     businessRoutes,
     companyRoutes,
+    personalRoutes,
   ];
 
   return useRoutes(routes);
