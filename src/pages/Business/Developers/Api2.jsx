@@ -1,4 +1,4 @@
-import "../../../css/Developers/Api2.css";
+import "../../../css/Business/Developers/Api2.css";
 const Api2 = () => {
   return (
     <div
@@ -45,7 +45,8 @@ const Api2 = () => {
                         </div>
                         <a
                           className="view_button"
-                          href="https://www.gmeremit.com/api-documentation/"
+                          href="/business/api-documentation"
+                          target="_blank"
                         >
                           <span className="view">View Documentation</span>
                         </a>

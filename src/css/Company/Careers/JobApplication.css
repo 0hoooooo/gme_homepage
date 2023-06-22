@@ -1,0 +1,76 @@
+#job_wrapper {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 1.5em;
+  position: relative;
+}
+.job_row_bg_wrap {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.job_inner_wrap {
+  transform: scale(1.11) translateZ(0);
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+.job_row_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+.job_dark_left {
+  display: flex;
+  flex-wrap: wrap;
+  float: none;
+  margin-bottom: 0 !important;
+  z-index: 10;
+  margin-left: -1%;
+  margin-right: -1%;
+  width: auto;
+  position: relative;
+}
+.job_column_container {
+  float: none;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+  padding-left: 1%;
+  padding-right: 1%;
+  box-shadow: none;
+  background-position: center;
+  position: relative;
+}
+@media (min-width: 690px) {
+  .job_column_container {
+    width: 100%;
+  }
+}
+.job_vc_column_inner {
+  position: relative;
+}
+.job_content {
+  margin-bottom: 0;
+}
+#job_iframe {
+  padding-top: 130px;
+  margin: 0px;
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  overflow: hidden;
+  opacity: 1;
+  visibility: visible;
+  height: 1100px;
+}

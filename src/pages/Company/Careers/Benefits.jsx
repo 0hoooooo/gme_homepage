@@ -1,4 +1,4 @@
-import "../../../css/Careers/Benefits.css";
+import "../../../css/Company/Careers/Benefits.css";
 const Benefits = () => {
   const perks = [
     {

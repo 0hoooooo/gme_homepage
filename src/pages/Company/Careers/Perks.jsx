@@ -1,4 +1,4 @@
-import "../../../css/Careers/Perks.css";
+import "../../../css/Company/Careers/Perks.css";
 const Perks = () => {
   return (
     <div id="perks" className="wpb_row vc_row-fluid vc_row top-level  ">

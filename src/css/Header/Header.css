@@ -255,7 +255,7 @@ li a:hover:after {
   overflow: hidden;
   background-size: cover;
   background-position: center;
-  width: 100%;
+  width: 105%;
   left: 0;
   box-shadow: 0 6px 28px rgba(0, 0, 0, 0.08);
   position: absolute;
@@ -279,7 +279,7 @@ li a:hover:after {
   overflow: hidden;
   background-size: cover;
   background-position: center;
-  width: 100%;
+  width: 105%;
   left: 0;
   box-shadow: 0 6px 28px rgba(0, 0, 0, 0.08);
   position: absolute;
@@ -414,7 +414,13 @@ li a:hover:after {
 .business_left_banner:hover .business_left_image_layer_loaded {
   transition: opacity 0.25s ease 0.1s;
 }
-.business_left_banner:hover .business_left_inner_content {
+.business_left_inner_content:hover {
+  border-radius: 10px;
+  transform: translateY(-4px) scale(1.1);
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+  transition-duration: 0.5s;
+}
+/* .business_left_banner:hover .business_left_inner_content {
   text-decoration: underline;
   text-decoration-color: blue;
   text-decoration-line: underline;
@@ -423,7 +429,7 @@ li a:hover:after {
   text-decoration-style: double;
   opacity: 1.2;
   background-color: transparent;
-}
+} */
 .business_left_image_layer {
   position: absolute;
   top: 0;

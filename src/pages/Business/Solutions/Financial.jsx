@@ -1,4 +1,4 @@
-import "../../../css/Solutions/Financial.css";
+import "../../../css/Business/Solutions/Financial.css";
 
 const Financial = () => {
   const upperlist = [
@@ -87,7 +87,8 @@ const Financial = () => {
                           <p>REDUCE COST ON BUSINESS TRANSFERS</p>
                           <a
                             className="contact_button"
-                            href="https://www.gmeremit.com/contact-sales/"
+                            href="/business/contact-sales"
+                            target="_blank"
                           >
                             <span>Contact Sales</span>
                           </a>

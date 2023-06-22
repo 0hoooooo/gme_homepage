@@ -1,4 +1,4 @@
-import "../../../css/Developers/Divider.css";
+import "../../../css/Business/Developers/Divider.css";
 const Divider = () => {
   return (
     <div id="fws_6461a126b38a3" class="row_fluid_divider">

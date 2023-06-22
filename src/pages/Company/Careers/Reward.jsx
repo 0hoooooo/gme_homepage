@@ -1,4 +1,4 @@
-import "../../../css/Careers/Reward.css";
+import "../../../css/Company/Careers/Reward.css";
 const Reward = () => {
   return (
     <div

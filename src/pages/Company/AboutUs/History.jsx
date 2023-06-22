@@ -1,14 +1,14 @@
 import { useEffect } from "react";
-import "../../../css/AboutUs/History.css";
+import "../../../css/Company/AboutUs/History.css";
 const History = () => {
   useEffect(() => {
     const animatedTags = document.querySelectorAll(".containertime");
-    animatedTags.forEach((tag) => {
+    animatedTags?.forEach((tag) => {
       tag.style.opacity = 0;
     });
     const fadeIn = function () {
       let delay = 0.5;
-      animatedTags.forEach((tag) => {
+      animatedTags?.forEach((tag) => {
         const tagTop = tag.getBoundingClientRect().top;
         const tagBottom = tag.getBoundingClientRect().bottom;
 

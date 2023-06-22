@@ -117,6 +117,7 @@ const Main5 = () => {
                             <div
                               style={{
                                 height: 25,
+                                paddingBottom: 50,
                               }}
                               className="divider"
                             ></div>

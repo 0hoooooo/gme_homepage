@@ -1,4 +1,4 @@
-import "../../../css/Careers/JoinUs.css";
+import "../../../css/Company/Careers/JoinUs.css";
 const JoinUs = () => {
   return (
     <div
@@ -28,7 +28,6 @@ const JoinUs = () => {
                         src="https://www.gmeremit.com/wp-content/uploads/2023/02/join-us.png"
                         alt=""
                         sizes="(min-width: 1450px) 75vw, (min-width: 1000px) 85vw, 100vw"
-                        srcset="https://www.gmeremit.com/wp-content/uploads/2023/02/join-us.png 1024w, https://www.gmeremit.com/wp-content/uploads/2023/02/join-us-300x156.png 300w, https://www.gmeremit.com/wp-content/uploads/2023/02/join-us-768x401.png 768w"
                       />
                     </div>
                   </div>
@@ -43,7 +42,7 @@ const JoinUs = () => {
               <a
                 className="join_button"
                 target="_blank"
-                href="https://www.gmeremit.com/job-application/"
+                href="/company/job-application/"
               >
                 <span>Apply Now</span>
               </a>

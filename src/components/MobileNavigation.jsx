@@ -540,7 +540,8 @@ const MobileNavigation = () => {
                           </li>
                           <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-icon menu-item-17546">
                             <a
-                              href="https://www.gmeremit.com/job-application/"
+                              target="_blank"
+                              href="/company/job-application/"
                               className="nectar-menu-item-with-icon"
                             >
                               <img

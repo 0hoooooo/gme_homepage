@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../../../css/Solutions/Partners.css";
+import "../../../css/Business/Solutions/Partners.css";
 import Slider from "react-slick";
 const Partners = () => {
   const list = [

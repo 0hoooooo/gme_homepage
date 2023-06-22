@@ -1,4 +1,4 @@
-import "../../../css/AboutUs/Video.css";
+import "../../../css/Company/AboutUs/Video.css";
 
 const Video = () => {
   return (

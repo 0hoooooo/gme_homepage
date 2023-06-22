@@ -323,7 +323,8 @@ const Navigation = (props) => {
                     <li id="menu-item-16780" className="sub-menu-li">
                       <a
                         className="nectar-menu-item-with-icon2"
-                        onClick={goDeveloper}
+                        href="/business/api-documentation"
+                        target="_blank"
                       >
                         <img
                           src="https://www.gmeremit.com/wp-content/uploads/2023/01/view.png"
@@ -633,7 +634,8 @@ const Navigation = (props) => {
                     </li>
                     <li id="menu-item-17546" className="sub-menu-li">
                       <a
-                        onClick={goCareers}
+                        target="_blank"
+                        href="/company/job-application/"
                         className="nectar-menu-item-with-icon3"
                       >
                         <img

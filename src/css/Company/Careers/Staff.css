@@ -60,6 +60,7 @@
   border-radius: 20px;
   padding: calc(1245px * 0.03);
   background-color: #fff;
+  border: 1px solid #e9d8d8;
   position: relative;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   top: 0;

@@ -1,4 +1,4 @@
-import "../../../css/Solutions/Features.css";
+import "../../../css/Business/Solutions/Features.css";
 import { useState } from "react";
 import Carousel from "react-elastic-carousel";
 import "slick-carousel/slick/slick.css";

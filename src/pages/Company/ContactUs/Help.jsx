@@ -1,4 +1,4 @@
-import "../../../css/ContactUs/Help.css";
+import "../../../css/Company/ContactUs/Help.css";
 const Help = () => {
   const centers = [
     {

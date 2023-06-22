@@ -1,4 +1,4 @@
-import "../../../css/Careers/Divider.css";
+import "../../../css/Company/Careers/Divider.css";
 const Divider = () => {
   return (
     <div id="fws_646c704252d21" className="divider_row">

@@ -1,4 +1,4 @@
-import "../../../css/Careers/Leave.css";
+import "../../../css/Company/Careers/Leave.css";
 const Leave = () => {
   return (
     <div id="leave" className="leave">

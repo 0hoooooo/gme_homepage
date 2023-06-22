@@ -1,4 +1,4 @@
-import "../../../css/Developers/ViewApi.css";
+import "../../../css/Business/Developers/ViewApi.css";
 
 const ViewApi = () => {
   return (

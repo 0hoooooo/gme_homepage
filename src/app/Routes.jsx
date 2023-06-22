@@ -8,6 +8,9 @@ import AboutUs from "../pages/Company/AboutUs";
 import Careers from "../pages/Company/Careers";
 import ContactUs from "../pages/Company/ContactUs";
 import QrCode from "../pages/Personal/Qrcode";
+import ContactSales from "../pages/Business/Solutions/ContactSales";
+import JobApplication from "../pages/Company/Careers/JobApplication";
+import ViewApi from "../pages/Business/Developers/ViewApi";
 
 const Routes = () => {
   const rootRoutes = {
@@ -54,6 +57,14 @@ const Routes = () => {
         path: "platform",
         element: <Platform />,
       },
+      {
+        path: "contact-sales",
+        element: <ContactSales />,
+      },
+      {
+        path: "api-documentation",
+        element: <ViewApi />,
+      },
     ],
   };
   const companyRoutes = {
@@ -71,6 +82,10 @@ const Routes = () => {
       {
         path: "contactUs",
         element: <ContactUs />,
+      },
+      {
+        path: "job-application",
+        element: <JobApplication />,
       },
     ],
   };

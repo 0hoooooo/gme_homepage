@@ -1,6 +1,6 @@
 #benefits {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   margin-bottom: 0;
   position: relative;
 }
@@ -83,16 +83,15 @@
   width: auto;
 }
 .padding_phone_benefits {
-  opacity: 1;
-  transform: none;
   float: none;
   margin-right: 0;
   margin-left: 0;
+  margin-bottom: 0;
   padding-left: 1%;
   padding-right: 1%;
-  position: relative;
   background-position: center;
-  display: block;
+  background-color: transparent;
+  position: relative;
 }
 @media only screen and (min-width: 690px) {
   .padding_phone_benefits {
@@ -101,8 +100,12 @@
 }
 .padding_inner_benefits {
   border-radius: 20px;
-  padding: calc(1245px * 0.02);
+  background-color: #f3f1f1;
+  padding: 30px;
+  margin: 10px;
   position: relative;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .column_link_benefits {
   position: absolute;
@@ -158,6 +161,11 @@
 .hover_wrap_inner_benefits {
   transition: all 0.65s cubic-bezier(0.05, 0.2, 0.1, 1) !important;
 }
+
+.padding_inner_benefits:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+}
 .img_benefits {
   opacity: 1;
   transform: none;
@@ -174,7 +182,7 @@
   position: relative;
 }
 .vc_custom_heading_benefits {
-  font-size: 22px;
+  font-size: 20px;
   text-align: center;
   font-family: Roboto;
   font-weight: 700;

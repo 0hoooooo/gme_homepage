@@ -1,4 +1,4 @@
-import "../../../css/ContactUs/Help2.css";
+import "../../../css/Company/ContactUs/Help2.css";
 const Help2 = () => {
   const africa = [
     {

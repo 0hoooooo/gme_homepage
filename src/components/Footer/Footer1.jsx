@@ -121,7 +121,7 @@ const Footer1 = () => {
                                   <span>
                                     <a
                                       style={{ color: "#b0aeae" }}
-                                      href="https://apps.apple.com/app/bars/id1439161261."
+                                      href="https://apps.apple.com/kr/app/gme-remit/id1439161261"
                                       target="_blank"
                                     >
                                       <span className="nectar-menu-icon-text">
@@ -298,7 +298,8 @@ const Footer1 = () => {
                                     <a
                                       className="nectar-menu-item-with-icon"
                                       style={{ color: "#b0aeae" }}
-                                      href="/business/developers"
+                                      href="/business/api-documentation"
+                                      target="_blank"
                                     >
                                       <span className="nectar-menu-icon-text">
                                         <span className="menu-title-text">
@@ -363,7 +364,7 @@ const Footer1 = () => {
                                     <a
                                       className="nectar-menu-item-with-icon"
                                       style={{ color: "#b0aeae" }}
-                                      href="https://www.gmeremit.com/?post_type=salient_g_sections&amp;p=17089&amp;preview=true#GME-HoM"
+                                      href="/business/platform"
                                     >
                                       <span className="nectar-menu-icon-text">
                                         <span className="menu-title-text">
@@ -677,7 +678,8 @@ const Footer1 = () => {
                                     <a
                                       className="nectar-menu-item-with-icon"
                                       style={{ color: "#b0aeae" }}
-                                      href="/company/careers"
+                                      target="_blank"
+                                      href="/company/job-application/"
                                     >
                                       <span className="nectar-menu-icon-text">
                                         <span className="menu-title-text">

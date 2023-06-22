@@ -1,4 +1,4 @@
-import "../../../css/Careers/Staff.css";
+import "../../../css/Company/Careers/Staff.css";
 const Staff = () => {
   const members = [
     {

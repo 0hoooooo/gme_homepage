@@ -13,7 +13,6 @@ const Developer = () => {
       <Divider />
       <Api3 />
       <Api4 />
-      <ViewApi />
     </>
   );
 };

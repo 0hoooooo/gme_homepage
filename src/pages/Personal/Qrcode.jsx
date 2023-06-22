@@ -1,4 +1,4 @@
-import "../../css/QrCode/QrCode.css";
+import "../../css/Personal/QrCode/QrCode.css";
 const QrCode = () => {
   return (
     <div id="fws_64923fb0b178b" className="qrcode_wrapper">

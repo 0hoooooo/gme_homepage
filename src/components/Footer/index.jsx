@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
-import Footer1 from "./Footer/Footer1";
-import Footer2 from "./Footer/Footer2";
-import Footer3 from "./Footer/Footer3";
+import Footer1 from "./Footer1";
+import Footer2 from "./Footer2";
+import Footer3 from "./Footer3";
 
 const Footer = () => {
   return (

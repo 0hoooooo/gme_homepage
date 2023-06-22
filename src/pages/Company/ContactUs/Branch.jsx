@@ -1,4 +1,4 @@
-import "../../../css/ContactUs/Branch.css";
+import "../../../css/Company/ContactUs/Branch.css";
 const Branch = () => {
   const branch = [
     {

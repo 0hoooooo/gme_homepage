@@ -1,4 +1,4 @@
-import "../../../css/Careers/Education.css";
+import "../../../css/Company/Careers/Education.css";
 const Education = () => {
   return (
     <div

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "../../../css/Solutions/Sps.css";
+import "../../../css/Business/Solutions/Sps.css";
 const Sps = () => {
   const [fadeIn, setFadeIn] = useState(false);
 
@@ -25,12 +25,12 @@ const Sps = () => {
 
   useEffect(() => {
     const animatedTags = document.querySelectorAll(".sps_image");
-    animatedTags.forEach((tag) => {
+    animatedTags?.forEach((tag) => {
       tag.style.opacity = 0;
     });
     const fadeIn = function () {
       let delay = 0.5;
-      animatedTags.forEach((tag) => {
+      animatedTags?.forEach((tag) => {
         const tagTop = tag.getBoundingClientRect().top;
         const tagBottom = tag.getBoundingClientRect().bottom;
 

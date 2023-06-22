@@ -1,4 +1,4 @@
-import "../../../css/Platform/Hom.css";
+import "../../../css/Business/Platform/Hom.css";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Hom = () => {
