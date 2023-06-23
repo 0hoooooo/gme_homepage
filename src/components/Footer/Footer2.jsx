@@ -9,9 +9,9 @@ const Footer2 = () => {
             <div className="column1">
               <p>
                 © 2023 GME Remittance. |{" "}
-                <a href="https://www.gmeremit.com/terms-conditions/">
+                <a href="/company/terms-conditions" target="_blank">
                   Terms &amp; Conditions
-                </a>{" "}
+                </a>
                 | <a href="#">Privacy Policy</a>
               </p>
             </div>

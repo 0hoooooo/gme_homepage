@@ -255,7 +255,7 @@ li a:hover:after {
   overflow: hidden;
   background-size: cover;
   background-position: center;
-  width: 105%;
+  width: 110%;
   left: 0;
   box-shadow: 0 6px 28px rgba(0, 0, 0, 0.08);
   position: absolute;
@@ -279,7 +279,7 @@ li a:hover:after {
   overflow: hidden;
   background-size: cover;
   background-position: center;
-  width: 105%;
+  width: 110%;
   left: 0;
   box-shadow: 0 6px 28px rgba(0, 0, 0, 0.08);
   position: absolute;

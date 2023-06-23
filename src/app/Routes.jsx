@@ -11,6 +11,7 @@ import QrCode from "../pages/Personal/Qrcode";
 import ContactSales from "../pages/Business/Solutions/ContactSales";
 import JobApplication from "../pages/Company/Careers/JobApplication";
 import ViewApi from "../pages/Business/Developers/ViewApi";
+import TermsCondtion from "../pages/Company/Condition/TermsCondition";
 
 const Routes = () => {
   const rootRoutes = {
@@ -86,6 +87,10 @@ const Routes = () => {
       {
         path: "job-application",
         element: <JobApplication />,
+      },
+      {
+        path: "terms-conditions",
+        element: <TermsCondtion />,
       },
     ],
   };
