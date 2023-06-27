@@ -1,11 +1,17 @@
 import { useEffect, useState } from "react";
 import "../css/Header/Header.css";
 import { FormattedMessage } from "react-intl";
+import { useNavigate } from "react-router-dom";
 
 const MobileNavigation = () => {
   const [open, setOpen] = useState(false);
   const [locale, setLocale] = useState(localStorage.getItem("locale") ?? "ko");
-
+  const navigate = useNavigate();
+  const goHome = () => {
+    console.log("홈으로 이동");
+    navigate("/main/home");
+    window.location.reload();
+  };
   return (
     <>
       <div className="fullscreen_mobile">
@@ -18,7 +24,9 @@ const MobileNavigation = () => {
               <div className="menu_wrap_menuwrapper">
                 <ul className="menuopen">
                   <li className="menu_item">
-                    <a className="menu_page">Personal</a>
+                    <a className="menu_page" onClick={goHome}>
+                      Personal
+                    </a>
                   </li>
                   <li className="menu_item">
                     <button
