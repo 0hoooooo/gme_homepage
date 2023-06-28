@@ -12,6 +12,7 @@ import ContactSales from "../pages/Business/Solutions/ContactSales";
 import JobApplication from "../pages/Company/Careers/JobApplication";
 import ViewApi from "../pages/Business/Developers/ViewApi";
 import TermsCondtion from "../pages/Company/Condition/TermsCondition";
+import PrivacyPolicy from "../pages/Company/Condition/PrivacyPolicy";
 
 const Routes = () => {
   const rootRoutes = {
@@ -91,6 +92,10 @@ const Routes = () => {
       {
         path: "terms-conditions",
         element: <TermsCondtion />,
+      },
+      {
+        path: "privacy-policy",
+        element: <PrivacyPolicy />,
       },
     ],
   };

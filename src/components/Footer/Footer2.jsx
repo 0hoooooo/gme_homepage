@@ -12,7 +12,10 @@ const Footer2 = () => {
                 <a href="/company/terms-conditions" target="_blank">
                   Terms &amp; Conditions
                 </a>
-                | <a href="#">Privacy Policy</a>
+                |{" "}
+                <a href="/company/privacy-policy" target="_blank">
+                  Privacy Policy
+                </a>
               </p>
             </div>
 
