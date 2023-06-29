@@ -48,8 +48,8 @@ const Financial = () => {
 
   return (
     <>
-      <div id="solutions">
-        <div className="row-bg-wrap">
+      <div id="solutions1">
+        <div className="row_bg_wrap_solutions">
           <div className="inner_wrap_using_image">
             <div className="row_bg_using_image_loaded1"></div>
           </div>
@@ -69,10 +69,7 @@ const Financial = () => {
                     <div className="main_wrapper">
                       <div className="vc_column-inner">
                         <div className="wpb_wrapper">
-                          <h1
-                            className="vc_custom_heading"
-                            style={{ textAlign: "left", fontSize: 60 }}
-                          >
+                          <h1 className="vc_custom_heading_financial">
                             GME for SMB's &amp;
                             <br />
                             E-Commerce Merchants
@@ -127,7 +124,7 @@ const Financial = () => {
         </div>
       </div>
 
-      <div id="solutions" style={{ paddingTop: 30, paddingBottom: 60 }}>
+      <div id="solutions2">
         <div className="row-bg-wrap">
           <div className="inner_wrap_using_image">
             <div className="row_bg_using_image_loaded2"></div>

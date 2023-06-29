@@ -9,7 +9,7 @@ const MobileNavigation = () => {
   const navigate = useNavigate();
   const goHome = () => {
     console.log("홈으로 이동");
-    navigate("/main/home");
+    navigate("/personal");
     window.location.reload();
   };
   return (

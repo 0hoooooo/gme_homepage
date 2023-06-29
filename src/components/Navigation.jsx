@@ -3,9 +3,10 @@ import { FormattedMessage } from "react-intl";
 import { useNavigate } from "react-router-dom";
 import { Link, ScrollLink } from "react-scroll";
 const Navigation = (props) => {
-  const { list, handleClick } = props;
+  const { list, handleClick, arr } = props;
   useEffect(() => {
     console.log("navigation", list);
+    console.log("menu:", arr);
   }, []);
   const navigate = useNavigate();
   const goPlatform = () => {
@@ -41,7 +42,7 @@ const Navigation = (props) => {
   };
   const goHome = () => {
     console.log("홈으로 이동");
-    navigate("/main/home");
+    navigate("/personal");
     window.location.reload();
   };
 
@@ -56,108 +57,101 @@ const Navigation = (props) => {
     window.location.reload();
   };
   return (
-    <div
-      className="menu"
-      style={{
-        display: "flex",
-        flexFlow: "row nowrap",
-        justifyContent: "space-between",
-      }}
-    >
+    <>
       <div className="menu">
         <nav className="menu_nav">
           <ul className="sf-menu">
             {/* {list.map((item, index) => (
-              <li
-                className="menu_item1"
-                key={index}
-                onClick={() => handleClick(item.name)}
-              >
-                <a className="businee_solutions_a">
-                  <span
-                    className="menu-title-text"
-                    style={{
-                      listStyle: "none outside none",
-                      margin: 0,
-                      padding: 0,
-                    }}
+      <li
+        className="menu_item1"
+        key={index}
+        onClick={() => handleClick(item.name)}
+      >
+        <a className="businee_solutions_a">
+          <span
+            className="menu-title-text"
+            style={{
+              listStyle: "none outside none",
+              margin: 0,
+              padding: 0,
+            }}
+          >
+            {item.name}
+          </span>
+        </a>
+        {item.sub1_category ? (
+          <ul className="sub_menu">
+            <li id="menu-item-16863" className="business_left">
+              <a onClick={goSolution} className="business_solutions_a">
+                <div className="business_left_banner">
+                  <div className="business_left_image_layer">
+                    <div className="business_left_image_layer_loaded"></div>
+                    <div className="business_left_color_overlay"></div>
+                  </div>
+                  <div className="business_left_inner_content">
+                    <span className="title_business">
+                      <span className="title_menu">B2B</span>
+                    </span>
+                    <span className="menu_item_desc">
+                      Reduce Cost on Business Transfers
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            {item.sub1_category?.map(
+              (item, index) => (
+                console.log("sub1_category:", item),
+                (
+                  <li
+                    id="menu-item-16714"
+                    className="developers"
+                    key={index}
                   >
-                    {item.name}
-                  </span>
-                </a>
-                {item.sub1_category ? (
-                  <ul className="sub_menu">
-                    <li id="menu-item-16863" className="business_left">
-                      <a onClick={goSolution} className="business_solutions_a">
-                        <div className="business_left_banner">
-                          <div className="business_left_image_layer">
-                            <div className="business_left_image_layer_loaded"></div>
-                            <div className="business_left_color_overlay"></div>
-                          </div>
-                          <div className="business_left_inner_content">
-                            <span className="title_business">
-                              <span className="title_menu">B2B</span>
-                            </span>
-                            <span className="menu_item_desc">
-                              Reduce Cost on Business Transfers
-                            </span>
-                          </div>
-                        </div>
-                      </a>
-                    </li>
-                    {item.sub1_category?.map(
-                      (item, index) => (
-                        console.log("sub1_category:", item),
-                        (
-                          <li
-                            id="menu-item-16714"
-                            className="developers"
-                            key={index}
+                    <a
+                      className="business_solutions_a"
+                      onClick={goSolution}
+                    >
+                      <span className="menu-title-text">
+                        {item.name}
+                      </span>
+                    </a>
+
+                    <ul className="sub-menu">
+                      {item.sub2_category?.map((item, index) => (
+                        <li
+                          id="menu-item-16718"
+                          className="sub-menu-li"
+                        >
+                          <a
+                            href="#!"
+                            className="nectar-menu-item-with-icon2"
+                            onClick={goSolution}
                           >
-                            <a
-                              className="business_solutions_a"
-                              onClick={goSolution}
-                            >
-                              <span className="menu-title-text">
+                            <img
+                              src="https://www.gmeremit.com/wp-content/uploads/2023/01/financial.png"
+                              className="icon_image"
+                              alt=""
+                              width="128"
+                              height="128"
+                            />
+                            <span className="nectar-menu-icon-text">
+                              <span className="menu_title_text2">
                                 {item.name}
                               </span>
-                            </a>
-
-                            <ul className="sub-menu">
-                              {item.sub2_category?.map((item, index) => (
-                                <li
-                                  id="menu-item-16718"
-                                  className="sub-menu-li"
-                                >
-                                  <a
-                                    href="#!"
-                                    className="nectar-menu-item-with-icon2"
-                                    onClick={goSolution}
-                                  >
-                                    <img
-                                      src="https://www.gmeremit.com/wp-content/uploads/2023/01/financial.png"
-                                      className="icon_image"
-                                      alt=""
-                                      width="128"
-                                      height="128"
-                                    />
-                                    <span className="nectar-menu-icon-text">
-                                      <span className="menu_title_text2">
-                                        {item.name}
-                                      </span>
-                                    </span>
-                                  </a>
-                                </li>
-                              ))}
-                            </ul>
-                          </li>
-                        )
-                      )
-                    )}
-                  </ul>
-                ) : null}
-              </li>
-            ))} */}
+                            </span>
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </li>
+                )
+              )
+            )}
+          </ul>
+        ) : null}
+      </li>
+    ))} */}
             <li className="menu_item1">
               <a className="business_solutions_a" onClick={goHome}>
                 <span
@@ -168,15 +162,13 @@ const Navigation = (props) => {
                     padding: 0,
                   }}
                 >
-                  <FormattedMessage id="personal" />
+                  Personal
                 </span>
               </a>
             </li>
             <li className="menu_item2">
               <a onClick={goSolution} className="business_solutions_a">
-                <span className="menu-title-text">
-                  <FormattedMessage id="business" />
-                </span>
+                <span className="menu-title-text">Business</span>
               </a>
               <ul className="sub_menu">
                 <li id="menu-item-16863" className="business_left">
@@ -450,9 +442,7 @@ const Navigation = (props) => {
             </li>
             <li className="menu_item3">
               <a className="business_solutions_a" onClick={goAboutUs}>
-                <span className="menu-title-text">
-                  <FormattedMessage id="company" />
-                </span>
+                <span className="menu-title-text">Company</span>
               </a>
               <ul className="sub_menu2">
                 <li id="menu-item-17554" className="business_left">
@@ -700,11 +690,10 @@ const Navigation = (props) => {
           </ul>
         </nav>
       </div>
-
       <div
         className="menu"
         style={{
-          marginLeft: 450,
+          marginLeft: "auto",
           textAlign: "right",
           alignContent: "flex-end",
         }}
@@ -733,42 +722,46 @@ const Navigation = (props) => {
                 </span>
               </a>
             </li>
-            <li>
-              <select
-                id="locale"
-                className="lang_menu"
-                value={locale}
-                onChange={(e) => chooseLan(e)}
-              >
-                <option value="ko" className="menu_item1">
-                  한국어(KOREAN)
-                </option>
-                <option value="eng">English</option>
-                <option value="chi">Chinese</option>
-              </select>
-            </li>
+            {/* <li>
+      <select
+        id="locale"
+        className="lang_menu"
+        value={locale}
+        onChange={(e) => chooseLan(e)}
+      >
+        <option value="ko" className="menu_item1">
+          한국어(KOREAN)
+        </option>
+        <option value="eng">English</option>
+        <option value="chi">Chinese</option>
+      </select>
+    </li> */}
 
-            {/* <li className="menu_item1">
+            <li className="menu_item1">
               <a
                 className="business_solutions_a"
                 href="https://www.gmeremit.com/"
-                aria-current="page"
+                rent="page"
               >
-                <span className="menu-title-text">English</span>
+                <img
+                  className="flag_image"
+                  src="https://www.gmeremit.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/en.png"
+                  alt=""
+                  width="18"
+                  height="12"
+                />
+                <span className="lang_name">English</span>
               </a>
-              <ul className="lan_menu">
-                <li
-                  id="menu-item-wpml-ls-5-ko"
-                  className="menu-item wpml-ls-slot-5 wpml-ls-item wpml-ls-item-ko wpml-ls-menu-item menu-item-type-wpml_ls_menu_item menu-item-object-wpml_ls_menu_item nectar-regular-menu-item menu-item-wpml-ls-5-ko"
-                >
+              <ul className="lang_menu">
+                <li id="menu-item-wpml-ls-5-ko" className="lang">
                   <a title="Korean" href="https://www.gmeremit.com/ko/">
                     <span className="menu-title-text">
                       <img
-                        className="wpml-ls-flag"
+                        className="flag_image"
                         src="https://www.gmeremit.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/ko.png"
                         alt=""
                       />
-                      <span className="wpml-ls-native" lang="ko">
+                      <span className="lang_name" lang="ko">
                         한국어
                       </span>
                       <span className="wpml-ls-display">
@@ -778,36 +771,33 @@ const Navigation = (props) => {
                     </span>
                   </a>
                 </li>
-                <li
-                  id="menu-item-wpml-ls-5-zh-hans"
-                  className="menu-item wpml-ls-slot-5 wpml-ls-item wpml-ls-item-zh-hans wpml-ls-menu-item wpml-ls-last-item menu-item-type-wpml_ls_menu_item menu-item-object-wpml_ls_menu_item nectar-regular-menu-item menu-item-wpml-ls-5-zh-hans"
-                >
+                <li id="menu-item-wpml-ls-5-zh-hans" className="lang">
                   <a
                     title="Chinese (Simplified)"
                     href="https://www.gmeremit.com/zh-hans/"
                   >
                     <span className="menu-title-text">
                       <img
-                        className="wpml-ls-flag"
+                        className="flag_image"
                         src="https://www.gmeremit.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/zh.png"
                         alt=""
                       />
-                      <span className="wpml-ls-native" lang="zh-hans">
+                      <span className="lang_name" lang="zh-hans">
                         简体中文
                       </span>
                       <span className="wpml-ls-display">
                         <span className="wpml-ls-bracket"> (</span>Chinese
-                        (Simplified)<span className="wpml-ls-bracket">)</span>
+                        <span className="wpml-ls-bracket">)</span>
                       </span>
                     </span>
                   </a>
                 </li>
               </ul>
-            </li> */}
+            </li>
           </ul>
         </nav>
       </div>
-    </div>
+    </>
   );
 };
 export default Navigation;

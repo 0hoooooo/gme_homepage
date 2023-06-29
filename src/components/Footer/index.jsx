@@ -8,7 +8,6 @@ const Footer = () => {
     <FooterWrapper>
       <Footer1 />
       <Footer2 />
-      <Footer3 />
     </FooterWrapper>
   );
 };

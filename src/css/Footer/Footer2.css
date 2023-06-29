@@ -7,7 +7,6 @@
 #copyright {
   border: none;
   background-color: #f3f6f8;
-  padding: 20px 0;
   font-size: 15px;
   color: #777;
 }
@@ -42,8 +41,8 @@
 .column1 p {
   color: #191c1f;
   line-height: 22px;
-  margin-top: 3px;
   font-size: 15px;
+  margin: 20px;
 }
 .column1 a {
   color: #191c1f !important;

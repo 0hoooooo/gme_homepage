@@ -272,10 +272,10 @@ const Help = () => {
                                   <p>{item.phone1}</p>
                                 </div>
                               </div>
-                              <div class="divider_wrap_center">
+                              <div className="divider_wrap_center">
                                 <div
                                   style={{ height: 15 }}
-                                  class="divider_center"
+                                  className="divider_center"
                                 ></div>
                               </div>
                               <h2 className="vc_custom_heading_center">

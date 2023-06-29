@@ -17,18 +17,18 @@ import PrivacyPolicy from "../pages/Company/Condition/PrivacyPolicy";
 const Routes = () => {
   const rootRoutes = {
     path: "/",
-    element: <Navigate to="/main/home" />,
+    element: <Navigate to="/personal" />,
   };
   const noMatchRoutes = {
     path: "*",
-    elemt: <Navigate to="/main/home" />,
+    elemt: <Navigate to="/personal" />,
   };
   const mainRoutes = {
-    path: "/main",
+    path: "/",
     element: <MainLayout />,
     children: [
       {
-        path: "home",
+        path: "personal",
         element: <Home />,
       },
     ],

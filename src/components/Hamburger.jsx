@@ -16,7 +16,7 @@ const Hamburger = ({ isOpen }) => {
           .hamburger {
             cursor: pointer;
             width: 2rem;
-            height: 2rem;
+            height: 3rem;
             display: flex;
             justify-content: space-around;
             flex-flow: column nowrap;

@@ -12,7 +12,7 @@ const Header = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const navigate = useNavigate();
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
-
+  const [location, setLocation] = useState([]);
   const toggleHamburger = () => {
     console.log("햄버거 메뉴 클릭:", hamburgerOpen);
     setHamburgerOpen(!hamburgerOpen);
@@ -20,6 +20,11 @@ const Header = () => {
 
   const [activeTab, setActiveTab] = useState();
 
+  useEffect(() => {
+    console.log(window.location.pathname);
+    const arr = window.location.pathname.split("/");
+    setLocation(arr);
+  }, []);
   const arrMenu = [
     {
       id: 1,
@@ -184,7 +189,7 @@ const Header = () => {
 
   const goHome = () => {
     console.log("홈으로 이동");
-    navigate("/main/home");
+    navigate("/personal");
     window.location.reload();
   };
 
@@ -197,7 +202,11 @@ const Header = () => {
     <CgMenu className="hamburger" onClick={() => setOpen(!open)} />
   );
   const closeIcon = (
-    <CgClose className="hamburger" onClick={() => setOpen(!open)} />
+    <CgClose
+      className="hamburger"
+      style={{ color: "white" }}
+      onClick={() => setOpen(!open)}
+    />
   );
   const handleSubNavOn = (name) => {
     setActiveTab(name);
@@ -217,7 +226,11 @@ const Header = () => {
                 />
               </a>
             </div>
-            <Navigation list={arrMenu} handleClick={handleSubNavOn} />
+            <Navigation
+              list={arrMenu}
+              arr={location}
+              handleClick={handleSubNavOn}
+            />
 
             {/* <div className="hamburger" onClick={toggleHamburger}>
               <Hamburger isOpen={hamburgerOpen} />
@@ -236,7 +249,7 @@ const Header = () => {
             .hamburger {
               cursor: pointer;
               width: 2rem;
-              height: 2rem;
+              height: 3rem;
               display: flex;
               justify-content: space-around;
               flex-flow: column nowrap;
