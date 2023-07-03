@@ -14,15 +14,22 @@
 @media only screen and (min-width: 1000px) {
   #header_outer {
     padding-top: 0;
+    transition: all ease 1s;
   }
 }
-
+@media only screen and (max-width: 900px) {
+  #header_outer {
+    padding: 20px 0 20px 0;
+    height: 10%;
+  }
+}
 #header_outer_scrolled {
   width: 100%;
   top: 0;
   left: 0;
   position: fixed;
   padding: 20px 0 20px 0;
+  transition: all ease 1s;
   background-color: #fff;
   border-bottom-color: transparent;
   z-index: 9999;
@@ -36,7 +43,7 @@
 }
 @media only screen and (max-width: 900px) {
   #header_outer_scrolled {
-    padding-top: 30px;
+    padding: 20px 0 20px 0;
     height: 10%;
   }
 }
@@ -281,8 +288,11 @@ li a:hover:after {
   z-index: 10;
   color: #191c1f;
 }
+#header_outer .menu_item2:hover .sub_menu {
+  top: 100%;
+}
 #header_outer_scrolled .menu_item2:hover .sub_menu {
-  top: 90%;
+  top: 110%;
 }
 .menu_item3 {
   display: inline-block;
@@ -305,8 +315,11 @@ li a:hover:after {
   z-index: 10;
   color: #191c1f;
 }
+#header_outer .menu_item3:hover .sub_menu2 {
+  top: 100%;
+}
 #header_outer_scrolled .menu_item3:hover .sub_menu2 {
-  top: 90%;
+  top: 110%;
 }
 /* .sub_menu li {
   display: flex;
@@ -471,7 +484,6 @@ li a:hover:after {
   overflow: hidden;
   background-size: cover;
   background-position: center;
-
   list-style: none outside none;
   margin: 0;
   padding: 0;
@@ -774,7 +786,7 @@ li a:hover:after {
   max-width: 100%;
 }
 .developers {
-  padding: 20px;
+  padding: 20px 0px 20px 20px;
   float: none;
   width: 25%;
   flex: none;

@@ -4,44 +4,44 @@ const Financial = () => {
   const upperlist = [
     {
       id: 1,
-      title: "1.Marketplaces",
+      title: "1. Marketplaces",
       src: "https://www.gmeremit.com/wp-content/uploads/2023/01/Marketplace@3x-2.png",
     },
     {
       id: 2,
-      title: "2.Merchants",
+      title: "2. Merchants",
       src: "https://www.gmeremit.com/wp-content/uploads/2023/01/mmerchants.png",
     },
     {
       id: 3,
-      title: "3.Global Service Providers",
+      title: "3. Global Service Providers",
       src: "https://www.gmeremit.com/wp-content/uploads/2023/01/Global-Service-Providers@3x.png",
     },
     {
       id: 4,
-      title: "4.Digital Marketing & Services",
+      title: "4. Digital Marketing & Services",
       src: "https://www.gmeremit.com/wp-content/uploads/2023/01/digital-marketing-payrolls@3x.png",
     },
   ];
   const downlist = [
     {
       id: 5,
-      title: "5.Freelancers",
+      title: "5. Freelancers",
       src: "https://www.gmeremit.com/wp-content/uploads/2023/01/freelancers@3x.png",
     },
     {
       id: 6,
-      title: "6.Payrolls",
+      title: "6. Payrolls",
       src: "https://www.gmeremit.com/wp-content/uploads/2023/01/digital-marketing-payrolls@3x.png",
     },
     {
       id: 7,
-      title: "7.Vendors & Suppliers",
+      title: "7. Vendors & Suppliers",
       src: "https://www.gmeremit.com/wp-content/uploads/2023/01/vendors-and-supplies.png",
     },
     {
       id: 8,
-      title: "8.Traders",
+      title: "8. Traders",
       src: "https://www.gmeremit.com/wp-content/uploads/2023/01/Traders.png",
     },
   ];

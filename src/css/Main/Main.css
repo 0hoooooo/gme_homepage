@@ -42,7 +42,7 @@
 .main-content > .row,
 header .row {
   display: flex;
-  margin-left: 0px;
+  margin-left: 20px;
   margin-right: 20px;
 }
 .row-bg-wrap {

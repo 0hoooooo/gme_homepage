@@ -371,7 +371,7 @@
 }
 .inner_solution {
   display: inline-block;
-  max-width: 50%;
+  max-width: 100%;
   width: auto;
   text-align: center;
   height: 100%;
@@ -402,8 +402,14 @@
   max-width: 100%;
   height: auto;
 }
+.solution_image:hover {
+  /* -webkit-transform: scale(1.1); */
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out !important;
+}
 .title_solution {
   font-size: 18px;
   color: #ffffff;
   text-align: center;
+  width: 100%;
 }
