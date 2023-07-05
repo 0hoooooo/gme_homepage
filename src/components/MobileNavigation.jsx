@@ -12,6 +12,12 @@ const MobileNavigation = () => {
     navigate("/personal");
     window.location.reload();
   };
+  useEffect(() => {
+    console.log("open:", open);
+  }, [open]);
+  useEffect(() => {
+    console.log("모바일 헤더");
+  }, []);
   return (
     <>
       <div className="fullscreen_mobile">
@@ -29,12 +35,9 @@ const MobileNavigation = () => {
                     </a>
                   </li>
                   <li className="menu_item">
-                    <button
-                      className="menu_page"
-                      onClick={() => setOpen(!open)}
-                    >
+                    <a className="menu_page" onClick={() => setOpen(!open)}>
                       Business
-                    </button>
+                    </a>
                     <ul
                       className={
                         open ? "sub_menu_mobile_open" : "sub_menu_mobile_close"
@@ -341,9 +344,13 @@ const MobileNavigation = () => {
                       </li>
                     </ul>
                   </li>
-                  <li className="megamenu columns-5 menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-16712 nectar-extra-menu-item-spacing">
-                    <a href="https://www.gmeremit.com/about-us/">Company</a>
-                    <ul className="sub-menu">
+                  <li className="menu_item">
+                    <a className="menu_page">Company</a>
+                    <ul
+                      className={
+                        open ? "sub_menu_mobile_open" : "sub_menu_mobile_close"
+                      }
+                    >
                       <li className="back">
                         <a href="#"> Back </a>
                       </li>
@@ -627,26 +634,16 @@ const MobileNavigation = () => {
                       </li>
                     </ul>
                   </li>
-                  <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-5410">
-                    <a href="#help" aria-current="page">
-                      Help
-                    </a>
+                  <li className="menu_item">
+                    <a className="menu_page">Help</a>
                   </li>
-                  <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-5411">
-                    <a href="https://online.gmeremit.com/Login">Login</a>
+                  <li className="menu_item">
+                    <a className="menu_page">Login</a>
                   </li>
-                  <li className="menu-item wpml-ls-slot-5 wpml-ls-item wpml-ls-item-en wpml-ls-current-language wpml-ls-menu-item wpml-ls-first-item menu-item-type-wpml_ls_menu_item menu-item-object-wpml_ls_menu_item menu-item-has-children menu-item-wpml-ls-5-en">
-                    <a
-                      title="English"
-                      href="https://www.gmeremit.com/contact-us/"
-                    >
-                      <img
-                        className="wpml-ls-flag"
-                        src="https://www.gmeremit.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/en.png"
-                        alt=""
-                      />
+                  <li className="menu_item">
+                    <a className="menu_page">
                       <span className="wpml-ls-native" lang="en">
-                        English
+                        Language
                       </span>
                     </a>
                     <ul className="sub-menu">
