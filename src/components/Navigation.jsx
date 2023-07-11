@@ -706,9 +706,7 @@ const Navigation = (props) => {
                 href="https://www.gmeremit.com/contact-us/#help"
                 aria-current="page"
               >
-                <span className="menu-title-text">
-                  <FormattedMessage id="help" />
-                </span>
+                <span className="menu-title-text">Help</span>
               </a>
             </li>
             <li className="menu_item1">
@@ -717,9 +715,7 @@ const Navigation = (props) => {
                 href="https://online.gmeremit.com/Login"
                 aria-current="page"
               >
-                <span className="menu-title-text">
-                  <FormattedMessage id="login" />
-                </span>
+                <span className="menu-title-text">Login</span>
               </a>
             </li>
             {/* <li>

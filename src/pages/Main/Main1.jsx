@@ -128,7 +128,7 @@ const Main1 = () => {
                           >
                             No.1
                             <br />
-                            <FormattedMessage id="Money Transfer Company in South Korea" />
+                            Money Transfer Company in South Korea
                           </h1>
                         </div>
                       </div>
@@ -173,7 +173,7 @@ const Main1 = () => {
                             }}
                             className="vc_custom_heading"
                           >
-                            <FormattedMessage id="Check the" />
+                            Check the
                           </h5>
                           <h3
                             style={{
@@ -184,9 +184,7 @@ const Main1 = () => {
                             }}
                             className="vc_custom_heading"
                           >
-                            <a>
-                              <FormattedMessage id="EXCHANGE RATE" />
-                            </a>
+                            <a>EXCHANGE RATE</a>
                           </h3>
                         </div>
                       </div>
@@ -223,9 +221,7 @@ const Main1 = () => {
                             }}
                             href="https://online.gmeremit.com/register"
                           >
-                            <span>
-                              <FormattedMessage id="Register" />
-                            </span>
+                            <span>Register</span>
                           </a>
                           <a
                             className="login_button"
@@ -236,9 +232,7 @@ const Main1 = () => {
                             }}
                             href="https://online.gmeremit.com/Login"
                           >
-                            <span>
-                              <FormattedMessage id="login" />
-                            </span>
+                            <span>Login</span>
                           </a>
                         </div>
                       </div>

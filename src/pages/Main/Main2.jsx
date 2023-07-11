@@ -65,15 +65,13 @@ const Main2 = () => {
                           </div>
                         </div>
                         <div className="wpb_wrapper">
-                          <h1 className="vc_custom_heading">
-                            <FormattedMessage id="Easy Secure" />
-                          </h1>
+                          <h1 className="vc_custom_heading">Easy & Secure</h1>
                           <div className="content_element">
                             <div className="wpb_wrapper">
                               <p>
-                                <FormattedMessage id="All-in-one mobile app." />
+                                All-in-one mobile app.
                                 <br />
-                                <FormattedMessage id="Government grade security." />
+                                Government grade security.
                               </p>
                             </div>
                           </div>
